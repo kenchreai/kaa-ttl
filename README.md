@@ -1,5 +1,5 @@
 # kaa-ttl
-An RDF Turtle file of all public data in the Kenchreai Archaeological Archive.
+An RDF Turtle file of all public data in the Kenchreai Archaeological Archive. KAA is a project of the American Excavations at Kenchreai. Please see http://www.kenchreai.org and http://kenchreai.org/kaa for further info and web-based browsing of data.
 
 One qualificatioin: kaa.trig is a http://www.w3.org/TR/trig/ file.
 
