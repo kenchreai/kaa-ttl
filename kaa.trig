@@ -1,5 +1,6 @@
 @prefix : <http://api.stardog.com/> .
 @prefix kaa: <http://kenchreai.org/kaa/> .
+@prefix kaakcp: <http://kenchreai.org/kaa/kcp/> .
 @prefix kaake: <http://kenchreai.org/kaa/ke/> .
 @prefix kaakth: <http://kenchreai.org/kaa/kth/> .
 @prefix kaaont: <http://kenchreai.org/kaa/ontology/> .
@@ -2946,6 +2947,7 @@
 		kaaont:broader kaatyp:marine-activities .
 	
 	<http://kenchreai.org/kaa/test/test01> a rdfs:Resource ;
+		kaaont:height "4" , 4 , "4.0"^^xsd:float ;
 		rdfs:label "KAA Test Object" .
 	
 	kaa:blaise-a-gratton a kaaont:person ;
@@ -5309,6 +5311,7 @@
 	kaake:ke0203 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/203-206.PDF" ;
 		kaaont:subject-number "L 52" ;
+		kaaont:photograph "photography/ke/inventoried-objects/Ke0203-L052-D13-001-Cf.png" , "photography/ke/inventoried-objects/Ke0203-L052-D13-002-Cf.png" ;
 		rdfs:label "KE 203 (Lamp)" ;
 		kaaont:next kaake:ke0204 ;
 		kaaont:typological-identification kaatyp:l ;
@@ -8564,6 +8567,7 @@
 	
 	kaake:ke0236 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/233-236.PDF" ;
+		kaaont:photograph "photography/ke/inventoried-objects/Ke0236-L062-D13-001-Cf.png" , "photography/ke/inventoried-objects/Ke0236-L062-D13-002-Cf.png" ;
 		kaaont:next kaake:ke0237 ;
 		kaaont:typological-identification kaatyp:l ;
 		kaaont:is-logical-part-of kaake:inventory-book .
@@ -17560,6 +17564,7 @@
 	kaake:ke0024 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/24-28.PDF" ;
 		kaaont:subject-number "L 2" ;
+		kaaont:photograph "photography/ke/inventoried-objects/Ke0024-L002-D13-001-Cf.png" ;
 		rdfs:label "KE 24 (Lamp)" ;
 		kaaont:next kaake:ke0025 ;
 		kaaont:typological-identification kaatyp:l ;
@@ -32975,13 +32980,15 @@
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0126 a kaaont:inventory-number ;
-		kaaont:comment "Object description in preparation." ;
-		rdfs:label "KTH 126" ;
+		kaaont:file "drawings/kth/KTH126-TCR-14.png" ;
+		rdfs:label "KTH126 (Palestinian Lamp 'Boot Type')" ;
+		kaaont:typological-identification kaatyp:l-palestinian-boot-type ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0127 a kaaont:inventory-number ;
+		kaaont:file "drawings\\/kth\\/KTH127-TCR-14a.png" ;
 		kaaont:comment "Object description in preparation." ;
-		rdfs:label "KTH 127" ;
+		rdfs:label "KTH 127 (LR Bowl-shaped Strainer)" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0128 a kaaont:inventory-number ;
@@ -33330,6 +33337,30 @@
 		rdfs:label "KTH274 (LRA 5)" ;
 		kaaont:typological-identification kaatyp:p-lra-5 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0292 a kaaont:inventory-number ;
+		kaaont:file "drawings/kth/KTH292-TCR-14.png" ;
+		rdfs:label "KTH273 (LRA 4)" ;
+		kaaont:typological-identification kaatyp:p-lra-4 ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaatyp:l-palestinian-boot-type a kaaont:typology-item ;
+		rdfs:label "Palestinian “Boot Type” Lamp" ;
+		kaaont:broader kaatyp:l ;
+		kaaont:not-after 700 ;
+		kaaont:not-before 500 .
+	
+	kaa:kcp a kaaont:project ;
+		kaaont:comment "Identifiers and descriptions associated with the Kenchreai Cemetary Project (2002-2006)." ;
+		rdfs:label "Kenchreai Cemetery Project (2002-2006)" ;
+		kaaont:is-logical-part-of <http://kenchreai.org/kaa> .
+	
+	kaakcp:inventoried-objects a kaaont:collection-of-related-entities ;
+		kaaont:comment "Inventoried from the Kenchreai Cemetary Project (KCP, 2002-2006). The information presented for each object is preliminary." ;
+		rdfs:label "Kenchreai Cemetary Project Inventoried Object" ;
+		kaaont:is-logical-part-of kaa:kcp .
+	
+	<http://kenchreai/kaa/test/test01> kaaont:height "4.0"^^xsd:float .
 }
 
 <urn:kenchreai:schema> {
