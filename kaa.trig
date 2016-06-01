@@ -2947,8 +2947,10 @@
 		kaaont:broader kaatyp:marine-activities .
 	
 	<http://kenchreai.org/kaa/test/test01> a rdfs:Resource ;
-		kaaont:height "4" , 4 , "4.0"^^xsd:float ;
-		rdfs:label "KAA Test Object" .
+		kaaont:height "4" , 5 , "4.0"^^xsd:float ;
+		kaaont:model kaa:people ;
+		kaaont:base-diameter 2.0 ;
+		rdfs:label "KAA Test Object ??" .
 	
 	kaa:blaise-a-gratton a kaaont:person ;
 		rdfs:label "Blaise A. Gratton" ;
@@ -7184,6 +7186,7 @@
 	
 	kaake:area-ta a kaaont:excavation-area ;
 		kaaont:file "plans/area-ta.png" ;
+		rdfs:seeAlso <http://www.jstor.org/stable/147632> ;
 		rdfs:comment "The site of an early imperial tomb built at a distance from the harbor itself. “TA” is short for “Temple of Artemis,” which was the working identification of the remains when work began." ;
 		rdfs:label "Area TA" ;
 		kaaont:is-logical-part-of kaa:month-august-1964 , kaa:month-march-1969 , kaa:month-july-1964 , kaa:ke ;
@@ -8567,7 +8570,9 @@
 	
 	kaake:ke0236 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/233-236.PDF" ;
+		kaaont:subject-number "L 62" ;
 		kaaont:photograph "photography/ke/inventoried-objects/Ke0236-L062-D13-001-Cf.png" , "photography/ke/inventoried-objects/Ke0236-L062-D13-002-Cf.png" ;
+		rdfs:label "KE 236 (Lamp)" ;
 		kaaont:next kaake:ke0237 ;
 		kaaont:typological-identification kaatyp:l ;
 		kaaont:is-logical-part-of kaake:inventory-book .
@@ -22136,6 +22141,9 @@
 	
 	kaake:ke0234 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/233-236.PDF" ;
+		kaaont:subject-number "L 60" ;
+		kaaont:photograph "photography/ke/inventoried-objects/Ke0234-L060-D13-001-Cf.png" , "photography/ke/inventoried-objects/Ke0234-L060-D13-002-Cf.png" ;
+		rdfs:label "KE 234 (Lamp)" ;
 		kaaont:next kaake:ke0235 ;
 		kaaont:typological-identification kaatyp:l ;
 		kaaont:is-logical-part-of kaake:inventory-book .
@@ -29452,6 +29460,9 @@
 	
 	kaake:ke0393 a kaaont:inventory-number ;
 		kaaont:pagescan "pagescans/inventory/390-395.PDF" ;
+		kaaont:subject-number "L 102" ;
+		kaaont:photograph "photography/ke/inventoried-objects/Ke0393-L102-D13-001-Cf.png" , "photography/ke/inventoried-objects/Ke0393-L102-D13-002-Cf.png" ;
+		rdfs:label "KE 393 (Lamp)" ;
 		kaaont:next kaake:ke0394 ;
 		kaaont:typological-identification kaatyp:l ;
 		kaaont:is-logical-part-of kaake:inventory-book .
@@ -32222,7 +32233,7 @@
 	kaakth:kth0002 a kaaont:inventory-number ;
 		kaaont:file "drawings/kth/KTH002-TCR-14.png" ;
 		kaaont:comment "Fabric is buff so not 'Tunisian'. Surface is unslipped." ;
-		rdfs:label "KTH 2" ;
+		rdfs:label "KTH 2 (Spatheion)" ;
 		kaaont:typological-identification kaatyp:p-spatheion ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
@@ -32235,7 +32246,8 @@
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0004 a kaaont:inventory-number ;
-		rdfs:label "KTH 4" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 4 (Palestinian Cookpot)" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0005 a kaaont:inventory-number ;
@@ -32256,7 +32268,7 @@
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0007 a kaaont:inventory-number ;
-		rdfs:label "KTH 7" ;
+		rdfs:label "KTH 7 (Small Late Roman Amphora 2)" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0008 a kaaont:inventory-number ;
@@ -32486,7 +32498,7 @@
 	
 	kaakth:kth0057 a kaaont:inventory-number ;
 		kaaont:comment "Object description in preparation." ;
-		rdfs:label "KTH 57" ;
+		rdfs:label "KTH 57 (Long Funnel Spout)" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0058 a kaaont:inventory-number ;
@@ -33322,8 +33334,10 @@
 	
 	kaakth:kth0206 a kaaont:inventory-number ;
 		kaaont:photograph "photography/threpsiades/inventoried-objects/KTH206-D14-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
 		rdfs:label "KTH206 (Loom Weight)" ;
-		kaaont:typological-identification kaatyp:loom-weight .
+		kaaont:typological-identification kaatyp:loom-weight ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0273 a kaaont:inventory-number ;
 		kaaont:file "drawings/kth/KTH273-TCR-14.png" ;
@@ -33340,7 +33354,8 @@
 	
 	kaakth:kth0292 a kaaont:inventory-number ;
 		kaaont:file "drawings/kth/KTH292-TCR-14.png" ;
-		rdfs:label "KTH273 (LRA 4)" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH292  (LRA 4)" , "KTH 292" ;
 		kaaont:typological-identification kaatyp:p-lra-4 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
@@ -33351,16 +33366,1203 @@
 		kaaont:not-before 500 .
 	
 	kaa:kcp a kaaont:project ;
-		kaaont:comment "Identifiers and descriptions associated with the Kenchreai Cemetary Project (2002-2006)." ;
 		rdfs:label "Kenchreai Cemetery Project (2002-2006)" ;
-		kaaont:is-logical-part-of <http://kenchreai.org/kaa> .
+		kaaont:is-logical-part-of <http://kenchreai.org/kaa> ;
+		kaaont:description "Identifiers and descriptions associated with the Kenchreai Cemetery Project (2002-2006)." .
 	
 	kaakcp:inventoried-objects a kaaont:collection-of-related-entities ;
-		kaaont:comment "Inventoried from the Kenchreai Cemetary Project (KCP, 2002-2006). The information presented for each object is preliminary." ;
-		rdfs:label "Kenchreai Cemetary Project Inventoried Object" ;
-		kaaont:is-logical-part-of kaa:kcp .
+		rdfs:label "Kenchreai Cemetery Project (2002-2006) Inventoried Objects" ;
+		kaaont:is-logical-part-of kaa:kcp ;
+		kaaont:description "Inventoried objects from the Kenchreai Cemetery Project (2002-2006). The information presented for each object is preliminary." .
 	
-	<http://kenchreai/kaa/test/test01> kaaont:height "4.0"^^xsd:float .
+	kaakth:kth0151 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 151" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0152 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 152" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0153 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 153" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0154 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 154" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0155 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 155" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0156 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 156" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0157 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 157" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0158 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 158" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0159 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 159" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0160 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 160" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0161 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 161" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0162 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 162" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0163 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 163" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0164 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 164" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0165 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 165" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0166 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 166" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0167 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 167" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0168 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 168" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0169 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 169" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0150 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 150" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0170 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 170" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0171 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 171" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0172 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 172" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0173 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 173" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0174 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 174" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0175 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 175" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0176 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 176" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0177 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 177" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0178 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 178" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0179 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 179" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0190 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 190" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0191 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 191" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0192 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 192" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0193 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 193" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0194 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 194" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0195 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 195" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0196 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 196" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0197 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 197" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0198 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 198" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0199 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 199" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0200 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 200" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0201 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 201" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0202 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 202" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0203 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 203" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0204 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 204" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0205 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 205" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0207 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 207" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0208 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 208" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0209 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 209" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0210 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 210" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0211 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 211" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0212 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 212" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0213 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 213" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0214 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 214" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0215 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 215" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0216 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 216" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0217 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 217" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0218 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 218" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0219 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 219" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0220 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 220" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0221 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 221" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0222 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 222" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0223 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 223" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0224 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 224" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0225 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 225" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0226 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 226" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0227 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 227" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0228 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 228" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0229 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 229" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0230 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 230" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0231 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 231" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0232 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 232" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0233 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 233" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0234 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 234" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0235 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 235" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0236 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 236" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0237 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 237" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0238 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 238" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0239 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 239" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0240 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 240" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0241 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 241" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0242 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 242" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0243 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 243" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0244 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 244" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0245 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 245" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0246 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 246" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0247 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 247" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0248 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 248" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0249 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 249" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0250 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 250" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0251 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 251" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0252 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 252" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0253 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 253" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0254 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 254" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0255 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 255" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0256 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 256" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0257 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 257" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0258 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 258" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0259 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 259" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0260 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 260" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0261 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 261" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0262 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 262" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0263 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 263" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0264 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 264" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0265 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 265" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0266 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 266" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0267 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 267" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0268 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 268" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0269 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 269" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0280 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 280" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0281 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 281" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0282 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 282" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0283 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 283" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0284 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 284" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0285 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 285" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0286 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 286" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0287 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 287" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0288 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 288" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0289 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 289" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0300 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 300" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0301 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 301" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0302 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 302" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0303 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 303" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0304 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 304" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0305 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 305" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0306 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 306" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0307 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 307" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0308 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 308" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0309 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 309" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0310 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 310" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0311 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 311" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0312 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 312" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0313 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 313" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0314 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 314" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0315 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 315" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0316 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 316" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0317 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 317" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0318 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 318" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0319 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 319" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0320 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 320" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0321 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 321" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0322 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 322" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0323 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 323" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0324 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 324" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0325 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 325" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0326 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 326" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0327 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 327" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0328 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 328" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0329 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 329" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0330 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 330" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0331 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 331" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0332 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 332" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0333 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 333" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0334 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 334" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0335 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 335" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0336 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 336" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0337 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 337" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0338 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 338" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0339 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 339" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0340 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 340" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0341 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 341" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0342 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 342" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0343 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 343" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0344 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 344" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0345 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 345" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0346 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 346" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0347 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 347" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0348 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 348" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0349 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 349" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0350 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 350" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0351 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 351" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0352 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 352" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0353 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 353" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0354 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 354" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0355 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 355" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0356 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 356" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0357 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 357" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0358 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 358" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0359 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 359" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0360 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 360" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0361 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 361" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0362 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 362" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0363 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 363" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0364 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 364" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0365 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 365" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0366 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 366" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0367 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 367" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0368 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 368" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0369 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 369" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0370 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 370" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0371 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 371" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0372 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 372" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0373 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 373" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0374 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 374" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0375 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 375" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0376 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 376" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0377 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 377" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0378 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 378" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0379 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 379" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0380 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 380" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0381 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 381" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0382 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 382" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0383 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 383" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0384 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 384" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0385 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 385" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0386 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 386" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0387 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 387" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0388 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 388" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0389 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 389" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0390 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 390" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0391 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 391" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0392 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 392" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0393 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 393" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0394 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 394" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0395 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 395" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0396 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 396" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0397 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 397" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0398 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 398" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0399 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 399" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0290 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 290" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0291 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 291" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0293 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 293" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0294 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 294" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0295 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 295" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0296 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 296" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0297 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 297" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0298 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 298" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakth:kth0299 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KTH 299" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects .
+	
+	kaakcp:ka001 a kaaont:inventory-number ;
+		kaaont:file "kcp/inventoried-objects/photographs/KA001-D03-001-Cf.png" ;
+		kaaont:comment "Object description in process." ;
+		rdfs:label "KA001 (Decorative Marble)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl001 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL001-D04-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL001 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl002 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL002-D04-001-Cf.png" , "kcp/inventoried-objects/drawings/KL002-composite.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL002 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl005 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL005-D13-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL005 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl003 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL003-D04-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL003 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl004 a kaaont:inventory-number ;
+		kaaont:file "kcp/inventoried-objects/drawings/KL004-composite.png" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL004-D13-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL004 (Lamp)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl006 a kaaont:inventory-number ;
+		kaaont:file "kcp/inventoried-objects/drawings/KL006-composite.png" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL006-D04-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL006 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
 }
 
 <urn:kenchreai:schema> {
@@ -33639,4 +34841,9 @@
 		rdfs:comment "Intended for the recording of amphoras, particularly the rim height of Late Roman Amphora 2. It is distinct from the 'neck height' measurement that includes the rim." ;
 		rdfs:label "Rim Height" ;
 		rdfs:range xsd:float .
+	
+	kaaont:description a owl:DatatypeProperty ;
+		rdfs:label "Description" ;
+		rdfs:range xsd:string ;
+		owl:equivalentProperty kaaont:kaa-any-string .
 }
