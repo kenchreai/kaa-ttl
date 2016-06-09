@@ -2948,11 +2948,15 @@
 		kaaont:broader kaatyp:marine-activities .
 	
 	<http://kenchreai.org/kaa/test/test01> a rdfs:Resource ;
-		kaaont:count 2 ;
+		kaaont:photograph "photographs/kth/kth0008" ;
 		kaaont:height "4" , 5 , "4.0"^^xsd:float ;
-		kaaont:model kaa:alix-barbet , kaatyp:jewelry-earring ;
+		kaaont:model kaake:trench-c64-a ;
 		rdfs:label "KAA Test Object ??" ;
-		kaaont:in-excavation-trench kaake:trench-c64-ii .
+		kaaont:has-part kaa:richard-k-dunn ;
+		kaaont:in-excavation-trench kaake:trench-c64-ii ;
+		kaaont:description """nnnhnhnhnhnh
+
+iebulbyulbyulbyulb""" .
 	
 	kaa:blaise-a-gratton a kaaont:person ;
 		rdfs:label "Blaise A. Gratton" ;
@@ -32244,6 +32248,7 @@
 	kaakth:kth0002 a kaaont:inventory-number ;
 		kaaont:file "drawings/kth/KTH002-TCR-14.png" ;
 		kaaont:comment "Fabric is buff so not 'Tunisian'. Surface is unslipped." ;
+		kaaont:rim-diameter 0.072 ;
 		rdfs:label "KTH 2 (Spatheion)" ;
 		kaaont:next kaakth:kth0003 ;
 		kaaont:typological-identification kaatyp:p-spatheion ;
@@ -32316,8 +32321,10 @@
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0011 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
 		rdfs:label "KTH 11" ;
 		kaaont:next kaakth:kth0012 ;
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0012 a kaaont:inventory-number ;
@@ -32326,50 +32333,76 @@
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0013 a kaaont:inventory-number ;
-		rdfs:label "KTH 13" ;
+		kaaont:comment "Complete object description in preparation." ;
+		rdfs:label "KTH0013 (Small Amphora Stopper/Lid)" ;
 		kaaont:next kaakth:kth0014 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0582 .
 	
 	kaakth:kth0014 a kaaont:inventory-number ;
-		rdfs:label "KTH 14" ;
+		kaaont:comment "Complete object description in preparation." ;
+		rdfs:label "KTH0014 (Small Amphora Stopper/Lid)" ;
 		kaaont:next kaakth:kth0015 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0608 .
 	
 	kaakth:kth0015 a kaaont:inventory-number ;
-		rdfs:label "KTH 15" ;
+		kaaont:comment "Complete object description in preparation." ;
+		rdfs:label "KTH0015 (Small Amphora Stopper/Lid)" ;
 		kaaont:next kaakth:kth0016 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0649 .
 	
 	kaakth:kth0016 a kaaont:inventory-number ;
+		kaaont:comment "Complete object description in preparation." ;
 		rdfs:label "KTH 16" ;
 		kaaont:next kaakth:kth0017 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0617 .
 	
 	kaakth:kth0017 a kaaont:inventory-number ;
 		rdfs:label "KTH 17" ;
 		kaaont:next kaakth:kth0018 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0615 .
 	
 	kaakth:kth0018 a kaaont:inventory-number ;
 		rdfs:label "KTH 18" ;
 		kaaont:next kaakth:kth0019 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0588 .
 	
 	kaakth:kth0019 a kaaont:inventory-number ;
 		rdfs:label "KTH 19" ;
 		kaaont:next kaakth:kth0020 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0593 .
 	
 	kaakth:kth0020 a kaaont:inventory-number ;
+		kaaont:comment "Complete object description in preparation." ;
 		rdfs:label "KTH 20" ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:next kaakth:kth0021 ;
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:maximum-diameter 0.0476 .
 	
 	kaakth:kth0021 a kaaont:inventory-number ;
 		rdfs:label "KTH 21" ;
+		kaaont:next kaakth:kth0022 ;
+		kaaont:typological-identification kaatyp:p-small-handled-stopper ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0022 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		kaaont:model kaakth:kth0023 ;
 		rdfs:label "KTH 22" ;
+		kaaont:typological-identification kaatyp:p-prs-hayes-3 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0023 a kaaont:inventory-number ;
@@ -36697,7 +36730,8 @@
 		kaaont:photograph "kcp/inventoried-objects/photographs/KP1990-002-D05-003-Cf.png" ;
 		rdfs:label "KP1990-002 (ESC Hayes Form 1)" ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-1 ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:extant-part "Profile" .
 	
 	kaakcp:km011 a kaaont:inventory-number ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KM011-on-backdrop.png" , "kcp/inventoried-objects/photographs/KM011-D05-002-Cf.png" ;
@@ -36713,14 +36747,335 @@
 	
 	kaakcp:kp031 a kaaont:inventory-number ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KP031-D09-001-Cf.png" ;
+		kaaont:rim-diameter 0.182 ;
 		rdfs:label "KP031 (ESC Hayes Form 3)" ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-3 ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:extant-part "Complete" ;
 		kaaont:drawing "kcp/inventoried-objects/drawings/KP031-AGF-09.png" .
 	
 	kaatyp:p-esc-hayes-3 a kaaont:typological-item ;
 		rdfs:label "Eastern Sigillata C Hayes Form 3" ;
 		kaaont:broader kaatyp:p-esc .
+	
+	kaakcp:km012 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KM012-on-backdrop.png" , "kcp/inventoried-objects/photographs/KM012-D05-002-Cf.png" ;
+		rdfs:label "KM012 (Gold finger-ring with intaglio)" ;
+		kaaont:typological-identification kaatyp:jewelry-finger-ring , kaatyp:intaglio ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:gold ;
+		kaaont:drawing "kcp/inventoried-objects/drawings/KM012-AGF_JLR-07-14.png" .
+	
+	kaakcp:kl008 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL008-D04-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL008 (Lamp)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl009 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL009-D04-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL009 (Lamp)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl010 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL010-D04-002-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL010 (Lamp)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl011 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL011-D04-002-Cf.png" , "kcp/inventoried-objects/photographs/KL011-D13-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL011 (Lamp)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl012 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL012-D13-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL012 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl013 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL013-D09-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL013 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl014 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL014 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl015 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL015-D13-001-Cf.png" ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL015 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl016 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL016 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl017 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL017 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl018 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL018 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl019 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL019 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl020 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL020 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl021 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL021 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl022 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL022 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl023 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL023 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl024 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL024 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl025 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL025 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl026 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL026 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl027 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL027 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl028 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL028 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl029 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL029 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl030 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL030 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl031 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL031 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl032 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL032 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl033 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL033 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl034 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL034 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl035 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL035 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl036 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL036 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl037 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL037 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl038 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL038 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl039 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL039 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl040 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL040 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl041 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL041 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl042 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL042 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl043 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL043 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl044 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL044 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl045 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL045 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl046 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL046 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl047 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL047 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl048 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL048 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl049 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL049 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl050 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL050 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl051 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL051 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl052 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL052 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl053 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL053 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:kl054 a kaaont:inventory-number ;
+		kaaont:comment "Object description in preparation." ;
+		rdfs:label "KL054 (Lamp)" ;
+		kaaont:typological-identification kaatyp:l ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:km001 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KM001-D04-001-Cf-2.png" ;
+		rdfs:label "KM001 (Glass)" ;
+		kaaont:typological-identification kaatyp:gl-unclassified ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaatyp:gl-unclassified a kaaont:typology-item ;
+		rdfs:label "Unclassified Glass" ;
+		kaaont:broader kaatyp:gl .
+	
+	kaakcp:km018 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KM018-D06-003-Cf.png" ;
+		rdfs:label "KM018 (Terracotta Figurine)" ;
+		kaaont:typological-identification kaatyp:s-figurine ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+	
+	kaakcp:km014 a kaaont:inventory-number ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KM014-on-backdrop.png" ;
+		rdfs:label "KM014 (Gold Foil Coin Impression)" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:gold .
+	
+	kaatyp:intaglio a kaaont:typological-item ;
+		rdfs:label "Intaglio" ;
+		kaaont:broader kaatyp:generic .
 }
 
 <urn:kenchreai:schema> {
@@ -37001,6 +37356,10 @@
 		rdfs:label "Material" ;
 		rdfs:subPropertyOf kaaont:is-logical-part-of .
 	
+	kaaont:diameter a owl:DatatypeProperty ;
+		rdfs:label "Diameter" ;
+		rdfs:range xsd:float .
+	
 	kaaont:neck-height a owl:DatatypeProperty ;
 		rdfs:comment "Intended for the recording of amphoras, particularly the neck height of Late Roman Amphora 2." ;
 		rdfs:label "Neck Height" ;
@@ -37019,4 +37378,28 @@
 	kaaont:drawing a owl:DatatypeProperty ;
 		rdfs:label "Drawing" ;
 		rdfs:range xsd:string .
+	
+	kaaont:length a owl:DatatypeProperty ;
+		rdfs:label "Length" ;
+		rdfs:range xsd:float .
+	
+	kaaont:preserved-length a owl:DatatypeProperty ;
+		rdfs:label "Preserved length" ;
+		rdfs:range xsd:float .
+	
+	kaaont:width a owl:DatatypeProperty ;
+		rdfs:label "Width" ;
+		rdfs:range xsd:float .
+	
+	kaaont:preserved-width a owl:DatatypeProperty ;
+		rdfs:label "Preserved width" ;
+		rdfs:range xsd:float .
+	
+	kaaont:maximum-diameter a owl:DatatypeProperty ;
+		rdfs:label "Maximum diameter" ;
+		rdfs:range xsd:float .
+	
+	kaaont:minimum-diameter a owl:DatatypeProperty ;
+		rdfs:label "Minimum diameter" ;
+		rdfs:range xsd:float .
 }
