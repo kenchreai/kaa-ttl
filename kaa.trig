@@ -162,12 +162,12 @@
 	kaatyp:l-er-italian a kaaont:typology-item ;
 		rdfs:label "Early Roman Italian Lamp" ;
 		kaaont:broader kaatyp:l ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaatyp:l-er-athenian a kaaont:typology-item ;
 		rdfs:label "Early Roman Athenian Lamp" ;
 		kaaont:broader kaatyp:l ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaatyp:l-er-athenian-alpha-ear a kaaont:typology-item ;
 		rdfs:label "Early Roman Athenian Lamp" ;
@@ -182,24 +182,24 @@
 	kaatyp:l-er-corinthian-imitation-of-italian a kaaont:typology-item ;
 		rdfs:label "Early Roman Corinthian Lamp, Imitation of Italian Types" ;
 		kaaont:broader kaatyp:l-er-corinthian ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaatyp:l-er-corinthian-transitional a kaaont:typology-item ;
 		rdfs:label "Early Roman Corinthian Lamp, Transitional (1st AD)" ;
 		kaaont:broader kaatyp:l-er-corinthian ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaatyp:l-er-corinthian-square-nozzle a kaaont:typology-item ;
 		rdfs:label "Early Roman Corinthian Lamp, Square Nozzle" ;
 		kaaont:broader kaatyp:l-er-corinthian ;
-		kaaont:comment "Same as Broneer Type VII." ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:comment "Same as Broneer Type XVI." ;
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaatyp:l-ermr-corinthian a kaaont:typology-item ;
 		rdfs:label "Early/Middle Roman Corinthian Lamp" ;
 		kaaont:broader kaatyp:l ;
 		kaaont:comment "Same as Broneer Type VII." ;
-		kaaont:historical-period <http://kenchreai.org/historical-chronology/early-roman> .
+		kaaont:has-historical-period kaachron:early-roman , kaachron:middle-roman .
 	
 	kaa:typology a kaaont:collection-of-related-entities ;
 		rdfs:comment "Typological terms used to describe objects identified during archaeological work at Kenchreai." ;
@@ -347,7 +347,7 @@
 		kaaont:broader kaatyp:p .
 	
 	kaa:year2012 a kaaont:year ;
-		rdfs:seeAlso <http://en.wikipedia.org/wiki/2012> ;
+		rdfs:seeAlso <http://en.wikipedia.org/wiki/2012> , <http://www.ascsa.edu.gr/index.php/news/newsDetails/report-on-kenchreai-2012> , <http://chronique.efa.gr/index.php/fiches/voir/2966/> ;
 		rdfs:label "Two-Thousand Twelve" ;
 		xsd:gYear "2012" ;
 		kaaont:is-logical-part-of kaa:modern-chronology .
@@ -567,7 +567,7 @@
 		kaaont:viaf <http://viaf.org/viaf/17303911> .
 	
 	kaa:year2013 a kaaont:year ;
-		rdfs:seeAlso <http://en.wikipedia.org/wiki/2013> ;
+		rdfs:seeAlso <http://en.wikipedia.org/wiki/2013> , <http://www.chronique.efa.gr/index.php/fiches/voir/4446/> ;
 		rdfs:label "Two-Thousand Thirteen" ;
 		xsd:gYear "2013" ;
 		kaaont:is-logical-part-of kaa:modern-chronology .
@@ -640,7 +640,7 @@
 		kaaont:not-before 450 .
 	
 	kaa:year2014 a kaaont:year ;
-		rdfs:seeAlso <http://en.wikipedia.org/wiki/2014> ;
+		rdfs:seeAlso <http://en.wikipedia.org/wiki/2014> , <http://www.chronique.efa.gr/index.php/fiches/voir/4880> ;
 		rdfs:label "Two-Thousand Fourteen" ;
 		xsd:gYear "2014" ;
 		kaaont:is-logical-part-of kaa:modern-chronology .
@@ -1081,12 +1081,6 @@
 	kaatyp:metal-unclasified a kaaont:typology-item ;
 		rdfs:label "Unclassified Metal (Material)" ;
 		kaaont:broader kaatyp:metal .
-	
-	kaa:year:2016 a kaaont:year ;
-		rdfs:label "Two-thousand Sixteen" ;
-		xsd:gYear "2016" ;
-		kaaont:is-logical-part-of kaa:modern-chronology ;
-		kaaont:wikidata <https://www.wikidata.org/wiki/Q25245> .
 	
 	_:node1abqj330hx12 kaaont:count 3 ;
 		kaaont:typological-identification kaatyp:p-lra-1 .
@@ -3059,9 +3053,7 @@
 		rdfs:label "KAA Test Object ??" ;
 		kaaont:photograph "photographs/kth/kth0008" ;
 		kaaont:height "4" , 5 , "4.0"^^xsd:float ;
-		kaaont:model kaake:trench-c64-a ;
 		kaaont:has-part kaa:richard-k-dunn ;
-		kaaont:in-excavation-trench kaake:trench-c64-ii ;
 		kaaont:description """nnnhnhnhnhnh
 
 
@@ -6397,10 +6389,13 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-unclassified .
 	
 	kaake:ke0946 a kaaont:inventory-number ;
+		rdfs:label "KE0946 (Lamp)" ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke0946-L233-D13-002-Cf.png" , "ke/inventoried-objects/photographs/Ke0946-L233-D13-001-Cf.png" ;
 		kaaont:next kaake:ke0947 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:pagescan "pagescans/inventory/944-946.PDF" .
+		kaaont:pagescan "pagescans/inventory/944-946.PDF" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-christian-symbol .
 	
 	kaake:ke0947 a kaaont:inventory-number ;
 		kaaont:next kaake:ke0948 ;
@@ -6409,9 +6404,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/947-949.PDF" .
 	
 	kaake:ke0948 a kaaont:inventory-number ;
+		rdfs:label "KE 948 (Late Roman Lamp)" ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke0948-L235-D13-001-Cf.png" , "ke/inventoried-objects/photographs/Ke0948-L235-D13-002-Cf.png" ;
+		kaaont:comment "Object descriptioin in progress" ;
 		kaaont:next kaake:ke0949 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:typological-identification kaatyp:l-unclassified ;
+		kaaont:pagescan "pagescans/inventory/947-949.PDF" ;
+		kaaont:subject-number "L 235" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-christian-symbol .
 	
 	kaake:notebook-page-a-vi-114 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-vi-115 ;
@@ -7121,9 +7122,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:file "photography/2011_inventory_photos/IMG_1772.png" , "photography/2011_inventory_photos/IMG_1777.png" , "photography/2011_inventory_photos/IMG_1792.png" .
 	
 	kaake:ke0340 a kaaont:inventory-number ;
+		rdfs:label "KE 340 (Roman Cookpot)" ;
 		kaaont:next kaake:ke0341 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/332-340.PDF" , "photography/2011_inventory_photos/IMG_2795.png" .
+		kaaont:file "pagescans/inventory/332-340.PDF" , "photography/2011_inventory_photos/IMG_2795.png" ;
+		kaaont:typological-identification kaatyp:p-cooking-ware-roman .
 	
 	kaake:ke0341 a kaaont:inventory-number ;
 		kaaont:next kaake:ke0342 ;
@@ -11414,6 +11417,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/1512-1515.PDF" .
 	
 	kaake:ke1516 a kaaont:inventory-number ;
+		rdfs:label "KE 1516 (Lamp)" ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke1516-L410-D13-001-Cf.png" ;
 		kaaont:next kaake:ke1517 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
@@ -12103,7 +12108,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2821.png" ;
 		kaaont:next kaake:ke0008 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:p-unclassified ;
+		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
 		kaaont:pagescan "pagescans/inventory/4-7.PDF" ;
 		kaaont:subject-number "P 4" ;
 		kaaont:typology-comment "Near Phocaean cookware." .
@@ -12743,7 +12748,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1495 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-esa-hayes-50 ;
-		kaaont:pagescan "pagescans/inventory/1493-1496.PDF" .
+		kaaont:pagescan "pagescans/inventory/1493-1496.PDF" ;
+		kaaont:drawing "ke/inventoried-objects/drawings/Ke1494-P0390-MAH-15.png" .
 	
 	kaake:ke1495 a kaaont:inventory-number ;
 		rdfs:label "Ke 1495 (Eastern Sigillata A Hayes Form 5b)" ;
@@ -15466,6 +15472,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-a-i .
 	
 	kaake:ke0644 a kaaont:inventory-number ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke0644-L168-D13-001-Cf.png" ;
 		kaaont:next kaake:ke0645 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
@@ -17823,7 +17830,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:comment "Temporary note: Previously uninventoried RC10 amphora. Inventoried in 2015." ;
 		rdfs:label "KE 2405" ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 .
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
+		kaaont:drawing "ke/inventoried-objects/drawings/Ke2405-P0796-MAH-15b.png" .
 	
 	kaake:notebook-page-a-vii-168 a kaaont:notebook-page ;
 		rdfs:label "Notebook A VII, Page 168" ;
@@ -22228,6 +22236,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/401-406.PDF" .
 	
 	kaake:ke0405 a kaaont:inventory-number ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke0405-L093-D13-001-Cf.png" ;
 		kaaont:next kaake:ke0406 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
@@ -26403,10 +26412,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-a-i .
 	
 	kaake:ke0754 a kaaont:inventory-number ;
+		rdfs:label "KE 754 (Late Roman Lamp)" ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke0754-L188-D13-001-Cf.png" , "ke/inventoried-objects/photographs/Ke0754-L188-D13-002-Cf.png" ;
 		kaaont:next kaake:ke0755 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:pagescan "pagescans/inventory/753-757.PDF" .
+		kaaont:pagescan "pagescans/inventory/753-757.PDF" ;
+		kaaont:subject-number "L 188" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-christian-symbol .
 	
 	kaake:ke1658 a kaaont:inventory-number ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2136.png" ;
@@ -27083,9 +27096,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book .
 	
 	kaake:ke1971 a kaaont:inventory-number ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1830.png" ;
+		rdfs:label "KE 1971 (Worked Bone Spoon)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1830.png" , "ke/inventoried-objects/photographs/Mi0539-Ke1971-D15-001-Cf.png" ;
 		kaaont:next kaake:ke1972 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:worked-bone .
 	
 	kaake:ke1972 a kaaont:inventory-number ;
 		kaaont:next kaake:ke1973 ;
@@ -28287,9 +28302,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-c-iii .
 	
 	kaake:ke1969 a kaaont:inventory-number ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0497.png" ;
+		rdfs:label "Ke1969 (Small handled stopper/lid" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_0497.png" , "ke/inventoried-objects/photographs/Ke1969-P0495-D15-001-Cf.png" , "ke/inventoried-objects/photographs/Ke1969-P0495-D15-005-Cf.png" , "ke/inventoried-objects/photographs/Ke1969-P0495-D15-006-Cf.png" ;
 		kaaont:next kaake:ke1970 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-small-handled-stopper .
 	
 	kaake:ke0875 a kaaont:inventory-number ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2113.png" ;
@@ -28379,6 +28396,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke2160 a kaaont:inventory-number ;
 		rdfs:label "KE 2160 (ESC Hayes form 1)" ;
+		kaaont:photograph "ke/inventoried-objects/photographs/Ke2160-P0603-D15-005-Cf.png" , "ke/inventoried-objects/photographs/Ke2160-P0603-D15-003-Cf.png" ;
 		kaaont:next kaake:ke2161 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-1 ;
@@ -32255,9 +32273,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0461 a kaaont:inventory-number ;
-		rdfs:label "KTH 461" ;
+		rdfs:label "KTH461 (ARS Hayes 109)" ;
+		kaaont:photograph "kth/inventoried-objects/photographs/KTH0461-D16-002-Cf.png" , "kth/inventoried-objects/photographs/KTH0461-D16-001-Cf.png" ;
 		kaaont:next kaakth:kth0462 ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-ars-hayes-109 .
 	
 	kaakth:kth0462 a kaaont:inventory-number ;
 		rdfs:label "KTH 462" ;
@@ -32934,7 +32954,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0105 a kaaont:inventory-number ;
-		rdfs:label "KTH 105" ;
+		rdfs:label "KTH 105 (Marine Shell)" ;
+		kaaont:photograph "kth/inventoried-objects/photographs/KTH0105-D14-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
@@ -32964,9 +32985,17 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0111 a kaaont:inventory-number ;
-		rdfs:label "KTH 111" ;
+		rdfs:label "KTH 111 (Late Roman Regional Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Oval discus has large central filling hole, relief decoration, and high, raised, narrow rim. Relief depicts Greek cross with simple raised outline, dots at corners, and six small raised dots in upper arm. Wide, sunken shoulder has herringbone in simple, raised line. Slight joining ridge and slight ledge but no webbing; brush marks and finger prints. Low, narrow, solid handle attaches just over shoulder-rim." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Regional imitation of North African lamp (Argive?)" ;
+		kaaont:extant-part "One large fragment preserves roughly half of discus and shoulder to rim and entire upper handle; broken along seam, and lower half missing." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-religious-symbol ;
+		kaaont:preserved-length 0.036 ;
+		kaaont:preserved-width 0.052 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0112 a kaaont:inventory-number ;
 		rdfs:label "KTH 112" ;
@@ -32989,9 +33018,17 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0116 a kaaont:inventory-number ;
-		rdfs:label "KTH 116" ;
+		rdfs:label "KTH 116 (Late Roman Corinthian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped outline. Rounded nozzle with traces of burning extending up wall. Thick joining ridge." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.028 ;
+		kaaont:typology-comment "Corinthian imitation of North African lamp?" ;
+		kaaont:extant-part "One large fragment preserves roughly one-third of base up to shoulder and front end of nozzle." ;
+		kaaont:preserved-length 0.078 ;
+		kaaont:preserved-width 0.054 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0117 a kaaont:inventory-number ;
 		rdfs:label "KTH 117" ;
@@ -33159,14 +33196,26 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0120 a kaaont:inventory-number ;
-		rdfs:label "KTH 120" ;
+		rdfs:label "KTH 120 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Thick walls in circular outline. Shoulder with rounded rim has broad groove with dense row of alternating jeweled hearts pointed outward (Ennabli motif M 6) and jeweled lambdas (Ennabli motif D 10) in high relief. Very low, narrow, solid handle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Hayes Type II" ;
+		kaaont:extant-part "One large fragment preserves less than one-quarter of shoulder and entire base." ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0121 a kaaont:inventory-number ;
-		rdfs:label "KTH 121" ;
+		rdfs:label "KTH 121 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Thick walls in circular outline. Discus has raised, rounded framing ring. Shoulder has wide, shallow groove with alternating concentric circles and layered triangles. Low, thick, solid handle extends to base ring. Circular base ring. Somewhat careless, heavy manufacturing from blunt mold." ;
+		kaaont:typology-comment "Hayes Type II, late phase?" ;
+		kaaont:extant-part "Four fragments preserve roughly one third of shoulder, entire handle, and one quarter of base." ;
+		kaaont:count-parts 4 ;
+		kaaont:preserved-length 0.049 ;
+		kaaont:preserved-width 0.084 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0122 a kaaont:inventory-number ;
 		rdfs:label "KTH 122" ;
@@ -33179,21 +33228,47 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0124 a kaaont:inventory-number ;
-		rdfs:label "KTH 124" ;
+		rdfs:label "KTH 124 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Thick walls with circular outline. Keyhold format. Circular discus has filling hole middle, relief, and  raised rim. Relief depicts Greek cross with raised rim, double(?) circles at four ends and fleurons. Shoulder has wide, shallow groove with alternating small volute lozenges and quatrefoils. Plain channel to wickhole. Traces of burning around end of nozzle. Short, thick, solid handle extends to base ring. Wide, some high, circular base ring with plain center." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Hayes Type II, late phase" ;
+		kaaont:extant-part "Four fragments preserve almost entire lamp except over half of nozzle and small part of right wall to front bottom." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-religious-symbol ;
+		kaaont:base-diameter 0.035 ;
+		kaaont:count-parts 1 ;
+		kaaont:length 0.11 ;
+		kaaont:width 0.067 ;
+		kaaont:discus-diameter 0.033 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0125 a kaaont:inventory-number ;
-		rdfs:label "KTH 125" ;
+		rdfs:label "KTH 125" , "KTH 125 (Late Roman/Early Byzantine Regional Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Corinthian imitation of North African lamp" ;
+		kaaont:extant-part "Intact except missing upper handle." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-religious-symbol ;
+		kaaont:base-diameter 0.033 ;
+		kaaont:count-parts 1 ;
+		kaaont:length 0.109 ;
+		kaaont:width 0.031 ;
+		kaaont:discus-diameter 0.035 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0126 a kaaont:inventory-number ;
-		rdfs:label "KTH126 (Palestinian Lamp 'Boot Type')" ;
-		kaaont:photograph "photography/threpsiades/inventoried-objects/KTH0126-D15-002-Cf.png" ;
+		rdfs:label "KTH 126 (Early Byzantine Palestinian Lamp )" ;
+		kaaont:photograph "photography/threpsiades/inventoried-objects/KTH0126-D15-002-Cf.png" , "ke/inventoried-objects/photographs/KTH0126-D15-003-Cf.png" , "ke/inventoried-objects/photographs/KTH0126-D15-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-palestinian-boot-type ;
-		kaaont:drawing "drawings/kth/KTH126-TCR-14.png" .
+		kaaont:height 0.052 ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:extant-part "Intact." ;
+		kaaont:drawing "drawings/kth/KTH126-TCR-14.png" ;
+		kaaont:diameter 0.067 ;
+		kaaont:length 0.088 .
 	
 	kaatyp:l-palestinian-boot-type a kaaont:typology-item ;
 		rdfs:label "Palestinian “Boot Type” Lamp" ;
@@ -33289,9 +33364,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0144 a kaaont:inventory-number ;
-		rdfs:label "KTH 144" ;
+		rdfs:label "KTH 144 (Late Roman-Early Byzantine Regional Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Almond-shaped outline. Oval, slightly concave discus has large filling hole middle, cross in low relief crowded inside sharp raised rim, and wide and straight channel to wickhole with circular indentation for airhole but unpierced. Relief depicts Greek cross flaring arms, raised outline, three double pellets inside top, right, and left arms, five double pellets and one triple pellet inside bottom arm, and three pellets around ends of arms; quadrants are empty. Shoulder has inward sloping groove with distinct rims and palm branch in relief. Long nozzle. Broad ledge and prominent webbing. Tall, thin, pinched and crooked, somewhat fin-like handle. Details are sharp." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Regional imitation of North African lamp" ;
+		kaaont:extant-part "One large fragment preserves most of top above seam but missing end of nozzle." ;
+		kaaont:preserved-length 0.065 ;
+		kaaont:width 0.039 .
 	
 	kaakth:kth0145 a kaaont:inventory-number ;
 		rdfs:label "KTH 145" ;
@@ -33690,29 +33771,68 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0174 a kaaont:inventory-number ;
-		rdfs:label "KTH 174" ;
+		rdfs:label "KTH 174 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Wide, tear-shaped outline. Keyhole format. Circular, slightly concave discus has design in somewhat high relief, large filling holes middle left and right, and raised rim. Design depicts stag standing with head in upper left, quatrefoil at right handle base, and target behind rump at top of channel. Shoulder with rounded rim has broad groove with dense rows of motifs: on left, rimmed rosette, hare running left, volute-heart pointed in, quatrefoil, quadruple target, hare runing left; on right, rimmed rosette, hare running left, rimmed rosette, quatrefoil, volute-hear pointed down, quatrefoil. Long, rounded nozzle and a wide, straight, plain channel from the discus to the large wickhole. Traces of burning. Low, narrow, pointed, solid, fin-like handle extends down over discus rim in front and down in low ridge to base ring in back. Circular base with raised ring around large quadruple concentric circles in hatched lined. Details are sharply rendered." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Hayes Type II" ;
+		kaaont:extant-part "Almost intact except middle to lower discus missing." ;
+		kaaont:base-diameter 0.04 ;
+		kaaont:length 0.174 ;
+		kaaont:width 0.86 ;
+		kaaont:discus-diameter 0.046 ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakth:kth0175 a kaaont:inventory-number ;
-		rdfs:label "KTH 175" ;
+		rdfs:label "KTH 175 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped outline. Keyhole format. Oval, slightly concave discus has large filling holes middle left and right, design in low relief, and sharply raised rim. Design depicts four simple, triangular leafs in cross arrangement and smaller, inverted, sharp leafs in quadrants. Shoulder with rounded rim has broad groove with dense row of alternating quintuple targets, five per side, and sexfoils, three per side. Long, rounded nozzle and a wide, straight, plain channel from the discus to the large wickhole. No evidence of burning. Low, narrow, pointed, solid, fin-like handle extends down over discus rim in front and down in low ridge to base ring in back. Circular base with raised ring; interior is plain and slightly convex. Decorative details are sharp and fine." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Hayes Type II" ;
+		kaaont:extant-part "Intact; apparently unused." ;
+		kaaont:base-diameter 0.042 ;
+		kaaont:length 0.137 ;
+		kaaont:width 0.077 ;
+		kaaont:discus-diameter 0.05 .
 	
 	kaakth:kth0176 a kaaont:inventory-number ;
-		rdfs:label "KTH 176" ;
+		rdfs:label "KTH 176 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped outline. Keyhole format. Oval, slightly concave discus has large filling holes middle left and right, design in low relief, and sharply raised rim. Design depicts Constantinian monogram with rho closed right and top loop extending past vertical arm, raised dots, and raised rim. Shoulder with rounded rim has broad groove with row of triple targets, five per side (Ennabli motif E2), interrupted at right and left middle by quatrefoils (Ennabli motif I2) and terminating on right at small palmette (cf. Ennabli motif P3) and on left at small leaf (Ennabli motif N2). Long, rounded nozzle and a wide, straight channel from the discus to large wickhole. No evidence of burning. Single triple target in relief at base of cross within channel. Low, narrow, pointed, solid, fin-like handle extends down over discus rim in front and down in low ridge to base ring in back. Circular base with raised ring; plain interior. Decorative details are sharp and fine." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Hayes Type II" ;
+		kaaont:extant-part "Intact; apparently unused." ;
+		kaaont:base-diameter 0.039 ;
+		kaaont:length 0.125 ;
+		kaaont:width 0.084 .
 	
 	kaakth:kth0177 a kaaont:inventory-number ;
-		rdfs:label "KTH 177" ;
+		rdfs:label "KTH 177 (Late Roman Athenian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped to almond-shaped outline. Keyhole format. Oval, slight concave discus has design in thick lines in high relief, two filling holes middle left and right, and sharply raised rim. Design depicts peacock striding left (up); large leaf above wing. Shoulder with rounded rim has broad groove with three palm trees flanking two birds sideways terminating at single lambda(?). Somewhat narrow, tall handle pinched lengthwise at middle and transversely on top. No joining seam or webbing: well made and carefully slipped." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian imitation of North African lamp" ;
+		kaaont:extant-part "One fragment preserves entire discus, shoulder, most of nozzle, upper handle; walls and base below seem are missing." ;
+		kaaont:preserved-length 0.114 ;
+		kaaont:width 0.077 .
 	
 	kaakth:kth0178 a kaaont:inventory-number ;
-		rdfs:label "KTH 178" ;
+		rdfs:label "KTH 178 (Late Classical-Hellenistic Corinthian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-howland-type-21 ;
+		kaaont:height 0.022 ;
+		kaaont:description "Circular outline. Large filling hole. Shoulder angles up from filling hole to rim; side walls rounded. Round, projecting nozzle has base attached over rim. Rounded to slightly angular strap handle attaches to upper wall below shoulder rim. Almost flat bottom with distinct rim; slightly concave with raised button in middle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type IVA/B, Corinthian product" ;
+		kaaont:extant-part "Almost intact but missing handle and front end of nozzle." ;
+		kaaont:base-diameter 0.036 ;
+		kaaont:preserved-length 0.053 ;
+		kaaont:discus-diameter 0.022 .
 	
 	kaakth:kth0179 a kaaont:inventory-number ;
 		rdfs:label "KTH 179" ;
@@ -33720,9 +33840,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0190 a kaaont:inventory-number ;
-		rdfs:label "KTH 190" ;
+		rdfs:label "KTH 190" , "KTH 190 (Late Roman-Early Byzantine Regional Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:height 0.026 ;
+		kaaont:description "Tear-shaped outline. Keyhole format with short channel to wickhole. Rounded nozzle with traces of burning. Small, circular, raised base with low, broad rim; plain inside. Slight joining ridge but mostly smoothed over." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:extant-part "One large fragment preserves roughly two thirds of bottom including lower nozzle up to seam." ;
+		kaaont:base-diameter 0.031 ;
+		kaaont:preserved-length 0.085 ;
+		kaaont:preserved-width 0.073 .
 	
 	kaakth:kth0191 a kaaont:inventory-number ;
 		rdfs:label "KTH 191" ;
@@ -33780,9 +33907,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0202 a kaaont:inventory-number ;
-		rdfs:label "KTH 202" ;
+		rdfs:label "KTH 202 (Early-Middle Roman Corinthian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow, pierced handle with two grooves extends to a point roughly 1 cm above base-groove. Almost straight wall. Flat base has single, circular groove." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One fragment preserves lower handle, less than one quarter of back wall, and small part of base." .
 	
 	kaakth:kth0203 a kaaont:inventory-number ;
 		rdfs:label "KTH 203" ;
@@ -33795,14 +33927,27 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0205 a kaaont:inventory-number ;
-		rdfs:label "KTH 205" ;
+		rdfs:label "KTH 205" , "KTH 205 (Late Roman-Early Byzantine Athenian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped outline. Oval discus has central filling hole, relief of irregular rosette with 11(?) wide petals, and high, raised rim. Shoulder has wide, shallow groove with double concentric circles. Tall, thick, solid, vertical handle. Thick, uneven seam with slight joining ridge." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian imitation of North African lamp" ;
+		kaaont:extant-part "One fragment preserves roughly half of discus, one third of shoulder, and one half of handle." ;
+		kaaont:preserved-length 0.07 ;
+		kaaont:preserved-width 0.061 .
 	
 	kaakth:kth0207 a kaaont:inventory-number ;
-		rdfs:label "KTH 207" ;
+		rdfs:label "KTH 207 (Late Roman Regional Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Circular to oval outline(?). Raised, distinct line from base of handle to base ring. Plain base has low, broad base ring." ;
+		kaaont:preserved-height 0.022 ;
+		kaaont:typology-comment "Corinthian imitation of North African lamp?" ;
+		kaaont:extant-part "One fragment preserves roughly one third of bottom and back walls roughly up to joining seam." ;
+		kaaont:base-diameter 0.028 ;
+		kaaont:preserved-length 0.046 ;
+		kaaont:preserved-width 0.07 .
 	
 	kaakth:kth0208 a kaaont:inventory-number ;
 		rdfs:label "KTH 208" ;
@@ -34075,9 +34220,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0262 a kaaont:inventory-number ;
-		rdfs:label "KTH 262" ;
+		rdfs:label "KTH 262 (Early Byzantine Palestinian Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-palestinian-boot-type ;
+		kaaont:height 0.05 ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:extant-part "Intact except missing three quarters of rim and handle." ;
+		kaaont:diameter 0.07 ;
+		kaaont:length 0.091 .
 	
 	kaakth:kth0263 a kaaont:inventory-number ;
 		rdfs:label "KTH 263" ;
@@ -34110,9 +34261,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0269 a kaaont:inventory-number ;
-		rdfs:label "KTH 269" ;
+		rdfs:label "KTH 269 (Late Roman North African Lamp)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:description "Tear-shaped, flat discus has large filling holes middle left and right, design in low relief, and sharply raised rim. Design depicts four fish in chiastic arrangement and oak leafs(?) in quadrants. Shoulder with rounded rim has broad groove with row of spiral design, five per side. Long, rounded nozzle and a wide, straight, plain channel from the discus to the large wickhole. Traces of burning. Short, narrow, pointed, solid, fin-like handle extends down over discus rim in front and down in low ridge to base ring in back. Plain base with circular, raised ring. Decorative details are fine and sharp." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:extant-part "Intact." ;
+		kaaont:base-diameter 0.042 ;
+		kaaont:length 0.136 ;
+		kaaont:width 0.08 .
 	
 	kaakth:kth0280 a kaaont:inventory-number ;
 		rdfs:label "KTH 280" ;
@@ -34714,6 +34871,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KA001-D03-001-Cf.png" ;
 		kaaont:comment "Object description in process." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:description "Moderately fine-grained, brecciated marble, reddish purple ground with large white inclusions (plagioclase feldspar). Probably breccia corallina (from Bithynian quarries). Substantial rectangular fragment from the edge of a plaque of marble revetment. Flat plaque that is polished on the face and slightly rougher on the back. One preserved edge has a thin, raised lip for delimitation (0.037 m Th, 0.004 m W). " ;
 		kaaont:has-material kaatyp:marble .
 	
 	kaatyp:marble a kaaont:typology-item ;
@@ -34740,21 +34898,40 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL005-D13-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow, pierced handle has two grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One small fragment preserves one half of handle and small part of body." .
 	
 	kaakcp:kl003 a kaaont:inventory-number ;
 		rdfs:label "KL003 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL003-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular discus has molded relief with line of drapery pushed up in middle at very top of discus and rounded framing ring. Probably erotic symplegma type with woman reclining left and man kneeling right on kline under canopy. Plain shoulder with panels. Low, narrow, solid handle with three grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian glazed, early phase" ;
+		kaaont:extant-part "One small fragment preserves upper handle and small part of discus and shoulder." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.051 ;
+		kaaont:preserved-width 0.027 .
 	
 	kaakcp:kl004 a kaaont:inventory-number ;
 		rdfs:label "KL004 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL004-D13-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:file "kcp/inventoried-objects/drawings/KL004-composite.png" .
+		kaaont:file "kcp/inventoried-objects/drawings/KL004-composite.png" ;
+		kaaont:count 1 ;
+		kaaont:description "Tear-shaped outline. Circular, concave discus has rosette with 10-14(?) concave petals and irregular raised rim. Sloping shoulder has herringbone in relief. Low, thick, solid handle has three grooves. Slight joining ridge and webbing." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian glazed lamp, late phase" ;
+		kaaont:extant-part "One small fragment preserves small part of discus and shoulder and entire upper handle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.037 ;
+		kaaont:preserved-width 0.035 .
 	
 	kaakcp:kl006 a kaaont:inventory-number ;
 		rdfs:label "KL006 (Lamp)" ;
@@ -34762,7 +34939,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:file "kcp/inventoried-objects/drawings/KL006-composite.png" ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Concave, circular discus of uncertain design (plain?) has small airhole at bottom, raised rim, and single framing ring. Shoulder has herringbone. Single groove frames wide, flat, kite-shaped nozzle with small groove from airhole from wickhole." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian late unglazed" ;
+		kaaont:extant-part "One small fragment preserves less than one-quarter of shoulder, discus, and edge of nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.03 ;
+		kaaont:preserved-width 0.025 .
 	
 	kaakth:kth0600 a kaaont:inventory-number ;
 		rdfs:label "KTH 600" ;
@@ -36325,9 +36509,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0405 a kaaont:inventory-number ;
-		rdfs:label "KTH 405" ;
+		rdfs:label "KTH 405 (Small Handled Stopper)" ;
+		kaaont:photograph "kth/inventoried-objects/photographs/KTH0405-D16-002-Cf.png" , "kth/inventoried-objects/photographs/KTH0405-D16-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-small-handled-stopper .
 	
 	kaakth:kth0406 a kaaont:inventory-number ;
 		rdfs:label "KTH 406" ;
@@ -36856,7 +37042,13 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KP1990-002-D05-003-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-1 ;
-		kaaont:extant-part "Profile" .
+		kaaont:height 0.123 ;
+		kaaont:description "Flattened ring foot on slightly convex base, opening to straight-sided body; out-turned rim with rounded horizontal lip." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:rim-diameter 0.3 ;
+		kaaont:extant-part "Profile" ;
+		kaaont:base-diameter 0.098 ;
+		kaaont:count-parts 6 .
 	
 	kaakcp:km011 a kaaont:inventory-number ;
 		rdfs:label "KM011 (Gold finger-ring)" ;
@@ -36902,39 +37094,83 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KL008 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL008-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has rays and framing ring. Shoulder has small ovules. Details are blunt." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII A" ;
+		kaaont:extant-part "One small fragment preserves less than one quarter of discus and small part of shoulder." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.027 ;
+		kaaont:preserved-width 0.033 .
 	
 	kaakcp:kl009 a kaaont:inventory-number ;
 		rdfs:label "KL009 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL009-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow, pierced handle has two grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.036 ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One small fragment preserves lower handle and small part of body. " ;
+		kaaont:preserved-length 0.035 ;
+		kaaont:preserved-width 0.038 .
 	
 	kaakcp:kl010 a kaaont:inventory-number ;
 		rdfs:label "KL010 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL010-D04-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:count 1 ;
+		kaaont:description "Tear-shaped(?) outline. Sloping shoulder has wavy lines. Thick, solid, handle has three grooves. Very slight joining ridge." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian glazed lamp" ;
+		kaaont:extant-part "One small fragment preserves small part of shoulder, nearly entire handle, and less than one quarter of body." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.045 ;
+		kaaont:preserved-width 0.034 .
 	
 	kaakcp:kl011 a kaaont:inventory-number ;
 		rdfs:label "KL011 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL011-D04-002-Cf.png" , "kcp/inventoried-objects/photographs/KL011-D13-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:count 1 ;
+		kaaont:description "Concave discus has rosette with 8(?) concave petals. Shoulder has herringbone in relief. Short, thick, solid handle has three grooves. Slight webbing." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Corinthian copy of Athenian lamp" ;
+		kaaont:extant-part "One small fragment preserves small part of discus, less than one-quarter of shoulder, and upper handle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.035 ;
+		kaaont:preserved-width 0.04 .
 	
 	kaakcp:kl012 a kaaont:inventory-number ;
 		rdfs:label "KL012 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL012-D13-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular to oval outline. Circular(?) discus has filling hole left middle and rounded framing ring. Flat shoulder has channel with alternating plain circles and squares in relief." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian late unglazed imitation of North African lamp" ;
+		kaaont:extant-part "One small fragment preserves small part of discus and less than one quarter of shoulder." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.033 ;
+		kaaont:preserved-width 0.02 .
 	
 	kaakcp:kl013 a kaaont:inventory-number ;
 		rdfs:label "KL013 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL013-D09-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow, pierced handle has two grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One small fragment preserves upper handle." .
 	
 	kaakcp:kl014 a kaaont:inventory-number ;
 		rdfs:label "KL014 (Lamp)" ;
@@ -36947,21 +37183,41 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL015-D13-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-er-italian ;
+		kaaont:description "Pinched volutes form ribs below rounded nozzle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.024 ;
+		kaaont:typology-comment "Italian or Corinthian imitation of Italian lamp" ;
+		kaaont:extant-part "One small fragment preserves roughly one-half of nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.039 .
 	
 	kaakcp:kl016 a kaaont:inventory-number ;
 		rdfs:label "KL016 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL016-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular, flat base has single groove. Narrow handle with two grooves extends almost to base-groove." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One small fragment preserves small part of lower handle, back wall, and base." .
 	
 	kaakcp:kl017 a kaaont:inventory-number ;
 		rdfs:label "KL017 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL017-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Tear-shaped or oval(?) outline. Sloping shoulder has wavy lines." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian late glazed lamp?" ;
+		kaaont:extant-part "One small fragment preserves small part of left shoulder." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.025 ;
+		kaaont:preserved-width 0.009 .
 	
 	kaakcp:kl018 a kaaont:inventory-number ;
 		rdfs:label "KL018 (Lamp)" ;
@@ -36974,7 +37230,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL019-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Concave discus has filling hole and irregular straight bands in relief, all very worn: uneven petals of rosette, or rays from head of Helios?" ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Late Roman Corinthian imitation of Athenian lamp?" ;
+		kaaont:extant-part "One small fragment preserves less than one-quarter of discus and rim." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.031 ;
+		kaaont:preserved-width 0.029 .
 	
 	kaakcp:kl020 a kaaont:inventory-number ;
 		rdfs:label "KL020 (Lamp)" ;
@@ -36988,38 +37251,84 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL021-D13-001-Cf.png" , "kcp/inventoried-objects/photographs/KL021-D13-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:drawing "kcp/inventoried-objects/drawings/KL021-composite.png" .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:height 0.054 ;
+		kaaont:description "Circular discus has central filling hole with raised rim, ray motif, and framing ring. Shoulder has vine pattern, including six broad, triangular grape clusters alternating with six frilled pentagonal leaves; details are distinct and finely rendered. Raised, kite-shaped nozzle with traces of burning. Narrow, pierced handle with two grooves extends to just under 1 cm above base. Plain, flat base has circular groove enclosing incuse signature: ΛΟΥΚΙΟΥ." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII B" ;
+		kaaont:extant-part "Five joining fragments preserve entire lamp except small parts of discus, rim and nozzle." ;
+		kaaont:base-diameter 0.039 ;
+		kaaont:count-parts 5 ;
+		kaaont:drawing "kcp/inventoried-objects/drawings/KL021-composite.png" ;
+		kaaont:length 0.065 ;
+		kaaont:width 0.071 ;
+		kaaont:discus-diameter 0.053 .
 	
 	kaakcp:kl022 a kaaont:inventory-number ;
 		rdfs:label "KL022 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL022-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular to oval, concave discus has central filling hole with set-back raised rim, ray motif, and wide framing ring. Broad shoulder has large ovules all around and stamped double circles flanking the nozzle. Kite-shaped, raised nozzle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII A" ;
+		kaaont:extant-part "One large fragment preserves over three-quarters of discus and large parts of shoulder and nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.078 ;
+		kaaont:preserved-width 0.061 ;
+		kaaont:discus-diameter 0.041 .
 	
 	kaakcp:kl023 a kaaont:inventory-number ;
 		rdfs:label "KL023 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL023-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:drawing "kcp/inventoried-objects/photographs/KL023-D04-001-Cf.png" .
+		kaaont:count 1 ;
+		kaaont:description "Pinched volutes form ribs below rounded nozzle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.025 ;
+		kaaont:typology-comment "Early Roman Asia Minor (Knidian?)" ;
+		kaaont:extant-part "One small fragment preserves roughly one third of nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.045 .
 	
 	kaakcp:kl024 a kaaont:inventory-number ;
 		rdfs:label "KL024 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL024-D04-001-Cf.png" , "kcp/inventoried-objects/photographs/KL024-D04-002-Cf.png" ;
-		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:height 0.048 ;
+		kaaont:description "Circular discus has filling hole to center right, figural relief, and narrow framing ring. Relief shows Hephaistos standing and facing forward, bearded and wearing a tunic. He holds staff in left hand and hammer in right hand; small two-tiered anvil at right foot. Plain shoulder has panels. Raised, kite-shaped nozzle with traces of burning. Narrow, pierced handle has two grooves. Flat, plain base base has single circular groove enclosing incuse signature: ΚΡΗϹΚΕ|ΝΤΟϹ. Details are blunt." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII C" ;
+		kaaont:extant-part "Intact." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-hephaistos ;
+		kaaont:base-diameter 0.048 ;
+		kaaont:count-parts 1 ;
+		kaaont:drawing "KL024-composite.png" ;
+		kaaont:length 0.11 ;
+		kaaont:width 0.087 ;
+		kaaont:discus-diameter 0.075 .
 	
 	kaakcp:kl025 a kaaont:inventory-number ;
 		rdfs:label "KL025 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL025-D09-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:has-visual-motif kaatyp:visual-motif-mythological-animal .
+		kaaont:count 1 ;
+		kaaont:description "Circular discus with filling hole below middle, figural relief and framing groove. Relief depicts Pegasus advancing left with wings open upward, left forelimb straight, and right forelimb flexed upward. Sloping, plain shoulder." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Early Roman Asia Minor" ;
+		kaaont:extant-part "Three joining fragments preserve two-thirds of discus and shoulder." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-mythological-animal ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.054 ;
+		kaaont:preserved-width 0.063 ;
+		kaaont:discus-diameter 0.047 .
 	
 	kaatyp:visual-motif-mythological-animal a kaaont:typology-item ;
 		rdfs:label "Mythological Animal (Visual Motif)" ;
@@ -37036,72 +37345,155 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL027-D04-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has framing ring and molded relief showing standing nude female figure (Leda) facing to right and embracing the swan, with outspread wings and a looping neck. Plain shoulder. Narrow, pierced handle has two grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.038 ;
+		kaaont:typology-comment "Broneer Type XXVIII C" ;
+		kaaont:extant-part "Four joining fragments preserve upper handle, roughly one-half of discus, and part of shoulder." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-religious-symbol ;
+		kaaont:count-parts 4 ;
+		kaaont:preserved-length 0.066 ;
+		kaaont:preserved-width 0.034 .
 	
 	kaakcp:kl028 a kaaont:inventory-number ;
 		rdfs:label "KL028 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL028-D08-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular, slightly concave discus with framing ring. Narrow, slightly rounded, plain shoulder. Narrow, solid handle with two grooves attaches to framing ring." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Red-on-white (Ephesian)" ;
+		kaaont:extant-part "One large fragment preserves small part of discus, one third of shoulder, and upper handle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.038 ;
+		kaaont:preserved-width 0.059 .
 	
 	kaakcp:kl029 a kaaont:inventory-number ;
 		rdfs:label "KL029 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL029-D09-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has central filling hole with raised rim, rosette with 12 concave petals, and broad framing ring. Shoulder has channel with panels passing over. Small, kite-shaped nozzle. Narrow, pierced handle extends to just above base, with small “x” just above base. Plain, flat base has circular groove enclosing incuse signature: ]Υ." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.033 ;
+		kaaont:typology-comment "Broneer Type XXVII D" ;
+		kaaont:extant-part "One large fragment preserves most of top of lamp and less than one quarter of back wall and base. " ;
+		kaaont:count-parts 1 ;
+		kaaont:drawing "KL029-composite.png" ;
+		kaaont:preserved-length 0.072 ;
+		kaaont:width 0.071 ;
+		kaaont:discus-diameter 0.044 .
 	
 	kaakcp:kl030 a kaaont:inventory-number ;
 		rdfs:label "KL030 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL030-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-er-italian ;
+		kaaont:description "Circular discus has filling hole lower middle, figural relief, and three rounded framing rings. Relief shows Celtic warrior with thick hair, bare chest, loincloth, and rectangular shield turning back to right, mounted on horse with thick mane rearing to left. Sloping shoulder has ovules and double circles on either side of nozzle. Heart-shaped nozzle. No handle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.015 ;
+		kaaont:extant-part "Three joining fragments preserve almost entire discus, two thirds of shoulder, and small part of nozzle." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:count-parts 3 ;
+		kaaont:preserved-length 0.073 ;
+		kaaont:width 0.072 ;
+		kaaont:discus-diameter 0.049 .
 	
 	kaakcp:kl031 a kaaont:inventory-number ;
 		rdfs:label "KL031 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL031-D04-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow handle with two grooves extends to base-groove. Flat, plain base has single circular groove enclosing incuse signature: ΚΑΛΛΙϹΤ|ΟΥ." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "Three joining fragments preserve almost all base and over one half of front wall. " ;
+		kaaont:base-diameter 0.036 ;
+		kaaont:count-parts 3 ;
+		kaaont:preserved-length 0.07 ;
+		kaaont:width 0.034 .
 	
 	kaakcp:kl032 a kaaont:inventory-number ;
 		rdfs:label "KL032 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL032-D09-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-er-corinthian-imitation-of-italian ;
+		kaaont:description "Circular discus with raised rim and framing ring. Narrow shoulder. Volute nozzle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:extant-part "One small fragment preserves less than one-quarter of shoulder and one side of nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.036 ;
+		kaaont:preserved-width 0.026 .
 	
 	kaakcp:kl033 a kaaont:inventory-number ;
 		rdfs:label "KL033 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL033-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:description "Circular, concave discus has central filling hole and two flat framing rings. the inner smaller than the outer. Wide, sloping shoulder has five, uneven rows of small globules but plain rim. Heart-shaped nozzle with single globule at apex. Flat, circular loop handle attaches at shoulder-rim. Flat, circular, plain base." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Asia Minor, imitation of Italian type?" ;
+		kaaont:extant-part "Nearly intact but missing handle and small part of front wall." ;
+		kaaont:base-diameter 0.038 ;
+		kaaont:length 0.097 ;
+		kaaont:width 0.1 ;
+		kaaont:discus-diameter 0.059 .
 	
 	kaakcp:kl034 a kaaont:inventory-number ;
 		rdfs:label "KL034 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL034-D05-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular, concave discus has large filling hole middle right, figural relief, and two rounded framing rings. Relief depicts of Athena Promachos facing left: visible outline of left shoulder, breastplate, and raised areas for brim and crest of helmet (but heavily worn in all areas). Slightly rounded shoulder has panels with branches crossing over double lines of globules separated by ridges. Somewhat narrow, raised, kite-shaped nozzle." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian early unglazed" ;
+		kaaont:extant-part "Six joining fragments preserve roughly one half of discus without middle and over three quarters of shoulder, nozzle, and base." ;
+		kaaont:base-diameter 0.034 ;
+		kaaont:count-parts 6 ;
+		kaaont:preserved-length 0.082 ;
+		kaaont:width 0.093 .
 	
 	kaakcp:kl035 a kaaont:inventory-number ;
 		rdfs:label "KL035 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL035-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:count 1 ;
+		kaaont:description "Circular discus has large filling hole left, small airhole near base of nozzle, figural relief, and narrow, rounded framing ring. Figures depicts erotic scene in which man stooped over with erect penis approaches back of stooped woman with exposed buttocks in heavy tunic and braided hair; columnar altar to lower right of man and child (or Eros?) with outstretched hands to lower left of woman, who touches head with right hand. Shoulder has panels crossing broad channel containing ten dot rosettes per side. Flat, narrow, kite-shaped nozzle with traces of burning." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian early unglazed" ;
+		kaaont:extant-part "One large fragment preserves three quarters of discus and shoulder and most of nozzle." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.071 ;
+		kaaont:preserved-width 0.069 .
 	
 	kaakcp:kl036 a kaaont:inventory-number ;
 		rdfs:label "KL036 (Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL036-D05-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has central filling hole with raised rim, ray motif, and framing ring. Shoulder has grapevine motif; leaves have lobes, vine is straight, and grape clusters are conical. Flat, kite-shaped nozzle. Details are sharp." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII B" ;
+		kaaont:extant-part "One fragment preserves one-quarter of shoulder and small parts of discus and nozzle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.072 ;
+		kaaont:preserved-width 0.043 .
 	
 	kaakcp:kl037 a kaaont:inventory-number ;
 		rdfs:label "KL037 (Lamp)" ;
@@ -37111,51 +37503,116 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl038 a kaaont:inventory-number ;
 		rdfs:label "KL038 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL038-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow handle extends to base-groove. Flat, plain base has circular groove enclosing incuse signature: [Λ]ΟΥΚΙΟΥ." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One small fragment preserves small part of lower handle, small part of wall, and roughly one half of base." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.033 ;
+		kaaont:preserved-width 0.037 .
 	
 	kaakcp:kl039 a kaaont:inventory-number ;
 		rdfs:label "KL039 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL039-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-unclassified .
 	
 	kaakcp:kl040 a kaaont:inventory-number ;
 		rdfs:label "KL040 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL040-D05-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Narrow handle with two grooves extends nearly to base. Flat, plain base has single circular groove enclosing an incuse signature: ΠΩϹΦΟΡ|[Ο]Υ̣. Lines are sharp." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII" ;
+		kaaont:extant-part "One large fragment preserves small part of lower handle, roughly one third of back and side wall, and one half of base." ;
+		kaaont:base-diameter 0.033 ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.043 ;
+		kaaont:preserved-width 0.05 .
 	
 	kaakcp:kl041 a kaaont:inventory-number ;
 		rdfs:label "KL041 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL041-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular discus has central filling hole, figural relief, and single, narrow framing ring, Relief depicts Eros playing diaulos facing left before sitting ram and altar with pinecone on it. Plain shoulder has panels. Details are somewhat blunt." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian early unglazed" ;
+		kaaont:extant-part "One large fragment preserves one third of discus and small part of left shoulder." ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-religious-symbol ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.059 ;
+		kaaont:preserved-width 0.039 .
 	
 	kaakcp:kl042 a kaaont:inventory-number ;
 		rdfs:label "KL042 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL042-D05-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has figural relief, filling hole left, and narrow framing ring. Male figure has right leg bent and resting on platform with colonette to side; left leg bent at the knee and resting on the ground. Left hand apparently pouring from a jar, with indistinguishable object behind left leg; right hand is placed between legs, apparently pulling on penis. The pointed head or bonnet, prominent lips and nose, nudity, and exuberant dancing posture all identify this individual as a grotesque or comic figure. Shoulder has small ovules and panels. Details are blunt." ;
+		kaaont:typology-comment "Broneer Type XXVII C" ;
+		kaaont:extant-part "One large fragment preserves nearly entire discus and small part of shoulder. " ;
+		kaaont:count-parts 1 .
 	
 	kaakcp:kl043 a kaaont:inventory-number ;
 		rdfs:label "KL043 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL043-D05-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-unclassified ;
+		kaaont:description "Concave discus has central filling hole with raised rim, one small airhole near bottom, ray motif, and wide framing ring. Wide shoulder has small ovules. Raised, kite-shaped nozzle. Narrow, pierced handle has two grooves." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVIII A" ;
+		kaaont:extant-part "One large fragment preserves entire discus, over one half of shoulder, and upper handle." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.076 ;
+		kaaont:preserved-width 0.063 ;
+		kaaont:discus-diameter 0.046 .
 	
 	kaakcp:kl044 a kaaont:inventory-number ;
 		rdfs:label "KL044 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL044-D05-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian ;
+		kaaont:description "Circular discus has central filling hole with rim, straight bands of herringbone tracing a diamond with four peltae in corners, and framing ring. Small slit forms airhole through the framing ring at bottom of discus. Shoulder has large, uneven ovules and heavy, off-set panel on left." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII C" ;
+		kaaont:extant-part "Two joining fragments preserve more than three quarters of discus and one third of rim." ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.056 ;
+		kaaont:preserved-width 0.071 ;
+		kaaont:discus-diameter 0.058 .
 	
 	kaakcp:kl045 a kaaont:inventory-number ;
 		rdfs:label "KL045 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL045-D09-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:height 0.051 ;
+		kaaont:description "Circular, deep concave discus has central filling hole with recessed and raised rim, wide rays, and rounded framing ring. Broad shoulder has grapvine motif in schematic detail, with two leafs and two clusters per side. Flat, kite-shaped nozzle with traces of burning. Narrow, pierced handle attaches at framing ring of discus and near base; two grooves above and below. Circular base has single groove and no signature. Details are blunt and show occasional clay nodules. Flat, plain base has single circular groove enclosing faint incuse signature: ΕΠΑΓΑΘΟΥ." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Athenian imitation of Broneer Type XXVII B" ;
+		kaaont:extant-part "Intact." ;
+		kaaont:base-diameter 0.034 ;
+		kaaont:count-parts 1 ;
+		kaaont:length 0.1 ;
+		kaaont:width 0.084 ;
+		kaaont:discus-diameter 0.047 .
 	
 	kaakcp:kl046 a kaaont:inventory-number ;
 		rdfs:label "KL046 (Lamp)" ;
@@ -37189,9 +37646,15 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl051 a kaaont:inventory-number ;
 		rdfs:label "KL051 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL051-D07-001-Cf.png" , "kcp/inventoried-objects/photographs/KL051-D07-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-er-corinthian ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XVI" ;
+		kaaont:extant-part "Intact." ;
+		kaaont:count-parts 1 .
 	
 	kaakcp:kl052 a kaaont:inventory-number ;
 		rdfs:label "KL052 (Lamp)" ;
@@ -37201,15 +37664,35 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl053 a kaaont:inventory-number ;
 		rdfs:label "KL053 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL053-D07-001-Cf.png" , "kcp/inventoried-objects/photographs/KL053-D07-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:description "Circular, concave discus has filling hole lower left, figural relief, and two, rounded framing rings. Relief shows facing eagle with folded wings, head turned to left on two-step podium. Later generation within type series? Round shoulder has small ovules and one double circles at either side of nozzle. Heart-shaped nozzle. Slightly raised, circular, plain base. Small hole pierced(?) in back wall just above base." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Early Roman Asia Minor" ;
+		kaaont:extant-part "Intact except nozzle." ;
+		kaaont:base-diameter 0.035 ;
+		kaaont:count-parts 1 ;
+		kaaont:preserved-length 0.068 ;
+		kaaont:width 0.069 ;
+		kaaont:discus-diameter 0.05 .
 	
 	kaakcp:kl054 a kaaont:inventory-number ;
 		rdfs:label "KL054 (Lamp)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KL054-D08-001-Cf.png" , "kcp/inventoried-objects/photographs/KL054-D08-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:typological-identification kaatyp:l-unclassified .
+		kaaont:count 1 ;
+		kaaont:typological-identification kaatyp:l-er-corinthian-transitional ;
+		kaaont:description "Circular, concave, plain discus has central filling hole and raised, rounded framing ring. Wide, slightly rounded shoulder has six to seven large ovules per side and double circles at nozzle. Wide, pierced handle with two grooves extends halfway down back wall. Flat, plain(?) base has single circular groove." ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:preserved-height 0.042 ;
+		kaaont:extant-part "Three joining fragments preserve three-quarters of discus and shoulder, one half of handle, and small part of base." ;
+		kaaont:count-parts 3 ;
+		kaaont:preserved-length 0.071 ;
+		kaaont:width 0.076 ;
+		kaaont:discus-diameter 0.044 .
 	
 	kaakcp:km001 a kaaont:inventory-number ;
 		rdfs:label "KM001 (Glass)" ;
@@ -37238,7 +37721,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:ks1990-002 a kaaont:inventory-number ;
 		rdfs:label "KS1990-002 (Marble Sculpture)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KS1990002-D06-002-Cf.png" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KS1990002-D06-002-Cf.png" , "kcp/inventoried-objects/photographs/KS1990002-D06-003-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:s ;
 		kaaont:has-material kaatyp:marble ;
@@ -37337,6 +37820,61 @@ iebulbyulbyulbyulb""" .
 	kaachron:modern a kaaont:historical-period ;
 		rdfs:label "Modern (Historical Period)" ;
 		kaaont:is-logical-part-of kaa:historical-chronology .
+	
+	kaakcp:kp1990-007 a kaaont:inventory-number ;
+		rdfs:label "KP1990-007 (Middle Roman Amphora 7)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KP1990-007-D06-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-mra-7 ;
+		kaaont:drawing "kcp/inventoried-objects/drawings/KP1990-007-AGF-09.png" ;
+		kaaont:has-historical-chronology kaachron:middle-roman .
+	
+	kaakcp:kp1990-027 a kaaont:inventory-number ;
+		rdfs:label "KP1990-027 (Roman Cookpot)" ;
+		kaaont:photograph "kcp/inventoried-objects/photographs/KP1990-027-D06-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
+		kaaont:drawing "kcp/inventoried-objects/drawings/KP1990-027-AGF-09.png" .
+	
+	kaatyp:p-cooking-ware-roman a kaaont:typology-item ;
+		rdfs:label "Roman-period Cooking Ware" ;
+		kaaont:broader kaatyp:p .
+	
+	kaa:year2009 a kaaont:year ;
+		rdfs:seeAlso <http://chronique.efa.gr/index.php/fiches/voir/1417/> ;
+		rdfs:label "Two-Thousan Nine" ;
+		xsd:gYear "2019" ;
+		kaaont:is-logical-part-of kaa:modern-chronology .
+	
+	kaa:year2011 a kaaont:year ;
+		rdfs:seeAlso <http://chronique.efa.gr/index.php/fiches/voir/2490/> ;
+		rdfs:label "Two-Thousan Eleven" ;
+		xsd:gYear "2011" ;
+		kaaont:is-logical-part-of kaa:modern-chronology .
+	
+	kaa:year2008 a kaaont:year ;
+		rdfs:seeAlso <http://chronique.efa.gr/index.php/fiches/voir/742/> ;
+		rdfs:label "Two-Thousand Eight" ;
+		xsd:gYear "2008" ;
+		kaaont:is-logical-part-of kaa:modern-chronology .
+	
+	kaakth:kth1169 a kaaont:inventory-number ;
+		rdfs:label "KTH1169 (PRS Hayes 10A)" ;
+		kaaont:photograph "kth/inventoried-objects/photographs/KTH1169-D16-003-Cf.png" , "kth/inventoried-objects/photographs/KTH1169-D16-004-Cf.png" ;
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-prs-hayes-10a .
+	
+	kaatyp:deity-visual-motif a kaaont:typological-item ;
+		rdfs:label "Deity (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif .
+	
+	kaatyp:visual-motif-deity a kaaont:typological-item ;
+		rdfs:label "Deity (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif .
+	
+	kaatyp:visual-motif-hephaistos a kaaont:typological-item ;
+		rdfs:label "Hephaistos (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif-deity .
 }
 
 <urn:kenchreai:schema> {
@@ -37348,33 +37886,39 @@ iebulbyulbyulbyulb""" .
 	
 	rdfs:label a owl:DatatypeProperty ;
 		rdfs:label "Label" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:broader a owl:ObjectProperty , owl:TransitiveProperty ;
 		rdfs:label "Broader" ;
 		owl:inverseOf kaaont:narrower ;
 		rdfs:subPropertyOf kaaont:is-logical-part-of ;
-		rdfs:domain kaaont:typology-item .
+		rdfs:domain kaaont:typology-item ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:photograph a owl:DatatypeProperty ;
 		rdfs:label "Photograph" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:comment a owl:DatatypeProperty ;
 		rdfs:label "Comment" ;
 		rdfs:range xsd:string ;
-		owl:equivalentProperty kaaont:kaa-any-string .
+		owl:equivalentProperty kaaont:kaa-any-string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:year a owl:Class ;
 		rdfs:label "Year" .
 	
 	kaaont:next a owl:ObjectProperty ;
 		rdfs:label "Next" ;
-		owl:inverseOf kaaont:previous .
+		owl:inverseOf kaaont:previous ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:is-logical-part-of a owl:ObjectProperty ;
 		rdfs:label "Logical part of" ;
-		rdfs:subPropertyOf kaaont:is-part-of .
+		rdfs:subPropertyOf kaaont:is-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:historical-period a owl:Class ;
 		rdfs:label "Historical Period" .
@@ -37384,11 +37928,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:not-after a owl:DatatypeProperty ;
 		rdfs:label "Not after (date)" ;
-		rdfs:range xsd:integer .
+		rdfs:range xsd:integer ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:not-before a owl:DatatypeProperty ;
 		rdfs:label "Not before (date)" ;
-		rdfs:range xsd:integer .
+		rdfs:range xsd:integer ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:file a owl:DatatypeProperty ;
 		rdfs:label "File" ;
@@ -37399,26 +37945,31 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:on-notebook-page a owl:ObjectProperty ;
 		rdfs:label "On notebook page" ;
-		rdfs:subPropertyOf kaaont:is-logical-part-of .
+		rdfs:subPropertyOf kaaont:is-logical-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:associated-with-year a owl:ObjectProperty ;
 		rdfs:label "Associated with year" ;
 		rdfs:subPropertyOf kaaont:associated-with-modern-chronology ;
-		rdfs:range kaaont:year .
+		rdfs:range kaaont:year ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:month a owl:Class ;
 		rdfs:label "Month" .
 	
 	kaaont:viaf a owl:ObjectProperty ;
-		rdfs:label "VIAF Id" .
+		rdfs:label "VIAF Id" ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:modern-chronology a owl:ObjectProperty ;
 		rdfs:comment "Used to indicate the modern chronology of an entity. This often means the date of discovery or date work was undertaken." ;
-		rdfs:label "Modern chronology" .
+		rdfs:label "Modern chronology" ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:count a owl:DatatypeProperty ;
 		rdfs:label "Count" ;
-		rdfs:range xsd:integer .
+		rdfs:range xsd:integer ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:typological-identification a owl:ObjectProperty ;
 		rdfs:label "Typological identification" ;
@@ -37427,11 +37978,13 @@ iebulbyulbyulbyulb""" .
 		rdfs:range kaaont:typology-item .
 	
 	kaaont:same-as a owl:ObjectProperty , owl:SymmetricProperty ;
-		rdfs:label "Same as" .
+		rdfs:label "Same as" ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:height a owl:DatatypeProperty ;
 		rdfs:label "Height" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:model a owl:DatatypeProperty ;
 		rdfs:comment "URL of 3D model." ;
@@ -37444,23 +37997,27 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:in-excavation-trench a owl:ObjectProperty ;
 		rdfs:label "In excavation trench" ;
-		rdfs:subPropertyOf kaaont:is-physical-part-of .
+		rdfs:subPropertyOf kaaont:is-physical-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:description a owl:DatatypeProperty ;
 		rdfs:label "Description" ;
 		rdfs:range xsd:string ;
-		owl:equivalentProperty kaaont:kaa-any-string .
+		owl:equivalentProperty kaaont:kaa-any-string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:notebook-page a owl:Class ;
 		rdfs:label "Notebook Page" .
 	
 	kaaont:pagescan a owl:DatatypeProperty ;
 		rdfs:label "Pagescan" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:is-physical-part-of a owl:ObjectProperty ;
 		rdfs:label "Physical part of" ;
-		rdfs:subPropertyOf kaaont:is-part-of .
+		rdfs:subPropertyOf kaaont:is-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:excavation-notebook a owl:Class ;
 		rdfs:label "Excavation notebook" ;
@@ -37474,14 +38031,16 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:subject-number a owl:DatatypeProperty ;
 		rdfs:label "Subject number" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:excavation-trench a owl:Class ;
 		rdfs:label "Excavation trench" .
 	
 	kaaont:has-material a owl:ObjectProperty ;
 		rdfs:label "Material" ;
-		rdfs:subPropertyOf kaaont:is-logical-part-of .
+		rdfs:subPropertyOf kaaont:is-logical-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:field-book-number a owl:Class ;
 		rdfs:label "Field book number" ;
@@ -37492,31 +38051,37 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:discarded a owl:DatatypeProperty ;
 		rdfs:label "Discarded" ;
-		rdfs:range xsd:boolean .
+		rdfs:range xsd:boolean ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:rim-diameter a owl:DatatypeProperty ;
 		rdfs:label "Rim diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:writing rdfs:label "Writing" .
 	
 	kaaont:preserved-height a owl:DatatypeProperty ;
 		rdfs:label "Preserved height" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:typology-comment a owl:DatatypeProperty ;
 		rdfs:comment "Either a note indicating the typological identity of the entity or a comment on the same." , "Typology comment" ;
 		rdfs:label "Typological identification comment" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:extant-part a owl:DatatypeProperty ;
 		rdfs:comment "Part of an object surviving." ;
 		rdfs:label "Extant part" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:has-visual-motif a owl:ObjectProperty ;
 		rdfs:label "Has visual motif (depicts)" ;
-		rdfs:subPropertyOf kaaont:is-logical-part-of .
+		rdfs:subPropertyOf kaaont:is-logical-part-of ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:kaa-note a owl:DatatypeProperty ;
 		rdfs:comment "A note indicating some aspect of the editorial state or other aspect of an entity within KAA." ;
@@ -37524,12 +38089,14 @@ iebulbyulbyulbyulb""" .
 		rdfs:range xsd:string .
 	
 	kaaont:has-published-catalog-entry a owl:ObjectProperty ;
-		rdfs:label "Published catalog entry" .
+		rdfs:label "Published catalog entry" ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:inventory-book-sketch a owl:DatatypeProperty ;
 		rdfs:comment "Boolean value indicating the presence of a sketch in the Inventory Book." ;
 		rdfs:label "Inventory Book Sketch" ;
-		rdfs:range xsd:boolean .
+		rdfs:range xsd:boolean ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:depicts a owl:DatatypeProperty ;
 		rdfs:label "Depicts" ;
@@ -37537,15 +38104,18 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:base-diameter a owl:DatatypeProperty ;
 		rdfs:label "Base Diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:notebook-transcription a owl:DatatypeProperty ;
 		rdfs:label "Notebook transcription" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:count-parts a owl:DatatypeProperty ;
 		rdfs:label "Count of parts" ;
-		rdfs:range xsd:integer .
+		rdfs:range xsd:integer ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:kth-container a owl:Class ;
 		rdfs:label "Threpsiades Container" .
@@ -37555,11 +38125,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:drawing a owl:DatatypeProperty ;
 		rdfs:label "Drawing" ;
-		rdfs:range xsd:string .
+		rdfs:range xsd:string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:maximum-diameter a owl:DatatypeProperty ;
 		rdfs:label "Maximum diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:project a owl:Class ;
 		rdfs:comment "Any set of closely related efforts to investigate the site of Kenchreai or nearby areas." ;
@@ -37587,7 +38159,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:comment "Text of the description as transcribed from the Inventory Book." ;
 		rdfs:label "Inventory book description" ;
 		rdfs:range xsd:string ;
-		owl:equivalentProperty kaaont:kaa-any-string .
+		owl:equivalentProperty kaaont:kaa-any-string ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:previous a owl:ObjectProperty .
 	
@@ -37604,7 +38177,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:subPropertyOf kaaont:has-part .
 	
 	kaaont:name a owl:DatatypeProperty ;
-		rdfs:label "Name" .
+		rdfs:label "Name" ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:has-physical-part a owl:ObjectProperty ;
 		rdfs:label "Has physical part" ;
@@ -37634,52 +38208,63 @@ iebulbyulbyulbyulb""" .
 	
 	kaaont:associated-with-month a owl:ObjectProperty ;
 		rdfs:label "Associated with month" ;
-		rdfs:range kaaont:month .
+		rdfs:range kaaont:month ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:writing-tanscription rdfs:label "Writing Transcription" .
 	
 	kaaont:diameter a owl:DatatypeProperty ;
 		rdfs:label "Diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:neck-height a owl:DatatypeProperty ;
 		rdfs:comment "Intended for the recording of amphoras, particularly the neck height of Late Roman Amphora 2." ;
 		rdfs:label "Neck Height" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:rim-height a owl:DatatypeProperty ;
 		rdfs:comment "Intended for the recording of amphoras, particularly the rim height of Late Roman Amphora 2. It is distinct from the 'neck height' measurement that includes the rim." ;
 		rdfs:label "Rim Height" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:length a owl:DatatypeProperty ;
 		rdfs:label "Length" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:preserved-length a owl:DatatypeProperty ;
 		rdfs:label "Preserved length" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:width a owl:DatatypeProperty ;
 		rdfs:label "Width" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:preserved-width a owl:DatatypeProperty ;
 		rdfs:label "Preserved width" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:minimum-diameter a owl:DatatypeProperty ;
 		rdfs:label "Minimum diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	kaaont:discus-diameter a owl:DatatypeProperty ;
 		rdfs:comment "Currently specific to lamps." ;
 		rdfs:label "Discus diameter" ;
-		rdfs:range xsd:float .
+		rdfs:range xsd:float ;
+		kaaont:x-display-in-editor true .
 	
 	owl:sameAs rdfs:label "Same as" .
 	
 	kaaont:has-historical-period a owl:ObjectProperty ;
 		rdfs:label "Belongs to Historical Period" ;
-		rdfs:subPropertyOf kaaont:is-logical-part-of .
+		rdfs:subPropertyOf kaaont:is-logical-part-of ;
+		kaaont:x-display-in-editor true .
 }
