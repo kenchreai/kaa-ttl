@@ -151,7 +151,7 @@
 	kaatyp:l-hellenistic-ephesus-type a kaaont:typology-item ;
 		rdfs:label "Ephesian-type Hellenistic Lamp" ;
 		kaaont:broader kaatyp:l ;
-		kaaont:comment "Same as Broneer Type VII." .
+		kaaont:comment "Same as Broneer Type XIX." .
 	
 	kaatyp:l-er-italian a kaaont:typology-item ;
 		rdfs:label "Early Roman Italian Lamp" ;
@@ -256,13 +256,13 @@
 		kaaont:broader kaatyp:p-amphora .
 	
 	kaatyp:p-ars-hayes-105 a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 105" ;
+		rdfs:label "African Red-Slip Hayes Form 105" ;
 		kaaont:broader kaatyp:p-ars ;
 		kaaont:not-after 675 ;
 		kaaont:not-before 580 .
 	
 	kaatyp:gl a kaaont:typology-item ;
-		rdfs:label "Glass" ;
+		rdfs:label "Glass (Artefact Category)" ;
 		kaaont:broader kaatyp:generic .
 	
 	kaatyp:p-prs-hayes-10c a kaaont:typology-item ;
@@ -333,7 +333,8 @@
 	
 	kaatyp:p-attic-black-figure a kaaont:typology-item ;
 		rdfs:label "Attic Black Figure" ;
-		kaaont:broader kaatyp:p .
+		kaaont:broader kaatyp:p ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaa:year2012 a kaaont:year ;
 		rdfs:seeAlso <http://en.wikipedia.org/wiki/2012> , <http://www.ascsa.edu.gr/index.php/news/newsDetails/report-on-kenchreai-2012> , <http://chronique.efa.gr/index.php/fiches/voir/2966/> ;
@@ -442,7 +443,7 @@
 		kaaont:comment "The use of this “type” can indicate that the record is incomplete and will be improved, that the form is currently unidentified, or that the lamp does not support further identification." .
 	
 	kaatyp:p-ars-hayes-104 a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 104" ;
+		rdfs:label "African Red-Slip Hayes Form 104" ;
 		kaaont:broader kaatyp:p-ars ;
 		kaaont:not-after 625 ;
 		kaaont:not-before 500 .
@@ -460,7 +461,8 @@
 	
 	kaatyp:p-attic-red-figure a kaaont:typology-item ;
 		rdfs:label "Attic Red Figure" ;
-		kaaont:broader kaatyp:p .
+		kaaont:broader kaatyp:p ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaatyp:p-kenchreai-4-rc-22e a kaaont:typology-item ;
 		rdfs:comment "In Kenchreai IV, catalog entry RC 22 is mixed and takes in a variety of sherds with dipinti. As a typological identification, “RC 22e” refers to the hard-fired, white slipped form illustrated on plate 29 of Kenchreai IV. See Slane and Sanders (2005) “Late Roman Horizons” no. 2-17." ;
@@ -510,7 +512,7 @@
 		kaaont:is-logical-part-of kaa:modern-chronology .
 	
 	kaatyp:p-ars-hayes-104c a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 104c" ;
+		rdfs:label "African Red-Slip Hayes Form 104c" ;
 		kaaont:broader kaatyp:p-ars-hayes-104 ;
 		kaaont:not-after 625 ;
 		kaaont:not-before 550 .
@@ -539,7 +541,8 @@
 	kaatyp:p-athenian-gouged a kaaont:typology-item ;
 		rdfs:seeAlso <http://www.agathe.gr/id/agora/object/p%2034657> ;
 		rdfs:label "Athenian Late Roman Gouged Ware" ;
-		kaaont:broader kaatyp:p-slipped-fw .
+		kaaont:broader kaatyp:p-slipped-fw ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaatyp:p-prs-hayes-1 a kaaont:typology-item ;
 		rdfs:label "Phocaean Red-Slip Hayes 1" ;
@@ -583,7 +586,7 @@
 		kaaont:viaf <http://viaf.org/viaf/10183217> , <http://viaf.org/viaf/237380935> .
 	
 	kaatyp:p-ars-hayes-104a a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 104a" ;
+		rdfs:label "African Red-Slip Hayes Form 104a" ;
 		kaaont:broader kaatyp:p-ars-hayes-104 ;
 		kaaont:not-after 580 ;
 		kaaont:not-before 500 .
@@ -618,7 +621,7 @@
 		kaaont:broader kaatyp:p-corinthian .
 	
 	kaatyp:p-ars-hayes-67 a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 67" ;
+		rdfs:label "African Red-Slip Hayes Form 67" ;
 		kaaont:broader kaatyp:p-ars .
 	
 	kaatyp:p-amphora-beirut-8 a kaaont:typology-item ;
@@ -646,7 +649,7 @@
 		xsd:gYearMonth "1963-07" .
 	
 	kaatyp:p-ars-hayes-84 a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 84" ;
+		rdfs:label "African Red-Slip Hayes Form 84" ;
 		kaaont:broader kaatyp:p-ars .
 	
 	kaatyp:p-lra-6 a kaaont:typology-item ;
@@ -654,7 +657,7 @@
 		kaaont:broader kaatyp:p-amphora .
 	
 	kaatyp:p-ars-hayes-104b a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 104b" ;
+		rdfs:label "African Red-Slip Hayes Form 104b" ;
 		kaaont:broader kaatyp:p-ars-hayes-104 ;
 		kaaont:not-after 600 ;
 		kaaont:not-before 570 .
@@ -3026,7 +3029,7 @@
 		kaaont:typological-identification kaatyp:p-prs-hayes-10a .
 	
 	kaatyp:p-ars-hayes-109 a kaaont:typology-item ;
-		rdfs:label "African Red-Slip Hayes 109" ;
+		rdfs:label "African Red-Slip Hayes Form 109" ;
 		kaaont:broader kaatyp:p-ars ;
 		kaaont:not-after 675 ;
 		kaaont:not-before 580 .
@@ -3337,7 +3340,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1796 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Gl 153" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:ke1796 a kaaont:inventory-number ;
 		rdfs:label "KE 1796 (Bone Needle)" ;
@@ -4114,7 +4117,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "P 113" ;
 		kaaont:rim-diameter 0.11 ;
 		kaaont:typology-comment "Cf. ARS Hayes Form 61A, Style Aii" ;
-		kaaont:has-historical-period kaachron:late-roman .
+		kaaont:has-historical-period kaachron:late-roman ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:ke0475 a kaaont:inventory-number ;
 		rdfs:label "KE 475 (Eastern Sigillata B Form 58)" ;
@@ -5537,7 +5541,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
 		kaaont:pagescan "pagescans/inventory/1178-1181.PDF" ;
 		kaaont:subject-number "L 315" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "Ke1182-L0315-JLR-15.png" .
 	
 	kaake:ke1182 a kaaont:inventory-number ;
 		rdfs:label "KE 1182 (Early/Middle Roman Corinthian Lamp)" ;
@@ -5546,8 +5551,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
 		kaaont:pagescan "pagescans/inventory/1182-1186.PDF" ;
 		kaaont:subject-number "L 316" ;
-		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "Ke1182-L0315-JLR-15.png" .
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke1183 a kaaont:inventory-number ;
 		rdfs:label "KE 1183 (Early/Middle Roman Corinthian Lamp)" ;
@@ -6855,7 +6859,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "L 52" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Broneer Type XXVII A" ;
-		kaaont:drawing "Ke0203-L052-JLR-16a.png" .
+		kaaont:drawing "Ke0203-L052-JLR-16d.png" .
 	
 	kaake:ke0204 a kaaont:inventory-number ;
 		rdfs:label "KE 204 (Early/Middle Roman Corinthian Lamp)" ;
@@ -6927,7 +6931,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typology-comment "Broneer Type XXI" .
 	
 	kaake:ke0013 a kaaont:inventory-number ;
-		rdfs:label "KE 13 (Glass Fragments)" ;
+		rdfs:label "KE 13 (Glass)" ;
 		kaaont:next kaake:ke0014 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/13-17.PDF" , "photography/2011_inventory_photos/IMG_3000.png" ;
@@ -7464,7 +7468,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:p-athenian-painted ;
 		kaaont:pagescan "pagescans/inventory/1282-1285.PDF" ;
 		kaaont:subject-number "P 358" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:ke0185 a kaaont:inventory-number ;
 		rdfs:label "KE 185 (Molded Marble Architectural Fragment)" ;
@@ -7892,8 +7897,10 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 718 (Early Byzantine Bronze Buckle)" ;
 		kaaont:next kaake:ke0719 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:buckle ;
 		kaaont:subject-number "Mi 154" ;
-		kaaont:has-material kaatyp:bronze .
+		kaaont:has-material kaatyp:bronze ;
+		kaaont:has-historical-period kaachron:byzantine .
 	
 	kaake:ke0719 a kaaont:inventory-number ;
 		rdfs:label "KE 719 (Bronze Swing Handle)" ;
@@ -9210,7 +9217,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/520-525.PDF" , "photography/2011_inventory_photos/IMG_1876.png" ;
 		kaaont:typological-identification kaatyp:fishing-technology ;
-		kaaont:has-material kaatyp:stone .
+		kaaont:has-material kaatyp:stone ;
+		kaaont:drawing "Ke0525-Mi118-DMW-15.png" .
 	
 	kaake:ke0526 a kaaont:inventory-number ;
 		rdfs:label "KE 526 (Late Roman North African Lamp)" ;
@@ -10130,9 +10138,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0850 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:count 1 ;
-		kaaont:typological-identification kaatyp:p-athenian-gouged ;
+		kaaont:typological-identification kaatyp:p-athenian-gouged-jug ;
 		kaaont:pagescan "pagescans/inventory/847-850.PDF" ;
-		kaaont:subject-number "P 229" .
+		kaaont:subject-number "P 229" ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:ke0850 a kaaont:inventory-number ;
 		rdfs:label "KE 850 (Hellenistic Moldmade Cooking Dish)" ;
@@ -10433,7 +10442,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0280 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Gl 32" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:ke0280 a kaaont:inventory-number ;
 		rdfs:label "KE 280 (Glass Fragments)" ;
@@ -12175,15 +12184,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-a-iii .
 	
 	kaake:ke0236 a kaaont:inventory-number ;
-		rdfs:label "KE 236 (Lamp)" ;
+		rdfs:label "KE 236 (Late Roman Corinthian Lamp)" ;
 		kaaont:photograph "Ke0236-L062-D13-001-Cf.png" , "Ke0236-L062-D13-002-Cf.png" ;
 		kaaont:next kaake:ke0237 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-unclassified ;
 		kaaont:pagescan "pagescans/inventory/233-236.PDF" ;
 		kaaont:subject-number "L 62" ;
+		kaaont:typology-comment "Retouched Late Roman Corinthian imitation of Athenian late unglazed lamp" ;
 		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross ;
-		kaaont:drawing "Ke0236-L062-JLR-16.png" .
+		kaaont:drawing "Ke0236-L062-JLR-16d.png" .
 	
 	kaake:ke0237 a kaaont:inventory-number ;
 		rdfs:label "KE 237 (Terracotta Antefix)" ;
@@ -12791,7 +12801,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1364 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-lr-african-hayes-ii ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "Ke1363-L371-JLR-16a.png" .
 	
 	kaake:ke1364 a kaaont:inventory-number ;
 		rdfs:label "KE 1364 (Lamp)" ;
@@ -16960,14 +16971,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke1261 a kaaont:inventory-number ;
-		rdfs:label "KE 1261 (Attic Red-Figure)" ;
+		rdfs:label "KE 1261 (Attic Red-Figure Body Sherd)" ;
 		kaaont:next kaake:ke1262 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1260-1263.PDF" , "photography/2011_inventory_photos/IMG_2778.png" ;
 		kaaont:typological-identification kaatyp:p-attic-red-figure ;
 		kaaont:subject-number "P 341" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:ke1262 a kaaont:inventory-number ;
 		rdfs:label "KE 1262 (Vessel)" ;
@@ -17941,7 +17953,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "P 188" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Cf. Corinth XI, no. 424, p. 74, fig. 52:a" ;
-		kaaont:drawing "Ke0682-P188-DMW-15.png" .
+		kaaont:drawing "Ke0682-P0188-DMWJLR-1516b.png" .
 	
 	kaake:ke0683 a kaaont:inventory-number ;
 		rdfs:label "KE 683 (Glass)" ;
@@ -18452,7 +18464,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-lr-african-hayes-ii ;
 		kaaont:pagescan "pagescans/inventory/642-646.PDF" ;
 		kaaont:subject-number "L 168" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "Ke0644-L168-JLR-16a.png" .
 	
 	kaake:ke0645 a kaaont:inventory-number ;
 		rdfs:label "KE 645 (Middle/Late Roman Athenian Lamp)" ;
@@ -19069,6 +19082,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2103.png" ;
 		kaaont:next kaake:ke1581 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:buckle ;
 		kaaont:subject-number "Mi 400" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -19373,7 +19387,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/35-40.PDF" ;
 		kaaont:subject-number "Gl 4" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:ke0038 a kaaont:inventory-number ;
 		rdfs:label "KE 38 (Middle/Late Roman Athenian Lamp)" ;
@@ -20236,7 +20250,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-lr-african-hayes-ii ;
 		kaaont:pagescan "pagescans/inventory/602-606.PDF" ;
 		kaaont:subject-number "L 142" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "Ke0602-L142-JLR-16a.png" .
 	
 	kaake:ke0603 a kaaont:inventory-number ;
 		rdfs:label "KE 603 (Lamp)" ;
@@ -22538,7 +22553,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:p-corinthian-a ;
 		kaaont:subject-number "P 794" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "Ke2403-P0794-MAH-15.png" , "Ke2403-P0794-MAH-15b.png" .
+		kaaont:drawing "Ke2403-P0794-MAH-15b.png" .
 	
 	kaake:ke0162 a kaaont:inventory-number ;
 		rdfs:label "KE 162 (Early Roman Asia Minor Lamp)" ;
@@ -25066,7 +25081,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typology-comment "Broneer Type XXVII A" .
 	
 	kaake:ke1922 a kaaont:inventory-number ;
-		rdfs:label "KE 1922 (Early Roman Italian Lamp Handle)" ;
+		rdfs:label "KE 1922 (Early Roman Italian Lamp)" ;
 		kaaont:next kaake:ke1923 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-er-italian ;
@@ -29594,7 +29609,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke2203 a kaaont:inventory-number ;
-		rdfs:label "KE 2203 (Eastern Sigillata C Hayes Form 3)" ;
+		rdfs:label "KE 2203 (ESC Hayes Form 3)" ;
 		kaaont:next kaake:ke2204 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-3 ;
@@ -31178,7 +31193,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:p-byz-glazed ;
 		kaaont:subject-number "P 109" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Cf. Corinth XI. no. 422, p. 73, fig. 52:e" .
+		kaaont:typology-comment "Cf. Corinth XI. no. 422, p. 73, fig. 52:e" ;
+		kaaont:drawing "Ke0439-P0109-JLR-16.png" .
 	
 	kaake:notebook-page-a-iii-092 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iii-093 ;
@@ -36078,7 +36094,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:p-attic-black-figure ;
 		kaaont:pagescan "pagescans/inventory/166-170.PDF" ;
 		kaaont:subject-number "P 33" ;
-		kaaont:has-visual-motif kaatyp:visual-motif-animal .
+		kaaont:has-visual-motif kaatyp:visual-motif-animal ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:notebook-page-a-vii-167 a kaaont:notebook-page ;
 		rdfs:label "Notebook A VII, Page 167" ;
@@ -36514,7 +36531,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-b-i .
 	
 	kaake:ke0676 a kaaont:inventory-number ;
-		rdfs:label "KE 676 (Black Figure Sherd)" , "KE 676 (Panthenaic Amphora?)" ;
+		rdfs:label "KE 676 (Black Figure Sherd: Panathenaic Amphora?)" ;
 		kaaont:next kaake:ke0677 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/674-680.PDF" , "photography/2011_inventory_photos/IMG_2776.png" ;
@@ -36536,7 +36553,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:writing-transcription "ΕΠΑΓΑΘΟΥ" .
 	
 	kaake:ke0296 a kaaont:inventory-number ;
-		rdfs:label "KE 296 (Knidian Relief Ware Patera, Emblema)" ;
+		rdfs:label "KE 296 (Knidian[?] Relief Ware Patera, Emblema)" ;
 		kaaont:next kaake:ke0297 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/292-296.PDF" , "photography/2011_inventory_photos/IMG_2263.png" ;
@@ -37050,7 +37067,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/64-67.PDF" , "photography/2011_inventory_photos/IMG_2763.png" ;
 		kaaont:typological-identification kaatyp:p-unclassified ;
-		kaaont:subject-number "P 20" .
+		kaaont:subject-number "P 20" ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:notebook-page-a-vii-065 a kaaont:notebook-page ;
 		rdfs:label "Notebook A VII, Page 65" ;
@@ -37074,7 +37092,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-a-ii .
 	
 	kaake:ke0996 a kaaont:inventory-number ;
-		rdfs:label "KE 996 (Late Roman North African Lamp, copy?)" ;
+		rdfs:label "KE 996 (Late Roman North African Lamp)" ;
 		kaaont:photograph "Ke0996-L279-D13-001-Cf.png" ;
 		kaaont:comment "Kenchreai V no. 430" ;
 		kaaont:next kaake:ke0997 ;
@@ -37082,7 +37100,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-lr-african-hayes-ii ;
 		kaaont:subject-number "L 279" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-animal .
+		kaaont:has-visual-motif kaatyp:visual-motif-animal ;
+		kaaont:drawing "Ke0996-L279-JLR-16a.png" .
 	
 	kaake:notebook-page-a-vi-165 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-vi-166 ;
@@ -37917,7 +37936,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1020 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Gl 92" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:notebook-page-a-viii-sketch-4 a kaaont:notebook-page ;
 		rdfs:label "Notebook A VIII, Sketch 4" ;
@@ -37948,7 +37967,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0668 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Gl 78" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:notebook-page-a-iv-065 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iv-066 ;
@@ -37969,7 +37988,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0288 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Gl 39" ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaake:ke2335 a kaaont:inventory-number ;
 		rdfs:label "KE 2335 (Casserole)" ;
@@ -39391,7 +39410,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-historical-period kaachron:late-roman , kaachron:byzantine .
 	
 	kaakth:kth0460 a kaaont:inventory-number ;
-		rdfs:label "KTH 460" ;
+		rdfs:label "KTH0460 (Roman Basin/Bowl?)" ;
 		kaaont:photograph "KTH0460-D16-001-Cf.png" , "KTH0460-D16-002-Cf.png" , "KTH0460-D16-003-Cf.png" ;
 		kaaont:next kaakth:kth0461 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
@@ -39412,7 +39431,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0461-MAH-16.png" .
 	
 	kaakth:kth0462 a kaaont:inventory-number ;
-		rdfs:label "KTH0462 (Slipped Basin)" ;
+		rdfs:label "KTH0462 (Slipped Bowl)" ;
 		kaaont:photograph "KTH0462-D16-001-Cf.png" , "KTH0462-D16-002-Cf.png" , "KTH0462-D16-003-Cf.png" ;
 		kaaont:next kaakth:kth0463 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
@@ -39444,9 +39463,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0464-MAH-16.png" .
 	
 	kaakth:kth0465 a kaaont:inventory-number ;
-		rdfs:label "KTH 465" ;
+		rdfs:label "KTH0465 (Roman Basin)" ;
 		kaaont:next kaakth:kth0466 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0465-MAH-16.png" .
 	
 	kaakth:kth0466 a kaaont:inventory-number ;
@@ -39584,11 +39604,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0478-MAH-16.png" .
 	
 	kaakth:kth0479 a kaaont:inventory-number ;
-		rdfs:label "KTH0479 (Pithos)" ;
+		rdfs:label "KTH0479 (Late Roman Basin?)" ;
 		kaaont:photograph "KTH0479-D16-002-Cf.png" , "KTH0479-D18-001-Cf.png" ;
 		kaaont:next kaakth:kth0480 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:typological-identification kaatyp:p-pithos ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0479-MAH-16.png" .
 	
@@ -39698,7 +39717,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakth:kth0009 a kaaont:inventory-number ;
 		rdfs:label "KTH0009 (Ceramic Stamp with Magical Imagery)" ;
-		kaaont:photograph "KTH0009-D14-003-Cf.png" , "KTH0009-D16-005-Cf.png" ;
+		kaaont:photograph "KTH0009-D16-005-Cf.png" ;
 		kaaont:next kaakth:kth0010 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -40418,13 +40437,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaakth:kth0101 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:gl ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0101 a kaaont:inventory-number ;
 		rdfs:label "KTH0101 (Glass)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0102 a kaaont:inventory-number ;
 		rdfs:label "KTH0102 (Bronze Nail)" ;
@@ -40582,7 +40602,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0481-MAH-16.png" .
 	
 	kaakth:kth0482 a kaaont:inventory-number ;
-		rdfs:label "KTH0482 (Late Roman Lid)" ;
+		rdfs:label "KTH0482 (Roman Amphora)" ;
 		kaaont:photograph "KTH0482-D16-003-Cf.png" , "KTH0482-D16-004-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0483 ;
@@ -40915,7 +40935,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakth:kth0125 a kaaont:inventory-number ;
 		rdfs:label "KTH0125 (Late Roman/Early Byzantine Regional Lamp)" ;
-		kaaont:photograph "KTH0125-D15-001-Cf.png" , "KTH0125-D15-002-Cf.png" , "KTH0125-D15-004-Cf.png" , "KTH0125-D15-005-Cf.png" ;
+		kaaont:photograph "KTH0125-D15-004-Cf.png" , "KTH0125-D15-005-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -40927,7 +40947,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:width 0.031 ;
 		kaaont:discus-diameter 0.035 ;
 		kaaont:has-historical-period kaachron:late-roman ;
-		kaaont:preservation-comment "Intact except missing upper handle. Slight, extensive abrasion; severe, extensive encrustation. Secondary scorching on back right side." .
+		kaaont:preservation-comment "Intact except missing upper handle. Slight, extensive abrasion; severe, extensive encrustation. Secondary scorching across back and sides." .
 	
 	kaakth:kth0126 a kaaont:inventory-number ;
 		rdfs:label "KTH0126 (Early Byzantine Palestinian Lamp)" ;
@@ -40983,14 +41003,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:gl .
 	
 	kaakth:kth0131 a kaaont:inventory-number ;
-		rdfs:label "KTH 131" ;
+		rdfs:label "KTH 031 (Glass)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0132 a kaaont:inventory-number ;
-		rdfs:label "KTH 132" ;
+		rdfs:label "KTH 132 (Glass bottle rim)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0133 a kaaont:inventory-number ;
 		rdfs:label "KTH0133 (Glass)" ;
@@ -41001,14 +41023,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:gl .
 	
 	kaakth:kth0134 a kaaont:inventory-number ;
-		rdfs:label "KTH 134" ;
+		rdfs:label "KTH 134 (Shell)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0135 a kaaont:inventory-number ;
-		rdfs:label "KTH 135" ;
+		rdfs:label "KTH 135 (Glass bottle rim)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0136 a kaaont:inventory-number ;
 		rdfs:label "KTH0136 (Glass)" ;
@@ -41019,39 +41042,54 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:gl .
 	
 	kaakth:kth0137 a kaaont:inventory-number ;
-		rdfs:label "KTH 137" ;
+		rdfs:label "KTH 137 (Iron nail and fragments)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth0138 a kaaont:inventory-number ;
-		rdfs:label "KTH 138" ;
+		rdfs:label "KTH 138 (Glass fragments)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0139 a kaaont:inventory-number ;
-		rdfs:label "KTH 139" ;
+		rdfs:label "KTH 139 (Iron nail)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth0140 a kaaont:inventory-number ;
-		rdfs:label "KTH 140" ;
+		rdfs:label "KTH 140 (Glass base fragments)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass ;
+		kaaont:extant-part "Base" .
 	
 	kaakth:kth0141 a kaaont:inventory-number ;
-		rdfs:label "KTH 141" ;
+		rdfs:label "KTH 141 (Iron nails)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth0142 a kaaont:inventory-number ;
-		rdfs:label "KTH 142" ;
+		rdfs:label "KTH 142 (Iron buckle)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:buckle ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth0143 a kaaont:inventory-number ;
-		rdfs:label "KTH 143" ;
+		rdfs:label "KTH 143 (Glass lid and other fragments)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass ;
+		kaaont:extant-part "Lid" .
 	
 	kaakth:kth0144 a kaaont:inventory-number ;
 		rdfs:label "KTH0144 (Late Roman/Early Byzantine Regional Lamp)" ;
@@ -41092,14 +41130,18 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:gl .
 	
 	kaakth:kth0148 a kaaont:inventory-number ;
-		rdfs:label "KTH 148" ;
+		rdfs:label "KTH 148 (Bronze Nail)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:has-material kaatyp:bronze .
 	
 	kaakth:kth0149 a kaaont:inventory-number ;
-		rdfs:label "KTH 149" ;
+		rdfs:label "KTH 149 (Glass fragments)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakth:kth0510 a kaaont:inventory-number ;
 		rdfs:label "KTH0510 (Lid/Funnel[?])" ;
@@ -41385,9 +41427,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:extant-part "Handle" .
 	
 	kaakth:kth0540 a kaaont:inventory-number ;
-		rdfs:label "KTH 540" ;
+		rdfs:label "KTH0540 (Roman Cooking Pot?)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0540-AGF-16.png" .
 	
 	kaakth:kth0541 a kaaont:inventory-number ;
@@ -41468,7 +41511,6 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KTH0273 (Late Roman Amphora 1)" ;
 		kaaont:next kaakth:kth0274 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:file "drawings/kth/KTH273-TCR-14.png" ;
 		kaaont:typological-identification kaatyp:p-lra-1 ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:extant-part "Rim" ;
@@ -41481,7 +41523,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:p-lra-5 ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:extant-part "Handle" , "Rim" , "Neck" ;
-		kaaont:drawing "drawings/kth/KTH274-TCR-14.png" , "KTH0274-TCR-14b.png" .
+		kaaont:drawing "KTH0274-TCR-14b.png" .
 	
 	kaakth:kth0292 a kaaont:inventory-number ;
 		rdfs:label "KTH0292 (Late Roman Amphora 4)" ;
@@ -41505,7 +41547,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaa:kcp .
 	
 	kaakth:kth0151 a kaaont:inventory-number ;
-		rdfs:label "KTH 151" ;
+		rdfs:label "KTH0151 (Ceramic Sherd)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
@@ -41546,7 +41588,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0158 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:gl ;
+		kaaont:extant-part "Lid" .
 	
 	kaakth:kth0158 a kaaont:inventory-number ;
 		rdfs:label "KTH 158" ;
@@ -41632,7 +41675,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0151 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:has-material kaatyp:gl , kaatyp:ceramic-material .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaakth:kth0170 a kaaont:inventory-number ;
 		rdfs:label "KTH0170 (Marble Cornice)" ;
@@ -41725,7 +41769,6 @@ iebulbyulbyulbyulb""" .
 	kaakth:kth0178 a kaaont:inventory-number ;
 		rdfs:label "KTH0178 (Late Classical-Hellenistic Corinthian Lamp)" ;
 		kaaont:photograph "KTH0178-D15-001-Cf.png" , "KTH0178-D15-002-Cf.png" ;
-		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-howland-type-21 ;
 		kaaont:height 0.022 ;
@@ -43077,6 +43120,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:description "Moldmade. Circular, concave, plain discus with central(?) filling hole has narrow, crisp framing ridge. Plain, steeply curving upper shoulder to a slight ridge at mid-body, below which the wall curves inward: somewhat biconvex profile around irregular juncture of upper and lower molds. Glazed on interior and exterior." ;
 		kaaont:typology-comment "Howland Type 43D = Scheibler Typ M-SSL" ;
+		kaaont:drawing "KL001-JLR-16a.png" ;
 		kaaont:preserved-length 0.035 ;
 		kaaont:preserved-width 0.02 ;
 		kaaont:preservation-comment "One small fragment preserves less than one-quarter of discus and rim. Moderate, extensive abrasion; slight, somewhat extensive pitting and scoring." ;
@@ -43117,7 +43161,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:preserved-length 0.051 ;
 		kaaont:preserved-width 0.027 ;
 		kaaont:preservation-comment "One small fragment preserves upper handle and small part of discus and shoulder. Moderate, extensive abrasion and pitting; slight, sparse patches of encrustation." ;
-		kaaont:fabric-description "Fabric: 5YR 7/8, reddish yellow. Hard, slightly micaceous clay with small black inclusions. Middle Roman Athenian fabric. Reddish slip or wash: nascent glazing?" .
+		kaaont:fabric-description "Fabric: 5YR 7/8, reddish yellow. Hard, slightly micaceous clay with small black inclusions. Middle Roman Athenian fabric. Reddish slip or wash: nascent glazing?" ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kl004 a kaaont:inventory-number ;
 		rdfs:label "KL004 (Late Roman Athenian Lamp)" ;
@@ -43130,7 +43175,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:preserved-length 0.037 ;
 		kaaont:preserved-width 0.035 ;
 		kaaont:preservation-comment "One small fragment preserves small part of discus and shoulder and entire upper handle. Very slight, very sparse abrasion; moderate, extensive encrustation." ;
-		kaaont:fabric-description "Fabric: 5YR 7/4, pink. Dull, thin, even slip is a slight wash preserved in large patches—late phase glazed." .
+		kaaont:fabric-description "Fabric: 5YR 7/4, pink. Dull, thin, even slip is a slight wash preserved in large patches—late phase glazed." ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kl006 a kaaont:inventory-number ;
 		rdfs:label "KL006 (Late Roman Athenian Lamp)" ;
@@ -43473,9 +43519,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:kaa-note "Incorrectly identified in KTH 2016 inventory log." .
 	
 	kaakth:kth0644 a kaaont:inventory-number ;
-		rdfs:label "KTH 644" ;
+		rdfs:label "KTH0644 (Roman Amphora)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0644-MAH-16b.png" .
 	
 	kaakth:kth0645 a kaaont:inventory-number ;
@@ -43534,7 +43581,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:extant-part "rim" .
 	
 	kaakth:kth0652 a kaaont:inventory-number ;
-		rdfs:label "KTH 652" , "KTH0652 (Small Late Roman Amphora 2)" ;
+		rdfs:label "KTH0652 (Small Late Roman Amphora 2)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0653 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
@@ -43710,9 +43757,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0680-AGF-16.png" .
 	
 	kaakth:kth0681 a kaaont:inventory-number ;
-		rdfs:label "KTH 681" ;
+		rdfs:label "KTH0681 (Late Roman Amphora 1)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-lra-1 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0681-AGF-16.png" .
 	
 	kaakth:kth0682 a kaaont:inventory-number ;
@@ -43755,6 +43804,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaakth:kth0689 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-ars-hayes-50 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:rim-diameter 0.34 ;
 		kaaont:extant-part "Rim" .
 	
@@ -43934,9 +43984,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0717-AGF-16.png" .
 	
 	kaakth:kth0718 a kaaont:inventory-number ;
-		rdfs:label "KTH 718" ;
+		rdfs:label "KTH0718 (Late Roman Amphora 5)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-lra-5 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0718-AGF-16.png" .
 	
 	kaakth:kth0719 a kaaont:inventory-number ;
@@ -43946,9 +43998,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0719-AGF-16.png" .
 	
 	kaakth:kth0720 a kaaont:inventory-number ;
-		rdfs:label "KTH 720" ;
+		rdfs:label "KTH0720 (Late Roman/Early Byzantine Pitcher)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0720-AGF-16.png" .
 	
 	kaakth:kth0721 a kaaont:inventory-number ;
@@ -44277,21 +44330,24 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH0767-AGF-16.png" .
 	
 	kaakth:kth0768 a kaaont:inventory-number ;
-		rdfs:label "KTH 768" ;
+		rdfs:label "KTH0768 (Roman Amphora)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0768-AGF-16.png" .
 	
 	kaakth:kth0769 a kaaont:inventory-number ;
-		rdfs:label "KTH 769" ;
+		rdfs:label "KTH0769 (Roman Amphora)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0769-AGF-16.png" .
 	
 	kaakth:kth0770 a kaaont:inventory-number ;
-		rdfs:label "KTH 770" ;
+		rdfs:label "KTH0770 (Roman Amphora)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0770-AGF-16.png" .
 	
 	kaakth:kth0771 a kaaont:inventory-number ;
@@ -45014,7 +45070,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0869 a kaaont:inventory-number ;
-		rdfs:label "KTH 869" ;
+		rdfs:label "KTH0869 (Cooking Pot)" ;
 		kaaont:photograph "KTH0869-D16-001-Cf.png" , "KTH0869-D16-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0870 ;
@@ -45706,15 +45762,19 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0451 a kaaont:inventory-number ;
-		rdfs:label "KTH 451" ;
+		rdfs:label "KTH0451 (Late Roman Amphora 4)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-lra-4 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0451-AGF-16.png" .
 	
 	kaakth:kth0452 a kaaont:inventory-number ;
-		rdfs:label "KTH 452" ;
+		rdfs:label "KTH0452 (Late Roman Amphora 5)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-lra-5 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0452-AGF-16.png" .
 	
 	kaakth:kth0453 a kaaont:inventory-number ;
@@ -45746,12 +45806,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0457 a kaaont:inventory-number ;
-		rdfs:label "KTH0457 (Late Roman Amphora 5)" ;
+		rdfs:label "KTH0457 (Late Roman Jug?)" ;
 		kaaont:photograph "KTH0457-D16-001-Cf.png" , "KTH0457-D16-005-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0458 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:typological-identification kaatyp:p-lra-5 ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:rim-diameter 0.12 ;
 		kaaont:extant-part "Rim" ;
@@ -45889,9 +45948,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0570 a kaaont:inventory-number ;
-		rdfs:label "KTH 570" ;
+		rdfs:label "KTH0570 (Late Roman Jug?)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0570-AGF-16.png" .
 	
 	kaakth:kth0571 a kaaont:inventory-number ;
@@ -45932,9 +45992,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakth:inventoried-objects .
 	
 	kaakth:kth0575 a kaaont:inventory-number ;
-		rdfs:label "KTH 575" ;
+		rdfs:label "KTH0575 (Roman Amphora)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH0575-AGF-16.png" .
 	
 	kaakth:kth0576 a kaaont:inventory-number ;
@@ -46160,6 +46221,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-unclassified ;
 		kaaont:description "Wide, open reservoir contained by thick, flaring wall with flat upper surface and no rim. Glazed on interior and top but apparently not on exterior. This type typically had a pinched in and drawn out nozzle, a horizontal ribbon handle, and a flat base." ;
 		kaaont:typology-comment "Howland Type 4" , "Broneer Type I" ;
+		kaaont:drawing "KL007-JLR-16a.png" ;
 		kaaont:preserved-length 0.03 ;
 		kaaont:preservation-comment "One small fragment preserves less than one-quarter of rim and body. Moderate, extensive abrasion and pitting; thin, extensive encrustation." ;
 		kaaont:height-base-to-shoulder-preserved 0.016 ;
@@ -46402,7 +46464,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl022 a kaaont:inventory-number ;
 		rdfs:label "KL022 (Early/Middle Roman Corinthian Lamp)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KL022-D04-001-Cf.png" , "KL022-D04-001-Cf.png" ;
+		kaaont:photograph "KL022-D04-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
 		kaaont:description "Circular to oval, concave discus has central filling hole with set-back raised rim, ray motif, and wide framing ring. Broad shoulder has large ovules all around and stamped double circles flanking the nozzle. Kite-shaped, raised nozzle." ;
@@ -46458,7 +46520,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Early Roman Asia Minor" ;
 		kaaont:has-visual-motif kaatyp:visual-motif-mythological-animal ;
-		kaaont:drawing "KL025-composite.png" , "KL025-JLR-15a.png" ;
+		kaaont:drawing "KL025-JLR-15a.png" ;
 		kaaont:preserved-length 0.054 ;
 		kaaont:preserved-width 0.063 ;
 		kaaont:discus-diameter 0.047 ;
@@ -46503,7 +46565,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:description "Circular, slightly concave discus with framing ring. Narrow, slightly rounded, plain shoulder. Narrow, solid handle with two grooves attaches to framing ring." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Red-on-white (Ephesian)" ;
-		kaaont:drawing "KL028-composite.png" , "KL028-JLR-15a.png" ;
+		kaaont:drawing "KL028-JLR-15a.png" ;
 		kaaont:preserved-length 0.038 ;
 		kaaont:preserved-width 0.059 ;
 		kaaont:preservation-comment "One large fragment preserves small part of discus, one third of shoulder, and upper handle. Slight, somewhat extensive abrasion and pitting." ;
@@ -46513,7 +46575,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl029 a kaaont:inventory-number ;
 		rdfs:label "KL029 (Early Roman Corinthian Lamp)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KL029-D09-001-Cf.png" , "KL029-D09-001-Cf.png" ;
+		kaaont:photograph "KL029-D09-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
 		kaaont:description "Circular discus has central filling hole with raised rim, rosette with 12 concave petals, and broad framing ring. Shoulder has channel with panels passing over. Small, kite-shaped nozzle. Narrow, pierced handle extends to just above base, with small “x” just above base. Plain, flat base has circular groove enclosing incuse signature: ]Υ." ;
@@ -46554,20 +46616,20 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Broneer Type XXVII" ;
 		kaaont:base-diameter 0.036 ;
-		kaaont:drawing "KL031-composite.png" , "KL031-JLR-10.png" ;
+		kaaont:drawing "KL031-JLR-10.png" ;
 		kaaont:preserved-length 0.07 ;
 		kaaont:preserved-width 0.034 ;
 		kaaont:preservation-comment "Three joining fragments preserve almost all base and over one half of front wall. Slight, sparse abrasion and pitting; very sparse specks of encrustation." ;
 		kaaont:fabric-description "5YR 7/6, reddish yellow. Early/Middle Roman Corinthian fabric." .
 	
 	kaakcp:kl032 a kaaont:inventory-number ;
-		rdfs:label "KL032 (Early Roman Corinthian Lamp)" ;
+		rdfs:label "KL032 (Early Roman Corinthian Imitative Lamp)" ;
 		kaaont:photograph "kcp/inventoried-objects/photographs/KL032-D09-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-er-corinthian-imitation-italian ;
 		kaaont:description "Circular discus with raised rim and framing ring. Narrow shoulder. Volute nozzle." ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "KL032-composite.png" , "KL032-JLR-15a.png" ;
+		kaaont:drawing "KL032-JLR-15a.png" ;
 		kaaont:preserved-length 0.036 ;
 		kaaont:preserved-width 0.026 ;
 		kaaont:preservation-comment "One small fragment preserves less than one-quarter of shoulder and one side of nozzle. Slight to moderate, extensive abrasion and pitting." ;
@@ -46592,13 +46654,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl034 a kaaont:inventory-number ;
 		rdfs:label "KL034 (Middle Roman Athenian Lamp)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KL034-D05-001-Cf.png" , "KL034-D05-001-Cf.png" ;
+		kaaont:photograph "KL034-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:description "Circular, concave discus has large filling hole middle right, figural relief, and two rounded framing rings. Relief depicts of Athena Promachos facing left: visible outline of left shoulder, breastplate, and raised areas for brim and crest of helmet (but heavily worn in all areas). Slightly rounded shoulder has panels with branches crossing over double lines of globules separated by ridges. Somewhat narrow, raised, kite-shaped nozzle." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Athenian early unglazed" ;
 		kaaont:base-diameter 0.034 ;
-		kaaont:drawing "KL034-composite.png" , "KL034-JLR-15a.png" ;
+		kaaont:drawing "KL034-composite.png" ;
 		kaaont:preserved-length 0.082 ;
 		kaaont:width 0.093 ;
 		kaaont:preservation-comment "Six joining fragments preserve roughly one half of discus without middle and over three quarters of shoulder, nozzle, and base. Irregular, slight, sparse abrasion, flaking, compression fractures; slight traces of encrustation." ;
@@ -46608,7 +46670,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:kl035 a kaaont:inventory-number ;
 		rdfs:label "KL035 (Middle Roman Athenian Lamp)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KL035-D05-002-Cf.png" , "KL035-D05-002-Cf.png" ;
+		kaaont:photograph "KL035-D05-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:description "Circular discus has large filling hole left, small airhole near base of nozzle, figural relief, and narrow, rounded framing ring. Figures depicts erotic scene in which man stooped over with erect penis approaches back of stooped woman with exposed buttocks in heavy tunic and braided hair; columnar altar to lower right of man and child (or Eros?) with outstretched hands to lower left of woman, who touches head with right hand. Shoulder has panels crossing broad channel containing ten dot rosettes per side. Flat, narrow, kite-shaped nozzle with traces of burning." ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -46843,7 +46905,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaakcp:km018 a kaaont:inventory-number ;
 		rdfs:label "KM018 (Terracotta Figurine of Child with Animals)" ;
-		kaaont:photograph "kcp/inventoried-objects/photographs/KM018-D06-003-Cf.png" , "KM018-D06-006-Cf.png" ;
+		kaaont:photograph "KM018-D06-006-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:s-figurine ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -52663,6 +52725,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KTH1952-D16-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH1952-AGF-16.png" .
 	
 	kaakth:kth1953 a kaaont:inventory-number ;
@@ -52670,6 +52733,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KTH1953-D16-001-Cf.png" , "KTH1953-D16-002-Cf.png" , "KTH1953-D16-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH1953-composite.png" .
 	
 	kaakth:kth1954 a kaaont:inventory-number ;
@@ -52677,6 +52741,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KTH1954-D16-002-Cf.png" , "KTH1954-D16-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH1954-composite.png" .
 	
 	kaakth:kth1955 a kaaont:inventory-number ;
@@ -52685,20 +52750,22 @@ iebulbyulbyulbyulb""" .
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Imitation Syro-Cypriote circular lamp" ;
+		kaaont:typology-comment "Imitation Syro-Cypriote circular lamp" , "Broneer Type XXXII (Sicilian)" ;
 		kaaont:drawing "KTH1955-composite.png" .
 	
 	kaakth:kth1956 a kaaont:inventory-number ;
 		rdfs:label "KTH1956 (Lamp)" ;
 		kaaont:photograph "KTH1956-D16-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaakth:kth1957 a kaaont:inventory-number ;
 		rdfs:label "KTH1957 (Late Roman/Early Byzantine Regional Lamp)" ;
 		kaaont:photograph "KTH1957-D16-001-Cf.png" , "KTH1957-D16-002-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Late regional imitation Late Roman North African lamp" ;
 		kaaont:drawing "KTH1957-composite.png" .
 	
@@ -53567,17 +53634,17 @@ iebulbyulbyulbyulb""" .
 		kaaont:broader kaatyp:p-amphora .
 	
 	kaatyp:p-ars-hayes-50 a kaaont:typology-item ;
-		rdfs:label "African Red Slip Hayes form 50" ;
+		rdfs:label "African Red-Slip Hayes Form 50" ;
 		kaaont:broader kaatyp:p-ars .
 	
 	kaakcp:km013 a kaaont:inventory-number ;
-		rdfs:label "KM013 (Gold earrings)" ;
+		rdfs:label "KM013 (Gold Earrings with Glass Beads) " ;
 		kaaont:photograph "KM013-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:jewelry-earring ;
 		kaaont:description "Matching pair of gold earrings. Oval to circular wire ending in a small loop with wire wrapped around the loop. Wire pendant (L. 0.011 m) attached by loop with wire wrapped around top portion of pendant shaft. Small spherical bead in opaque, white glass hangs on pendant, secured by a small gold ball fastened to the end of the shaft." ;
 		kaaont:has-material kaatyp:gold ;
-		kaaont:drawing "KM013ab-AGF-07.png" ;
+		kaaont:drawing "KM013ab-AGF-07.png" , "KM013-on-backdrop.png" ;
 		kaaont:maximum-diameter 0.021 ;
 		kaaont:has-historical-period kaachron:early-roman , kaachron:middle-roman ;
 		kaaont:preservation-comment "Both loops intact in good condition;  bead of KM013a is chipped and bead of KM013b is missing." .
@@ -53614,20 +53681,24 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP054 (Beirut 3 amphora)" ;
 		kaaont:photograph "KP054-D06-001-Cf.png" , "KP054-D06-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP054-JLR-16b.png" .
 	
 	kaakcp:kp061 a kaaont:inventory-number ;
 		rdfs:label "KP061 (Small Stewpot)" ;
 		kaaont:photograph "KP061-D05-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP061-DMW-06.png" .
 	
 	kaakcp:kp033 a kaaont:inventory-number ;
 		rdfs:label "KP033 (Thin-Walled Ware Cup)" ;
+		kaaont:photograph "KP033-D04-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Italian urnetta a collarino?" .
+		kaaont:typology-comment "Italian urnetta a collarino?" ;
+		kaaont:drawing "KP033-JLR-16.png" .
 	
 	kaakcp:kl1988-003 a kaaont:inventory-number ;
 		rdfs:label "KL1988-003 (Early/Middle Roman Corinthian Lamp)" ;
@@ -53729,24 +53800,29 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KP085-DMW-06.png" .
 	
 	kaakth:kth0276 a kaaont:inventory-number ;
-		rdfs:label "KTH0276" ;
+		rdfs:label "KTH0276 (Marble Colonette)" ;
 		kaaont:photograph "KTH0276-D16-001-Cf.png" , "KTH0276-D16-002-Cf.png" , "KTH0276-D16-003-Cf.png" , "KTH0276-D16-006-Cf.png" ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaakth:kth0277 a kaaont:inventory-number ;
-		rdfs:label "KTH0277" ;
+		rdfs:label "KTH0277 (Marble Column Base)" ;
 		kaaont:photograph "KTH0277-D16-001-Cf.png" , "KTH0277-D16-004-Cf.png" , "KTH0277-D16-006-Cf.png" ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaakth:kth0278 a kaaont:inventory-number ;
-		rdfs:label "KTH0278" ;
+		rdfs:label "KTH0278 (Marble Impost Block with Cross)" ;
 		kaaont:photograph "KTH0278-D15-001-Cf.png" , "KTH0278-D15-002-Cf.png" ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:marble ;
+		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross .
 	
 	kaakth:kth0279 a kaaont:inventory-number ;
-		rdfs:label "KTH0279" ;
+		rdfs:label "KTH0279 (Marble Tray or Table-Top)" ;
 		kaaont:photograph "KTH0279-D16-001-Cf.png" ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke0039b kaaont:photograph "Ke0039b-L011-D13-001-Cf.png" .
 	
@@ -53797,18 +53873,18 @@ iebulbyulbyulbyulb""" .
 		kaaont:fabric-description "Fabric: 5YR 7/4, pink. Slip: 5YR 5/4, reddish brown. Thin, uneven, dull slip that is flakey." .
 	
 	kaakcp:kl1969-003 a kaaont:inventory-number ;
-		rdfs:label "KP 1969-003 (Early/Middle Roman Corinthian Lamp)" ;
+		rdfs:label "KL1969-003 (Early/Middle Roman Corinthian Lamp)" ;
 		kaaont:photograph "KL1969003-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
 		kaaont:description "Circular discus relief has filling hole off-center, figural relief, and flat framing ring. Relief depicts dog(?) striding left but looking back to missing figure in center. Collar and paws of animal show retouch. Shoulder has ovules." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Broneer Type XXVII C" ;
-		kaaont:drawing "KL1969003-composite.png" ;
+		kaaont:drawing "KL1969003-JLR-16a.png" ;
 		kaaont:preserved-length 0.027 ;
 		kaaont:preserved-width 0.021 ;
 		kaaont:preservation-comment "One small fragment preserves lower one quarter of discus and small part of shoulder. Slight, sparse scoring and gouging." ;
-		kaaont:fabric-description "Typical Early-Middle Roman Corinthian fabric. Small clay nodules in grooves and one large one over head of figure." , "Early/Middle Roman Corinthian fabric. Small clay nodules in grooves and one large one over head of figure." .
+		kaaont:fabric-description "Early/Middle Roman Corinthian fabric. Small clay nodules in grooves and one large one over head of figure." .
 	
 	kaakcp:kl1969-005 a kaaont:inventory-number ;
 		rdfs:label "KL1969-005 (Early Roman Asia Minor Lamp)" ;
@@ -53963,7 +54039,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:preservation-comment "Almost complete from eight joining fragments but missing small parts of wall and nozzle. Well preserved surface." ;
 		kaaont:height-shoulder-to-handle 0.014 ;
 		kaaont:height-base-to-handle 0.033 ;
-		kaaont:fabric-description "Orangish red to pale red. Typical Late Roman Athenian fabric." .
+		kaaont:fabric-description "Orangish red to pale red. Typical Late Roman Athenian fabric." ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kl1976-006 a kaaont:inventory-number ;
 		rdfs:label "KL1976-006 (Late Roman Athenian Lamp)" ;
@@ -54068,7 +54145,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:height-shoulder-to-handle 0.006 ;
 		kaaont:discus-length 0.049 ;
 		kaaont:discus-width 0.047 ;
-		kaaont:fabric-description "Late Roman Corinthian red fabric. Slight joining ridge and webbing." .
+		kaaont:fabric-description "Late Roman Corinthian red fabric. Slight joining ridge and webbing." ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kl1988-007 a kaaont:inventory-number ;
 		rdfs:label "KL1988-007 (Late Roman Corinthian Lamp)" ;
@@ -54151,7 +54229,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:preservation-comment "11 joining fragments preserve complete handle, most of shoulder and base, one third of discus, and small part of nozzle. Well preserved surface." ;
 		kaaont:height-base-to-shoulder 0.02 ;
 		kaaont:height-shoulder-to-handle 0.033 ;
-		kaaont:fabric-description "2.5Y 8/2, white. Fine, creamy white, chalky clay from Attica, on which see Agora VII, pp. 18-19 and Isthmia III, pp. 59-60 n. 41." .
+		kaaont:fabric-description "2.5Y 8/2, white. Fine, creamy white, chalky clay from Attica, on which see Agora VII, pp. 18-19 and Isthmia III, pp. 59-60 n. 41." ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kl1989-006 a kaaont:inventory-number ;
 		rdfs:label "KL1989-006 (Hellenistic Corinthian Miniature Lamp)" ;
@@ -54190,7 +54269,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:description "Circular outline. Circular discus has wide, flate framing ring. Wide shoulder has ovules and “ear” in shape of arching band with volutes at transition to side; horizontal orientation to body." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Red-on-White" ;
-		kaaont:drawing "KL1989008 composite.png" ;
+		kaaont:drawing "KL1989008-JLR-15a.png" ;
 		kaaont:preservation-comment "One small fragment preserves less than one quarter of shoulder. Slight, sparse abrasion and pitting." ;
 		kaaont:estimated-width 0.088 ;
 		kaaont:maximum-preserved-dimension 0.043 ;
@@ -54205,8 +54284,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:description "Circular, flat base with single circular groove around signature in relief: AΓ (monogram)." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Broneer Type XXVII, start of series?" ;
-		kaaont:writing-transcription "AΓ" ;
-		kaaont:drawing "KL1989009 composite.png" ;
+		kaaont:drawing "KL1989009-JLR-10.png" ;
 		kaaont:preserved-length 0.042 ;
 		kaaont:preserved-width 0.047 ;
 		kaaont:preservation-comment "One small fragment preserves two thirds of base and small part of wall. Well preserved surface but very slight abrasion." ;
@@ -54219,8 +54297,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:description "Circular, flat base has single groove around incuse signature ]ΑΝΙ|[ (circular impression in second line is perhaps a stamped circle). Probably should read RΩΜ]ΑΝΙ|[SΙS (mixed Greek and Latin, with retrograde esses)." ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:writing-transcription "RΩΜ]ΑΝΙ|[SΙS " ;
-		kaaont:drawing "KL1989010 composite.png" ;
+		kaaont:drawing "KL1989010-JLR-10.png" ;
 		kaaont:preserved-length 0.032 ;
 		kaaont:preservation-comment "One large fragment preserves roughly one-half of base. Well preserved surface." ;
 		kaaont:base-diameter-estimated 0.033 ;
@@ -54234,7 +54311,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:preserved-height 0.022 ;
 		kaaont:has-visual-motif kaatyp:visual-motif-deity ;
-		kaaont:drawing "KL1989011 composite.png" ;
+		kaaont:drawing "KL1989011-JLR-15a.png" ;
 		kaaont:preserved-length 0.057 ;
 		kaaont:preserved-width 0.051 ;
 		kaaont:preservation-comment "One large fragment preserves two thirds of discus, one quarter of shoulder, and base of nozzle. Slight, sparse abrasion." ;
@@ -54311,7 +54388,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:preserved-height 0.028 ;
 		kaaont:typology-comment "Athenian alpha-globule" , "Broneer Type XX" ;
-		kaaont:drawing "KL1990001 composite.png" ;
+		kaaont:drawing "KL1990001-JLR-15a.png" ;
 		kaaont:preserved-length 0.065 ;
 		kaaont:preservation-comment "One large fragment preserves small part of discus and nozzle and roughly one half of shoulder. Well preserved surface but slightly flaking." ;
 		kaaont:estimated-width 0.08 ;
@@ -54451,21 +54528,22 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KM1969-017 (Molten Glass Fragments)" ;
 		kaaont:photograph "KM1969017-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl ;
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass ;
 		kaaont:typology-comment "Tubular unguentarium?" .
 	
 	kaakcp:km1969-021 a kaaont:inventory-number ;
 		rdfs:label "KM1969-021 (Glass Unguentarium)" ;
 		kaaont:photograph "KM1969021-D09-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl ;
+		kaaont:has-material kaatyp:glass ;
 		kaaont:typology-comment "Tubular unguentarium" .
 	
 	kaakcp:km1969-022 a kaaont:inventory-number ;
 		rdfs:label "KM1969-022 (Glass Rod)" ;
 		kaaont:photograph "KM1969022-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1969-023 a kaaont:inventory-number ;
 		rdfs:label "KM1969-023 (Bronze Pin)" ;
@@ -54507,37 +54585,43 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KM1988-002 (Glass Cup or Bowl)" ;
 		kaaont:photograph "KM1988002-D08-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-001 a kaaont:inventory-number ;
 		rdfs:label "KM1989-001 (Glass Bowl)" ;
 		kaaont:photograph "KM1989001-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-002 a kaaont:inventory-number ;
 		rdfs:label "KM1989-002 (Glass Vessel)" ;
 		kaaont:photograph "KM1989002-D06-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-003 a kaaont:inventory-number ;
 		rdfs:label "KM1989-003 (Glass Unguentarium)" ;
 		kaaont:photograph "KM1989003-D06-002-Cf.png" , "KM1989003-D06-003-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-005 a kaaont:inventory-number ;
 		rdfs:label "KM1989-005 (Glass Bottle)" ;
 		kaaont:photograph "KM1989005-D06-002-Cf.png" , "KM1989005-D06-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-006 a kaaont:inventory-number ;
 		rdfs:label "KM1989-006 (Glass Stemmed Bowl or Kantharos)" ;
 		kaaont:photograph "KM1989006-D06-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1989-008 a kaaont:inventory-number ;
 		rdfs:label "KM1989-008 (Brazier)" ;
@@ -54555,7 +54639,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KM1990-001 (Early Roman Glass Unguentarium)" ;
 		kaaont:photograph "KM1990001-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:gl .
+		kaaont:typological-identification kaatyp:gl ;
+		kaaont:has-material kaatyp:glass .
 	
 	kaakcp:km1990-002 a kaaont:inventory-number ;
 		rdfs:label "KM1990-002 (Bronze Hasp)" ;
@@ -54588,20 +54673,20 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:rim-diameter 0.153 ;
 		kaaont:base-diameter 0.262 ;
-		kaaont:drawing "KP1956003-DMW-06.png" ;
+		kaaont:drawing "KP1956003-DMW-06b.png" ;
 		kaaont:preservation-comment "28 variously joining fragments preserve over three quarters of vessel. Roughly one third of body and rim restored with white plaster. Moderate to heavy, extensive abrasion and slight, extensive pitting and scoring; large, moderate patches of encrustation around base." ;
 		kaaont:fabric-description "Fabric: 5YR 7/4, pink. Hard, fine Corinthian buff fabric; cf. KP1956-004, Corinthian transitional and early Broneer Type XXVII lamps. Dull, thin, uneven, somewhat flakey, faded paint in mostly dense brushstrokes, preserved only in scattered patches." .
 	
 	kaakcp:kp1956-004 a kaaont:inventory-number ;
 		rdfs:label "KP1956-004 (Early Roman Cinerary Urn)" ;
+		kaaont:photograph "KP1956004a-D06-001-Cf.png" , "KP1956004b-D06-001-Cf.png" , "KP1956004c-D06-001-Cf.png" , "KP1956004c-D06-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:file "KP1956004a-D06-001-Cf.png" , "KP1956004b-D06-001-Cf.png" , "KP1956004c-D06-001-Cf.png" , "KP1956004c-D06-004-Cf.png" ;
 		kaaont:height 0.285 ;
 		kaaont:description "Flat base marked by raised band forming low pedestal. Tall, cylindrical body that widens slightly. Somewhat narrow, irregular, horizontal flange with impressed piecrust decoration at 0.036 m below rim. Vertical, straight rim with sharp lip that slopes downward on interior. Sharp, horizontaly groove incised on outside of pedestal. Two wide, wavey lines with close peaks inscribed horizontally by finger around body at midpoint and at ca. 0.05 m below flange. Two wide grooves incised by finger around top surface of flange. Horizontal, spined, strap handle attached at midpoint of body over lower wavey groove. Seven horizontal zones of painted decoration extending from roughly 0.036 m above base up to lip: 1) intermittent row of angular, vertical, overlapping figures, perhaps large hatching and/or festoons, in black, red, or brown; 2) one tall, straight, solid band in black, red, or brown, just below and not overlapping lower wavey-line groove; 3) one row of very tall, thick loops hanging unevenly and obliquely from narrow peaks in black, red, or brown; 4) one somewhat tall, straight, solid band in black; 5) one row of thick, sideways chevrons in black or brown just below flange; 6) one somewhat tall, uneven, solid band in black or brown; 7) one short, even, solid band in black or brown just below lip." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:rim-diameter 0.232 ;
 		kaaont:base-diameter 0.238 ;
-		kaaont:drawing "KP1956004-DMW-06.png" ;
+		kaaont:drawing "KP1956004-DMWJLR-0616b.png" ;
 		kaaont:preservation-comment "23 variously joining fragments preserve almost complete base, roughly one third of body, and over three quarters of rim. Roughly one-quarter to one-third of body restored with white plaster. Moderate to heavy, extensive abrasion and slight, extensive pitting and scoring; large, moderate patches of encrustation around base." ;
 		kaaont:fabric-description "Fabric: 7.5YR 8/4, pink. Hard, fine Corinthian buff fabric but somewhat gritty; cf. KP1956-003, Corinthian transitional and early Broneer Type XXVII lamps. Dull, thin, uneven, somewhat flakey, faded paint in light brushstrokes, preserved in large patches. Slight horizontal scoring around body from knife-trimming." .
 	
@@ -54731,6 +54816,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1969-005 (Pontic Sigillata Zhuravlev Form 24)" ;
 		kaaont:photograph "KP1969005B-D05-002-Cf.png" , "KP1969005B-D05-003-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:sig-pontic ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1969005-AGF-12.png" .
 	
@@ -54794,7 +54880,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:subject-number "KE 2347" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "KP1969013-DMW-07b.png" .
+		kaaont:drawing "KP1969013-DMWJLR-0716b.png" .
 	
 	kaakcp:kp1969-014 a kaaont:inventory-number ;
 		rdfs:label "KP1969-014 (Early Roman Cinerary Urn Lid)" ;
@@ -54802,7 +54888,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:subject-number "KE 2350, P 792" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "KP1969014-DMW-07a.png" , "KP1969014-DMW-07b.png" .
+		kaaont:drawing "KP1969014-DMW-07a.png" .
 	
 	kaakcp:kp1969-015 a kaaont:inventory-number ;
 		rdfs:label "KP1969-015 (Unguentarium)" ;
@@ -54832,7 +54918,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KP1976002-D11-001-Cf.png" , "KP1976002-D11-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-athenian-gouged-jug ;
-		kaaont:drawing "KP1976002-AGF-12.png" .
+		kaaont:drawing "KP1976002-AGF-12.png" ;
+		kaaont:has-geographic-origin kaa:attica .
 	
 	kaakcp:kp1976-003 a kaaont:inventory-number ;
 		rdfs:label "KP1976-003 (Early/Middle Roman Trefoil Pitcher)" ;
@@ -54861,7 +54948,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-athenian-gouged-jug ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "KP1976006-AGF-12.png" .
+		kaaont:drawing "KP1976006-AGF-12b.png" .
 	
 	kaakcp:kp1976-007 a kaaont:inventory-number ;
 		rdfs:label "KP1976-007 (Athenian Gouged Ware Jug)" ;
@@ -54869,7 +54956,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-athenian-gouged-jug ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:drawing "KP1976007-AGF-12.png" .
+		kaaont:drawing "KP1976007-AGF-12b.png" .
 	
 	kaakcp:kp1976-008 a kaaont:inventory-number ;
 		rdfs:label "KP1976-008 (Mug)" ;
@@ -54898,6 +54985,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1976-011 (Pontic Sigillata Form 1)" ;
 		kaaont:photograph "KP1976011-D12-002-Cf.png" , "KP1976011-D12-003-Cf.png" , "KP1976011-D12-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:sig-pontic ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1976011-AGF-12.png" .
 	
@@ -54905,6 +54993,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1976-012 (Early Roman Piriform Unguentarium)" ;
 		kaaont:photograph "KP1976012-D13-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-unguentarium ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1976012-AGF-16.png" .
 	
@@ -54912,6 +55001,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1976-013 (Early Roman Bulbous Unguentarium)" ;
 		kaaont:photograph "KP1976013-D13-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:model kaatyp:p-unguentarium ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1976013-AGF-16.png" .
 	
@@ -54919,6 +55009,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1976-014 (Early Roman Bulbous Unguentarium)" ;
 		kaaont:photograph "KP1976014-D13-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-unguentarium ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1976014-AGF-16.png" .
 	
@@ -54926,6 +55017,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1976-015 (Early Roman Bulbous Unguentarium)" ;
 		kaaont:photograph "KP1976015-D13-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-unguentarium ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1976015-AGF-16.png" .
 	
@@ -54942,7 +55034,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KP1988003-D06-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-amphora-unclassified ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP1988003-JLR-16.png" .
 	
 	kaakcp:kp1988-004 a kaaont:inventory-number ;
 		rdfs:label "KP1988-004 (Micaceous Water Jar)" ;
@@ -54970,7 +55063,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KP1988008-D05-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-esc-hayes-2 ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP1988008-JLR-16.png" .
 	
 	kaakcp:kp1988-009 a kaaont:inventory-number ;
 		rdfs:label "KP1988-009 (Late Roman Amphora 3)" ;
@@ -55047,6 +55141,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KP1989009-D05-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-mra-4 ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1989009-AGF-09b.png" .
 	
 	kaakcp:kp1989-010 a kaaont:inventory-number ;
@@ -55284,6 +55379,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1989-041 (Early Roman Piriform Unguentarium)" ;
 		kaaont:photograph "KP1989041-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-unguentarium ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KP1989041-AGF-12.png" .
 	
@@ -55345,7 +55441,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KP1990006-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP1990006-JLR-16.png" .
 	
 	kaakcp:kp1990-008 a kaaont:inventory-number ;
 		rdfs:label "KP1990-008 (Deep Globular Stewpot)" ;
@@ -55406,7 +55503,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KP1990-015 (Thin-Walled Ware Cup)" ;
 		kaaont:photograph "KP1990015-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP1990015-JLR-16.png" .
 	
 	kaakcp:kp1990-016 a kaaont:inventory-number ;
 		rdfs:label "KP1990-016 (Thin-Walled Ware Cup)" ;
@@ -55553,72 +55651,252 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KL1976008-composite.png" .
 	
 	kaakcp:km1976-002 a kaaont:inventory-number ;
-		rdfs:label "KM1976-002" ;
-		kaaont:photograph "KM1976002-D16-001-CWf.png" , "KM1976002-D16-002-CWf.png" , "KM1976002-D16-003-CWf.png" ;
+		rdfs:label "KM1976-002 (Bronze Spatula)" ;
+		kaaont:photograph "KM1976002-D16-004-CWf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:bronze ;
 		kaaont:drawing "KM1976002-AGF-16.png" .
 	
 	kaakth:kth0055 a kaaont:inventory-number ;
-		rdfs:label "KTH0055" ;
+		rdfs:label "KTH0055 (Amphora Base)" ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:drawing "KTH0055-AGF-16.png" .
 	
 	kaakcp:ka002 a kaaont:inventory-number ;
-		rdfs:label "KA002" ;
+		rdfs:label "KA002 (Roman Marble Molding)" ;
 		kaaont:photograph "KA002-D03-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:marble ;
 		kaaont:drawing "KA002-DMW-08.png" .
 	
 	kaakcp:ki001 a kaaont:inventory-number ;
-		rdfs:label "KI001" ;
+		rdfs:label "KI001 (Late Roman Greek Inscription: epitaph?)" ;
 		kaaont:photograph "KI001-D06-001-Cf.png" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaakcp:ki002 a kaaont:inventory-number ;
-		rdfs:label "KI002" ;
+		rdfs:label "KI002 (Byzantine Graffito: Christian prayer)" ;
 		kaaont:photograph "KI002-D04-003-Cf.png" , "KI002-D08-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:drawing "KI002-FMJLR-0415.png" .
 	
 	kaakcp:kl100 a kaaont:inventory-number ;
-		rdfs:label "KL100" ;
+		rdfs:label "KL100 (Early/Middle Roman Corinthian Lamp)" ;
+		kaaont:photograph "KL100-D08-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Broneer Type XXVII C" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-deity ;
 		kaaont:drawing "KL100-composite.png" .
 	
 	kaakcp:kl143 a kaaont:inventory-number ;
-		rdfs:label "KL143" ;
+		rdfs:label "KL143 (Early/Middle Roman Corinthian Lamp)" ;
 		kaaont:photograph "KL143-D13-001-Cf.png" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KL143-JLR-13.png" .
 	
 	kaakcp:kl1969-004 a kaaont:inventory-number ;
-		rdfs:label "KL1969-004" ;
+		rdfs:label "KL1969-004 (Early/Middle Roman Corinthian Lamp)" ;
 		kaaont:photograph "KL1969004-D05-001-Cf.png" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KL1969004-JLR-10.png" .
 	
 	kaakcp:kl198 a kaaont:inventory-number ;
-		rdfs:label "KL198" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		rdfs:label "KL1989" ;
 		kaaont:drawing "KL1989008-JLR-15a.png" , "KL1989009-JLR-10.png" , "KL1989010-JLR-10.png" , "KL1989011-JLR-15a.png" .
 	
 	kaakcp:kl199 a kaaont:inventory-number ;
-		rdfs:label "KL199" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		rdfs:label "KL1990001" ;
 		kaaont:drawing "KL1990001-JLR-15a.png" .
 	
 	kaakcp:km003 a kaaont:inventory-number ;
-		rdfs:label "KM003" ;
+		rdfs:label "KM003 (Cooking Strut)" ;
 		kaaont:photograph "KM003-D04-001-Cf.png" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaakcp:km017 a kaaont:inventory-number ;
-		rdfs:label "KM017" ;
+		rdfs:label "KM017 (Early/Middle Roman Knidian Thymiaterion-Lampstand)" ;
 		kaaont:photograph "KM017-D05-001-Cf.png" , "KM017-D05-002-Cf.png" , "KM017-D05-003-Cf.png" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects .
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaakcp:kp198 a kaaont:inventory-number ;
-		rdfs:label "KP198" ;
-		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		rdfs:label "KP1989035" ;
 		kaaont:drawing "KP1989035-DMWJLR-0616.png" .
+	
+	kaakcp:ki1988-001 a kaaont:inventory-number ;
+		rdfs:label "KL1988-001 (Early Roman Latin Epitaph)" ;
+		kaaont:photograph "KI1988001-D05-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:marble .
+	
+	kaakcp:kl097 a kaaont:inventory-number ;
+		rdfs:label "KL097 (Early Roman Asia Minor Lamp)" ;
+		kaaont:photograph "KL097-D09-001-Cf.png" , "KL097-D09-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Knidian" ;
+		kaaont:drawing "KL097-composite.png" .
+	
+	kaakcp:kl098 a kaaont:inventory-number ;
+		rdfs:label "KL098 (Early Roman Asia Minor Lamp)" ;
+		kaaont:photograph "KL098-D07-001-Cf.png" , "KL098-D07-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "ROW" .
+	
+	kaakcp:kl099 a kaaont:inventory-number ;
+		rdfs:label "KL099 (Early Roman Corinthian Imitation Asia Minor[?] Lamp)" ;
+		kaaont:photograph "KL099-D07-001-Cf.png" , "KL099-D07-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-ermr-corinthian-imitation-asia-minor ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KL099-composite.png" .
+	
+	kaakcp:kl101 a kaaont:inventory-number ;
+		rdfs:label "KL101 (Early/Middle Roman Corinthian Lamp)" ;
+		kaaont:photograph "KL101-D08-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:has-visual-motif kaatyp:visual-motif-deity ;
+		kaaont:drawing "KL101-composite.png" .
+	
+	kaakcp:kl140 a kaaont:inventory-number ;
+		rdfs:label "KL140 (Early Roman Asia Minor Lamp)" ;
+		kaaont:photograph "KL140-D13-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "ROW" ;
+		kaaont:drawing "KL140-JLR-15a.png" .
+	
+	kaakcp:kl141 a kaaont:inventory-number ;
+		rdfs:label "KL141 (Early Roman Asia Minor Lamp)" ;
+		kaaont:photograph "KL141-D13-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material .
+	
+	kaakcp:kl142 a kaaont:inventory-number ;
+		rdfs:label "KL142 (Early/Middle Roman Corinthian Lamp)" ;
+		kaaont:photograph "KL142-D13-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii ;
+		kaaont:has-material kaatyp:ceramic-material .
+	
+	kaakcp:kp001 a kaaont:inventory-number ;
+		rdfs:label "KP001 (ESC Hayes Form 3)" ;
+		kaaont:photograph "KP001-D04-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-esc-hayes-3 ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP001-AGF-07.png" .
+	
+	kaakcp:kp002 a kaaont:inventory-number ;
+		rdfs:label "KP002 (Late Hellenistic-Early Roman Small Bowl)" ;
+		kaaont:photograph "KP002-D04-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP002-DMW-08.png" .
+	
+	kaakcp:kp008 a kaaont:inventory-number ;
+		rdfs:label "KP008 (Early Roman Casserole)" ;
+		kaaont:photograph "KP008-D09-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
+		kaaont:has-material kaatyp:ceramic-material .
+	
+	kaakcp:kp016 a kaaont:inventory-number ;
+		rdfs:label "KP016 (Early Roman Wide-Mouth Pitcher)" ;
+		kaaont:photograph "KP016-D08-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP016-AGF-07.png" .
+	
+	kaakcp:kp017 a kaaont:inventory-number ;
+		rdfs:label "KP017 (Late Roman/Early Byzantine Squat Pitcher)" ;
+		kaaont:photograph "KP017-D06-001-Cf.png" , "KP017-D06-002-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP017-AGF-12.png" .
+	
+	kaakcp:kp032 a kaaont:inventory-number ;
+		rdfs:label "KP032 (Early Roman Casserole)" ;
+		kaaont:photograph "KP032-D04-001-Cf.png" ;
+		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KP032-JLR-16.png" .
+	
+	kaatyp:sig-pontic a kaaont:typology-item ;
+		rdfs:label "Pontic Sigillata" ;
+		kaaont:broader kaatyp:p-slipped-fw .
+	
+	kaatyp:sig-cypriot a kaaont:typology-item ;
+		rdfs:label "Cypriot Sigillata" ;
+		kaaont:broader kaatyp:p-slipped-fw .
+	
+	kaatyp:sig-cypriot-hayes-1 a kaaont:typology-item ;
+		rdfs:label "Cypriot Sigillata Hayes form 1" ;
+		kaaont:broader kaatyp:sig-cypriot .
+	
+	kaatyp:sig-cypriot-hayes-8 a kaaont:typology-item ;
+		rdfs:label "Cypriot Sigillata Hayes form 8" ;
+		kaaont:broader kaatyp:sig-cypriot .
+	
+	kaatyp:sig-cypriot-hayes-17 a kaaont:typology-item ;
+		rdfs:label "Cypriot Sigillata Hayes form 17" ;
+		kaaont:broader kaatyp:sig-cypriot .
+	
+	kaatyp:sig-cypriot-hayes-21 a kaaont:typology-item ;
+		rdfs:label "Cypriot Sigillata Hayes form 21" ;
+		kaaont:broader kaatyp:sig-cypriot .
+	
+	kaatyp:glass a kaaont:typology-item ;
+		rdfs:label "Glass (Material)" ;
+		kaaont:broader kaatyp:material ;
+		kaaont:comment "Used to indicate the material an object consists of. Distinct from the 'gl' abbrviation under typology, which is used to identify a category of small find, often a vessel." .
+	
+	kaatyp:iron a kaaont:typology-item ;
+		rdfs:seeAlso <http://nomisma.org/id/fe> ;
+		rdfs:label "Iron (Material)" ;
+		kaaont:broader kaatyp:material .
+	
+	kaatyp:nail a kaaont:typology-item ;
+		rdfs:label "Nail" ;
+		kaaont:broader kaatyp:generic .
+	
+	kaatyp:buckle a kaaont:typology-item ;
+		rdfs:label "Buckle" ;
+		kaaont:broader kaatyp:generic .
+	
+	kaa:geographic-entities a kaaont:collection-of-related-entities ;
+		rdfs:label "Geographic Entities" ;
+		kaaont:is-logical-part-of <http://kenchreai.org/kaa> ;
+		kaaont:description "Identifiers for geographic entities, including regions and sites." .
+	
+	kaa:greece a kaaont:geographic-entity ;
+		rdfs:label "Greece" ;
+		kaaont:is-logical-part-of kaa:geographic-entities .
+	
+	kaa:attica a kaaont:geographic-entity ;
+		rdfs:seeAlso <https://pleiades.stoa.org/places/579888> ;
+		rdfs:label "Attica" ;
+		kaaont:is-logical-part-of kaa:greece .
+	
+	kaa:corinthia a kaaont:geographic-entity ;
+		rdfs:label "Corinthia" ;
+		kaaont:is-logical-part-of kaa:greece .
+	
+	kaa:argolid a kaaont:geographic-entity ;
+		rdfs:label "Argolid" ;
+		kaaont:is-logical-part-of kaa:greece .
 }
 
 <urn:kenchreai:schema> {
@@ -56226,4 +56504,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:comment "Person contributing to the content within the Kenchreai Archaeological Archive." , "Plain text acknowledgement of individuals or other entities contributing to content within the Kenchreai Archaeological Archive." ;
 		rdfs:label "Contributor" ;
 		rdfs:range xsd:string .
+	
+	kaaont:geographic-entity a owl:Class ;
+		rdfs:label "Geographic Entity" .
 }
