@@ -234,7 +234,8 @@
 	kaatyp:p-esa a kaaont:typology-item ;
 		rdfs:seeAlso <http://classics.uc.edu/troy/grbpottery/html/esa.html> ;
 		rdfs:label "Eastern Sigillata A" ;
-		kaaont:broader kaatyp:p-slipped-fw .
+		kaaont:broader kaatyp:p-slipped-fw ;
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	<http://purl.org/dc/terms/creator> rdfs:label "Author or Editor" .
 	
@@ -282,7 +283,6 @@
 		rdfs:seeAlso <http://pleiades.stoa.org/places/570347> ;
 		rdfs:comment "This is the base entity for real-world locations within Kenchreai and for physical objects from Kenchreai. This is distinct from the organization of records, which will appear in the kaa: hierarchy." ;
 		rdfs:label "The Archaeological Site of Kenchreai in Greece" ;
-		kaaont:broader kaa:corinthia ;
 		<http://www.w3.org/2003/01/geo/wgs84_pos#lat> 3.7885E1 ;
 		<http://www.w3.org/2003/01/geo/wgs84_pos#long> 2.29875E1 ;
 		kaaont:drawing "plans/harbor-plan.png" , "plans/harbor-reconstruction.png" .
@@ -3307,7 +3307,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1983 a kaaont:inventory-number ;
 		rdfs:label "KE 1983 (Circular Porphyry Plaque, Opus Sectile)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0847.png" ;
+		kaaont:photograph "Ar0105-Ke1983-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1984 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1983-1986.PDF" ;
@@ -3317,7 +3317,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1984 a kaaont:inventory-number ;
 		rdfs:label "KE 1984 (Triangular Porphyry Plaques, Opus Sectile)" ;
-		kaaont:photograph <photography/2011_inventory_photos/IMG_0859.png> , <photography/2011_inventory_photos/IMG_0854.png> ;
+		kaaont:photograph <photography/2011_inventory_photos/IMG_0859.png> , <photography/2011_inventory_photos/IMG_0854.png> , "Ar0106a-Ke1984-D11-001-Cf.png" , "Ke1984-Ar0106b-D11-001-Cf.png" , "Ke1984-Ar0106f-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1985 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar ;
@@ -3330,6 +3330,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1985 a kaaont:inventory-number ;
 		rdfs:label "KE 1985 (Porphyry polishing stone)" ;
+		kaaont:photograph "Ke1985-Ar0107-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1986 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Ar 107" ;
@@ -3337,7 +3338,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1986 a kaaont:inventory-number ;
 		rdfs:label "KE 1986 (Circular Porphyry Disks, Opus Sectile)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0848.png" ;
+		kaaont:photograph "Ke1986-Ar0108-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1987 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1983-1986.PDF" ;
@@ -3346,10 +3347,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:stone .
 	
 	kaake:ke1793 a kaaont:inventory-number ;
-		rdfs:label "KE 1793 (Metal Object)" ;
+		rdfs:label "KE 1793 (Bronze wire: earring?)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2162.png" ;
 		kaaont:next kaake:ke1794 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1793-1800.PDF" , "photography/2011_inventory_photos/IMG_2162.png" .
+		kaaont:file "pagescans/inventory/1793-1800.PDF" ;
+		kaaont:typological-identification kaatyp:jewelry-bracelet ;
+		kaaont:subject-number "Mi 471" ;
+		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1794 a kaaont:inventory-number ;
 		rdfs:label "KE 1794 (Early Roman Italian Lamp)" ;
@@ -3883,6 +3888,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1947 a kaaont:inventory-number ;
 		rdfs:label "KE 1947 (Palmette Antefix)" ;
+		kaaont:photograph "Ar0100-Ke1947-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1948 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar-terracotta-antefix ;
@@ -4300,7 +4306,9 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1189 (Bronze Ring)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2002.png" ;
 		kaaont:next kaake:ke1190 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 302" ;
+		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke2330 a kaaont:inventory-number ;
 		rdfs:label "KE 2330 (Vertical Rim Stewpot)" ;
@@ -5005,10 +5013,11 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0247 a kaaont:inventory-number ;
 		rdfs:label "KE 247 (Amphora with dipinto)" ;
+		kaaont:photograph "P0048-Ke0249-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0248 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/242-247.PDF" ;
-		kaaont:subject-number "P 0048" ;
+		kaaont:subject-number "P 48" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0248 a kaaont:inventory-number ;
@@ -5407,7 +5416,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1943 (Iron Blade)" ;
 		kaaont:next kaake:ke1944 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:subject-number "Mi 528" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1944 a kaaont:inventory-number ;
 		rdfs:label "KE 1944 (Early Roman[?] Gray Ware Cup)" ;
@@ -5482,7 +5492,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry ;
 		kaaont:subject-number "Mi 398" ;
-		kaaont:has-material kaatyp:gold .
+		kaaont:has-material kaatyp:silver , kaatyp:gold .
 	
 	kaake:ke1562 a kaaont:inventory-number ;
 		rdfs:label "KE 1562 (Moldmade Glass Bowl)" ;
@@ -5782,7 +5792,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0212 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/211-215.PDF" ;
-		kaaont:subject-number "Mi 0055" .
+		kaaont:subject-number "Mi 55" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-a-v-154 a kaaont:notebook-page ;
 		rdfs:label "Notebook 1964 Area A V, Page 154" ;
@@ -5810,10 +5821,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0018 a kaaont:inventory-number ;
 		rdfs:label "KE 18 (Classical Ribbed Kantharos)" ;
+		kaaont:photograph "Ke0018-P0011-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0019 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/18-23.PDF" , "photography/2011_inventory_photos/IMG_2748.png" ;
-		kaaont:subject-number "P 11" .
+		kaaont:file "pagescans/inventory/18-23.PDF" ;
+		kaaont:typological-identification kaatyp:p-unclassified ;
+		kaaont:subject-number "P 11" ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0019 a kaaont:inventory-number ;
 		rdfs:label "KE 19 (African Red Slip Hayes Form 104)" ;
@@ -6017,6 +6031,7 @@ iebulbyulbyulbyulb""" .
 	kaake:ke0810 a kaaont:inventory-number ;
 		rdfs:label "KE 810 (Early Roman Greek Epitaph)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1100.png" ;
+		kaaont:comment "IG IV 207; Roman Peloponnese I, no. COR 273-274" ;
 		kaaont:next kaake:ke0811 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
@@ -6026,6 +6041,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0811 a kaaont:inventory-number ;
 		rdfs:label "KE 811 (Greek Inscription)" ;
+		kaaont:comment "Kenchreai I, pp. 72-73" ;
 		kaaont:next kaake:ke0812 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
@@ -6198,7 +6214,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0430 a kaaont:inventory-number ;
 		rdfs:label "KE 430 (Eastern Sigillata B Cup)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_2843.png" ;
+		kaaont:photograph "Ke0430-P0100-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0431 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-esb ;
@@ -6324,16 +6340,19 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0240 a kaaont:inventory-number ;
 		rdfs:label "KE 240 (Early Roman Situla)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_2270.png" ;
+		kaaont:photograph "P0041-Ke0240-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0241 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "P 41" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0241 a kaaont:inventory-number ;
 		rdfs:label "KE 241 (Early Roman Situla)" ;
+		kaaont:photograph "P0042-Ke0241-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0242 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/237-241.PDF" , "photography/2011_inventory_photos/IMG_2264.png" ;
+		kaaont:file "pagescans/inventory/237-241.PDF" ;
+		kaaont:subject-number "P 42" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0242 a kaaont:inventory-number ;
@@ -7078,7 +7097,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0016 a kaaont:inventory-number ;
 		rdfs:label "KE 16 (Macedonian Terra Sigillata Grise Bowl)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1733.png" ;
+		kaaont:photograph "Ke0016-P0009-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0017 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-unclassified ;
@@ -7415,9 +7434,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1662 a kaaont:inventory-number ;
 		rdfs:label "KE 1662 (Bronze Needle)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2129.png" ;
 		kaaont:next kaake:ke1663 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1655-1662.PDF" , "photography/2011_inventory_photos/IMG_2129.png" ;
+		kaaont:file "pagescans/inventory/1655-1662.PDF" ;
 		kaaont:subject-number "Mi 427" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -7683,6 +7703,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1091 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 277" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1091 a kaaont:inventory-number ;
@@ -7691,6 +7712,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1092 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 278" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1092 a kaaont:inventory-number ;
@@ -7699,6 +7721,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1093 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 279" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke2233 a kaaont:inventory-number ;
@@ -7995,7 +8018,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1694 (Plaster Molding)" ;
 		kaaont:next kaake:ke1695 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 448" .
+		kaaont:subject-number "Mi 448" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0908 a kaaont:inventory-number ;
 		rdfs:label "KE 908 (Bronze Netting Needle)" ;
@@ -8197,7 +8221,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:worked-bone .
 	
 	kaake:ke0340 a kaaont:inventory-number ;
-		rdfs:label "KE 340 (Vessel)" ;
+		rdfs:label "KE 340 (Roman small stewpot)" ;
+		kaaont:photograph "P0065-Ke0340-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0341 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/332-340.PDF" ;
@@ -8205,7 +8230,6 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0341 a kaaont:inventory-number ;
 		rdfs:label "KE 341 (Roman Small Stewpot)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_2795.png" ;
 		kaaont:next kaake:ke0342 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/341-348.PDF" ;
@@ -8329,7 +8353,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1100-1103.PDF" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-sexual-activity .
 	
 	kaake:ke1104 a kaaont:inventory-number ;
 		rdfs:label "KE 1104 (Palmette Antefix)" ;
@@ -8346,7 +8370,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1106 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 290" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke2006 a kaaont:inventory-number ;
 		rdfs:label "KE 2006 (Hellenistic Lamp)" ;
@@ -8547,7 +8571,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1845 (Painted Plaster)" ;
 		kaaont:next kaake:ke1846 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 506" .
+		kaaont:subject-number "Mi 506" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1846 a kaaont:inventory-number ;
 		rdfs:label "KE 1846 (Knidian Relief Ware, Patera Handle)" ;
@@ -8627,33 +8652,39 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1654 a kaaont:inventory-number ;
 		rdfs:label "KE 1654 (Iron Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2132.png" ;
 		kaaont:next kaake:ke1655 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1646-1654.PDF" , "photography/2011_inventory_photos/IMG_2132.png" ;
+		kaaont:file "pagescans/inventory/1646-1654.PDF" ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 417" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1655 a kaaont:inventory-number ;
 		rdfs:label "KE 1655 (Iron Nail in Mortar)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2133.png" ;
 		kaaont:next kaake:ke1656 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1655-1662.PDF" , "photography/2011_inventory_photos/IMG_2133.png" ;
+		kaaont:file "pagescans/inventory/1655-1662.PDF" ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 420" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1656 a kaaont:inventory-number ;
 		rdfs:label "KE 1656 (Iron Nail)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2134.png" ;
 		kaaont:next kaake:ke1657 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 421" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1657 a kaaont:inventory-number ;
 		rdfs:label "KE 1657 (Bronze Tack)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2135.png" ;
 		kaaont:next kaake:ke1658 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 422" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -8702,6 +8733,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0562 a kaaont:inventory-number ;
 		rdfs:label "KE 562 (Palmette Antefix)" ;
+		kaaont:photograph "Ar0051-Ke0562-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0563 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar-terracotta-antefix ;
@@ -8991,13 +9023,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1087 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 273" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1087 a kaaont:inventory-number ;
 		rdfs:label "KE 1087 (Bronze Loop and Attachment)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2182.png" ;
 		kaaont:next kaake:ke1088 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1082-1087.PDF" , "photography/2011_inventory_photos/IMG_2182.png" ;
+		kaaont:file "pagescans/inventory/1082-1087.PDF" ;
+		kaaont:subject-number "Mi 274" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-viii-195 a kaaont:notebook-page ;
@@ -9196,7 +9231,9 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 903 (Small Bronze Ring)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2154.png" ;
 		kaaont:next kaake:ke0904 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 224" ;
+		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0904 a kaaont:inventory-number ;
 		rdfs:label "KE 904 (Bone Button or Disc)" ;
@@ -9213,13 +9250,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/905-910.PDF" ;
 		kaaont:subject-number "S 23" ;
-		kaaont:has-material kaatyp:bronze .
+		kaaont:has-material kaatyp:bronze ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person .
 	
 	kaake:ke0906 a kaaont:inventory-number ;
 		rdfs:label "KE 906 (Iron Strigil?)" ;
 		kaaont:next kaake:ke0907 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 226" .
+		kaaont:subject-number "Mi 226" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1807 a kaaont:inventory-number ;
 		rdfs:label "KE 1807 (Worked Fishbone)" ;
@@ -9231,9 +9270,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1808 a kaaont:inventory-number ;
 		rdfs:label "KE 1808 (Bronze Fishhook)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2187.png" ;
 		kaaont:next kaake:ke1809 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1808-1815.PDF" , "photography/2011_inventory_photos/IMG_2187.png" ;
+		kaaont:file "pagescans/inventory/1808-1815.PDF" ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
 		kaaont:subject-number "Mi 484" ;
 		kaaont:has-material kaatyp:bronze .
@@ -9289,7 +9329,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0715 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/710-716.PDF" ;
-		kaaont:subject-number "Mi 151" .
+		kaaont:subject-number "Mi 151" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0715 a kaaont:inventory-number ;
 		rdfs:label "KE 715 (Burned Tile? Glass Crucible?)" ;
@@ -9464,7 +9505,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1430 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 335" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1430 a kaaont:inventory-number ;
 		rdfs:label "KE 1430 (Byzantine Lead Seal)" ;
@@ -9546,7 +9587,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "Ke0143-L034-D13-001-Cf.png" ;
 		kaaont:next kaake:ke0144 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:l-lr-corinthian-copy-imitation-north-african ;
+		kaaont:typological-identification kaatyp:l-lr-corinthian-copy-north-african ;
 		kaaont:pagescan "pagescans/inventory/141-144.PDF" ;
 		kaaont:subject-number "L 34" ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -9763,12 +9804,16 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1979 (Marble Screen or Revetment Slab)" ;
 		kaaont:next kaake:ke1980 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:pagescan "pagescans/inventory/1978-1982.PDF" .
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:pagescan "pagescans/inventory/1978-1982.PDF" ;
+		kaaont:subject-number "Ar 101" ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke1980 a kaaont:inventory-number ;
 		rdfs:label "KE 1980 (Marble Slab with Moulding)" ;
 		kaaont:next kaake:ke1981 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:pagescan "pagescans/inventory/1978-1982.PDF" ;
 		kaaont:subject-number "Ar 102" ;
 		kaaont:has-material kaatyp:marble .
@@ -9777,6 +9822,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1981 (Marble Slab with Molding)" ;
 		kaaont:next kaake:ke1982 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:subject-number "Ar 103" ;
 		kaaont:has-material kaatyp:marble .
 	
@@ -9819,6 +9865,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 885 (Bronze Nail)" ;
 		kaaont:next kaake:ke0886 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 205" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -9827,6 +9874,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2127.png" ;
 		kaaont:next kaake:ke0887 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 206" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0887 a kaaont:inventory-number ;
@@ -9834,13 +9883,17 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0888 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/880-887.PDF" , "photography/2011_inventory_photos/IMG_2143.png" ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 207" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0888 a kaaont:inventory-number ;
 		rdfs:label "KE 888 (Bronze Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2144.png" ;
 		kaaont:next kaake:ke0889 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/888-896.PDF" , "photography/2011_inventory_photos/IMG_2144.png" ;
+		kaaont:file "pagescans/inventory/888-896.PDF" ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 208" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -9901,7 +9954,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1791 (Painted Plaster)" ;
 		kaaont:next kaake:ke1792 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 470" .
+		kaaont:subject-number "Mi 470" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1792 a kaaont:inventory-number ;
 		rdfs:label "KE 1792 (Glass)" ;
@@ -9972,18 +10026,21 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1599 (Plaster Molding)" ;
 		kaaont:next kaake:ke1600 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 407" .
+		kaaont:subject-number "Mi 407" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1600 a kaaont:inventory-number ;
 		rdfs:label "KE 1600 (Plaster Molding)" ;
 		kaaont:next kaake:ke1601 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 408" .
+		kaaont:subject-number "Mi 408" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1601 a kaaont:inventory-number ;
 		rdfs:label "KE 1601 (Architectural Terracotta)" ;
 		kaaont:next kaake:ke1602 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:subject-number "Ar 86-66" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
@@ -10351,8 +10408,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:count 1 ;
 		kaaont:typological-identification kaatyp:p-athenian-gouged-jug ;
 		kaaont:pagescan "pagescans/inventory/847-850.PDF" ;
-		kaaont:subject-number "P 229" ;
-		kaaont:has-geographic-origin kaa:attica .
+		kaaont:subject-number "P 229" .
 	
 	kaake:ke0850 a kaaont:inventory-number ;
 		rdfs:label "KE 850 (Hellenistic Moldmade Cooking Dish)" ;
@@ -10661,7 +10717,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0279 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/278-285.PDF" ;
-		kaaont:subject-number "Mi 72" .
+		kaaont:subject-number "Mi 72" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0279 a kaaont:inventory-number ;
 		rdfs:label "KE 279 (Glass Fragments)" ;
@@ -10690,15 +10747,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1423 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 329" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1423 a kaaont:inventory-number ;
 		rdfs:label "KE 1423 (Iron Nails)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2053.png" ;
 		kaaont:next kaake:ke1424 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 330" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1424 a kaaont:inventory-number ;
 		rdfs:label "KE 1424 (Bronze Hasp)" ;
@@ -11053,6 +11111,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0881 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/880-887.PDF" , "photography/2011_inventory_photos/IMG_2119.png" ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 200" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0881 a kaaont:inventory-number ;
@@ -11060,13 +11120,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2122.png" ;
 		kaaont:next kaake:ke0882 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 201" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0882 a kaaont:inventory-number ;
 		rdfs:label "KE 882 (Bronze Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2124.png" ;
 		kaaont:next kaake:ke0883 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/880-887.PDF" , "photography/2011_inventory_photos/IMG_2124.png" ;
+		kaaont:file "pagescans/inventory/880-887.PDF" ;
 		kaaont:subject-number "Mi 202" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -11075,6 +11138,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2125.png" ;
 		kaaont:next kaake:ke0884 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 203" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:field-book-number-c-0070 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -11121,6 +11186,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_0482.png" ;
 		kaaont:next kaake:ke1786 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:pagescan "pagescans/inventory/1781-1785.PDF" ;
 		kaaont:subject-number "P 463" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -11201,7 +11267,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1594 a kaaont:inventory-number ;
 		rdfs:label "KE 1594 (Schistose Marble Cutting Debris?)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0760.png" ;
+		kaaont:photograph "Ar0084-Ke1594-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1595 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Ar 84-66" ;
@@ -11209,6 +11275,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1595 a kaaont:inventory-number ;
 		rdfs:label "KE 1595 (Schistose Marble Cutting Debris?)" ;
+		kaaont:photograph "Ar0085-Ke1595-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1596 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1588-1595.PDF" ;
@@ -11373,6 +11440,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0103 a kaaont:inventory-number ;
 		rdfs:label "KE 103 (Pottery)" ;
+		kaaont:photograph "P0025-Ke0109-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0104 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-unclassified ;
@@ -11999,11 +12067,12 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0083 a kaaont:inventory-number ;
 		rdfs:label "KE 83 (Marble templon screen with liturgical inscription)" ;
+		kaaont:comment "Kenchreai I, p. 126, no. 26" ;
 		kaaont:next kaake:ke0084 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar , kaatyp:inscription ;
 		kaaont:pagescan "pagescans/inventory/82-84.PDF" ;
-		kaaont:subject-number "In Gr 3" , "Ar 6" ;
+		kaaont:subject-number "Ar 6" , "InGr 3" ;
 		kaaont:has-material kaatyp:marble ;
 		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross .
 	
@@ -12485,9 +12554,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0239 a kaaont:inventory-number ;
 		rdfs:label "KE 239 (Early Roman Situla)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_2281.png" ;
+		kaaont:photograph "P0040-Ke0239-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0240 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "P 40" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:has-visual-motif kaatyp:visual-motif-dionysos-bacchus .
 	
@@ -12715,7 +12785,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/978-981.PDF" ;
 		kaaont:subject-number "L 261" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Broneer Type IV" .
+		kaaont:typology-comment "Broneer Type IV" ;
+		kaaont:drawing "Ke0978-L0261-HW72-001.png" .
 	
 	kaake:ke0979 a kaaont:inventory-number ;
 		rdfs:label "KE 979 (Early/Middle Roman Corinthian Lamp)" ;
@@ -12895,6 +12966,7 @@ iebulbyulbyulbyulb""" .
 	kaake:ke1934 a kaaont:inventory-number ;
 		rdfs:label "KE 1934 (Monumental Greek Inscription)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1111.png" ;
+		kaaont:comment "Kenchreai I, pp. 123-124, no. 5" ;
 		kaaont:next kaake:ke1935 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
@@ -12978,14 +13050,17 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2141.png" ;
 		kaaont:next kaake:ke1744 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 463" .
+		kaaont:subject-number "Mi 463" ;
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1744 a kaaont:inventory-number ;
 		rdfs:label "KE 1744 (Lead Fragment)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2140.png" ;
 		kaaont:next kaake:ke1745 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1737-1744.PDF" , "photography/2011_inventory_photos/IMG_2140.png" ;
-		kaaont:subject-number "Mi 464" .
+		kaaont:file "pagescans/inventory/1737-1744.PDF" ;
+		kaaont:subject-number "Mi 464" ;
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1745 a kaaont:inventory-number ;
 		rdfs:label "KE 1745 (Byzantine Wall Painting)" ;
@@ -13233,11 +13308,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke2078 a kaaont:inventory-number ;
 		rdfs:label "KE 2078 (Late Archaic/Early Classical Greek Epitaph) " ;
+		kaaont:comment "Kenchreai I, p. 8; SEG XXIX 344" ;
 		kaaont:next kaake:ke2079 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
 		kaaont:subject-number "InGr 27" ;
-		kaaont:has-material kaatyp:limestone .
+		kaaont:has-material kaatyp:limestone ;
+		kaaont:has-historical-period kaachron:archaic , kaachron:classical .
 	
 	kaake:ke2079 a kaaont:inventory-number ;
 		rdfs:label "KE 2079 (Early-Middle Roman Corinthian Basin)" ;
@@ -13471,7 +13548,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0803 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/798-802.PDF" ;
-		kaaont:subject-number "Mi 184" .
+		kaaont:subject-number "Mi 184" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0803 a kaaont:inventory-number ;
 		rdfs:label "KE 803 (Right Angle Ceramic Drain)" ;
@@ -13758,7 +13836,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:writing true ;
 		kaaont:has-published-catalog-entry kaake:kenchreai-vol4-er10 ;
 		kaaont:base-diameter 8.8E-2 ;
-		kaaont:writing-transcription "ZWI" ;
+		kaaont:writing-transcription "CORINT(" ;
 		kaaont:drawing "Ke1328-P0364-MAH-15.png" .
 	
 	kaake:ke2229 a kaaont:inventory-number ;
@@ -14075,7 +14153,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-howland-type-25 ;
 		kaaont:subject-number "L 256" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Broneer Type VII" , "Scheibler Type DSL3" , "Howland Type 25A" .
+		kaaont:typology-comment "Broneer Type VII" , "Scheibler Type DSL3" , "Howland Type 25A" ;
+		kaaont:drawing "Ke0973-L0256-HW72-001.png" .
 	
 	kaake:ke0974 a kaaont:inventory-number ;
 		rdfs:label "KE 974 (Late Roman Athenian Lamp)" ;
@@ -14188,9 +14267,9 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0785 a kaaont:inventory-number ;
 		rdfs:label "KE 785 (Palmette Antefix)" ;
+		kaaont:photograph "Ar0086-Ke0785-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0786 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "photography/2011_inventory_photos/IMG_0870.png" ;
 		kaaont:typological-identification kaatyp:ar-terracotta-antefix ;
 		kaaont:subject-number "Ar 86" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -14303,9 +14382,10 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke1497 a kaaont:inventory-number ;
-		rdfs:label "KE 1497 (Painted Plaster)" ;
+		rdfs:label "KE 1497 (Lamp)" ;
 		kaaont:next kaake:ke1498 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:l-unclassified ;
 		kaaont:pagescan "pagescans/inventory/1497-1500.PDF" ;
 		kaaont:subject-number "L 401" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -15013,16 +15093,17 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0177 a kaaont:inventory-number ;
 		rdfs:label "KE 177 (Greek inscription)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1095.png" ;
 		kaaont:next kaake:ke0178 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/176-180.PDF" , "photography/2011_inventory_photos/IMG_1095.png" ;
+		kaaont:file "pagescans/inventory/176-180.PDF" ;
 		kaaont:typological-identification kaatyp:inscription ;
 		kaaont:subject-number "InGr 6" ;
 		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke0178 a kaaont:inventory-number ;
 		rdfs:label "KE 178 (Marble column)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0893.png" ;
+		kaaont:photograph "Ke0178-Ar0019-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0179 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar ;
@@ -15381,7 +15462,9 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2156.png" ;
 		kaaont:next kaake:ke1684 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 445 a, b" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1684 a kaaont:inventory-number ;
 		rdfs:label "KE 1684 (Hellenistic Moldmade Bowl)" ;
@@ -15447,6 +15530,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2024.png" ;
 		kaaont:next kaake:ke2397 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 590" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2397 a kaaont:inventory-number ;
@@ -15454,6 +15539,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2228.png" ;
 		kaaont:next kaake:ke2398 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 591" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2398 a kaaont:inventory-number ;
@@ -15574,7 +15661,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0519 a kaaont:inventory-number ;
 		rdfs:label "KE 519 (Italian Sigillata Stamp OCK 1623.96)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_2903.png" ;
+		kaaont:photograph "Ke0519-P0129-D11-001-Cf.png" ;
 		kaaont:comment "Rasinius of Arezzo" ;
 		kaaont:next kaake:ke0520 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
@@ -15942,6 +16029,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1839 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 500" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-iv-089 a kaaont:notebook-page ;
@@ -16061,7 +16149,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1648 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 414" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1648 a kaaont:inventory-number ;
 		rdfs:label "KE 1648 (Glass Lamp)" ;
@@ -16106,14 +16194,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0553 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/548-552.PDF" ;
-		kaaont:subject-number "Mi 123" .
+		kaaont:subject-number "Mi 123" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0553 a kaaont:inventory-number ;
 		rdfs:label "KE 553 (Painted Plaster)" ;
 		kaaont:next kaake:ke0554 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/553-557.PDF" ;
-		kaaont:subject-number "Mi 124" .
+		kaaont:subject-number "Mi 124" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0554 a kaaont:inventory-number ;
 		rdfs:label "KE 554 (Iron Spike)" ;
@@ -16148,9 +16238,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1458 a kaaont:inventory-number ;
 		rdfs:label "KE 1458 (Bronze Finial)" ;
+		kaaont:photograph """	  photography/2011_inventory_photos/IMG_2084.png""" ;
 		kaaont:next kaake:ke1459 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1458-1463.PDF" , "photography/2011_inventory_photos/IMG_2084.png" ;
+		kaaont:file "pagescans/inventory/1458-1463.PDF" ;
 		kaaont:subject-number "Mi 365" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -16577,6 +16668,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2243.png" ;
 		kaaont:next kaake:ke2392 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 585" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2392 a kaaont:inventory-number ;
@@ -16584,6 +16676,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2014.png" ;
 		kaaont:next kaake:ke2393 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 586" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2393 a kaaont:inventory-number ;
@@ -16797,11 +16890,12 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1418 a kaaont:inventory-number ;
 		rdfs:label "KE 1418 (Iron Clamp)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2056.png" ;
 		kaaont:next kaake:ke1419 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1418-1425.PDF" , "photography/2011_inventory_photos/IMG_2056.png" ;
+		kaaont:file "pagescans/inventory/1418-1425.PDF" ;
 		kaaont:subject-number "Mi 325" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:metal , kaatyp:iron .
 	
 	kaake:ke1419 a kaaont:inventory-number ;
 		rdfs:label "KE 1419 (Iron Clamp)" ;
@@ -16809,7 +16903,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1420 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 326" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1420 a kaaont:inventory-number ;
 		rdfs:label "KE 1420 (Large Lead Clamp)" ;
@@ -16825,7 +16919,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1422 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 328" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke0324 a kaaont:inventory-number ;
 		rdfs:label "KE 324 (Glass Fragments)" ;
@@ -17096,6 +17190,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2114.png" ;
 		kaaont:next kaake:ke0877 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 196" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0877 a kaaont:inventory-number ;
@@ -17103,6 +17199,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2115.png" ;
 		kaaont:next kaake:ke0878 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 197 a, b" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0878 a kaaont:inventory-number ;
@@ -17110,6 +17208,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2117.png" ;
 		kaaont:next kaake:ke0879 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 198" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0879 a kaaont:inventory-number ;
@@ -17117,6 +17217,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0880 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/874-879.PDF" , "photography/2011_inventory_photos/IMG_2118.png" ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 199" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:field-book-number-c-0066 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -17197,7 +17299,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 689 (Painted Plaster)" ;
 		kaaont:next kaake:ke0690 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 145" .
+		kaaont:subject-number "Mi 145" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1830 a kaaont:inventory-number ;
 		rdfs:label "KE 1830 (Early/Middle Roman Corinthian Lamp)" ;
@@ -17338,6 +17441,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "Mi0357-Ke1451-D15-002-Cf.png" , "Mi0357-Ke1451-D15-003-Cf.png" ;
 		kaaont:next kaake:ke1452 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 357" ;
 		kaaont:has-material kaatyp:worked-bone ;
 		kaaont:drawing "Ke1451-Mi357-DMW-15.png" .
 	
@@ -17362,6 +17466,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2027.png" ;
 		kaaont:next kaake:ke2355 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 570" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -17482,7 +17587,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "L 538" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Athenian glazed" .
+		kaaont:typology-comment "Athenian glazed" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-gazelle .
 	
 	kaake:ke1070 a kaaont:inventory-number ;
 		rdfs:label "KE 1070 (Terracotta Figurine of Aphrodite Pudica)" ;
@@ -17845,13 +17951,15 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1605 (Painted Plaster)" ;
 		kaaont:next kaake:ke1606 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 409" .
+		kaaont:subject-number "Mi 409" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1606 a kaaont:inventory-number ;
 		rdfs:label "KE 1606 (Plaster Molding)" ;
 		kaaont:next kaake:ke1607 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Ar 89-66" .
+		kaaont:subject-number "Ar 89-66" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-b-i-032 a kaaont:notebook-page ;
 		rdfs:label "Notebook B I, Page 32" ;
@@ -17943,7 +18051,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1414 a kaaont:inventory-number ;
 		rdfs:label "KE 1414 (Palmette Antefix)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1184.png" ;
+		kaaont:photograph "Ar0081-Ke1414-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1415 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar-terracotta-antefix ;
@@ -17955,7 +18063,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1416 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 323" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1416 a kaaont:inventory-number ;
 		rdfs:label "KE 1416 (Bronze Swing Handle)" ;
@@ -18033,6 +18141,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:on-notebook-page kaake:notebook-page-a-v-182 , kaake:notebook-page-a-v-045 ;
 		kaaont:typological-identification kaatyp:s ;
 		kaaont:pagescan "pagescans/inventory/1222-1223.PDF" ;
+		kaaont:has-material kaatyp:marble ;
 		kaaont:has-visual-motif kaatyp:visual-motif-person .
 	
 	kaake:ke1224 a kaaont:inventory-number ;
@@ -18043,6 +18152,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:model <http://p3d.in/y9hVe/shadeless> ;
 		kaaont:pagescan "pagescans/inventory/1224-1227.PDF" ;
 		kaaont:subject-number "S 57" ;
+		kaaont:has-material kaatyp:marble ;
 		kaaont:has-visual-motif kaatyp:visual-motif-lion .
 	
 	kaake:ke1225 a kaaont:inventory-number ;
@@ -18762,6 +18872,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1928 (Silver Earring)" ;
 		kaaont:next kaake:ke1929 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:jewelry-earring ;
 		kaaont:subject-number "Mi 522" ;
 		kaaont:has-material kaatyp:silver .
 	
@@ -18780,6 +18891,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1931 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 524" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1931 a kaaont:inventory-number ;
@@ -18817,12 +18929,14 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0837 a kaaont:inventory-number ;
 		rdfs:label "KE 837 (Greek Inscribed Column)" ;
+		kaaont:comment "Kenchreai I, pp. 73, 125; SEG XXVIII 387" ;
 		kaaont:next kaake:ke0838 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar , kaatyp:inscription ;
 		kaaont:pagescan "pagescans/inventory/836-837.PDF" ;
 		kaaont:subject-number "Ar 77" , "InGr 21" ;
-		kaaont:has-material kaatyp:marble .
+		kaaont:has-material kaatyp:marble ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaake:notebook-page-a-vi-003 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-vi-004 ;
@@ -18848,7 +18962,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2160.png" ;
 		kaaont:next kaake:ke1739 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 458" .
+		kaaont:subject-number "Mi 458" ;
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1739 a kaaont:inventory-number ;
 		rdfs:label "KE 1739 (Lead Fragment)" ;
@@ -18863,7 +18978,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2155.png" ;
 		kaaont:next kaake:ke1741 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 460" .
+		kaaont:subject-number "Mi 460" ;
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1741 a kaaont:inventory-number ;
 		rdfs:label "KE 1741 (Lead Strip)" ;
@@ -18871,7 +18987,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1742 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 461" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:notebook-page-b-i-167 a kaaont:notebook-page ;
 		rdfs:label "Notebook B I, Page 167" ;
@@ -19111,7 +19227,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0267 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/260-266.PDF" ;
-		kaaont:subject-number "Mi 0069" .
+		kaaont:subject-number "Mi 69" .
 	
 	kaake:ke0267 a kaaont:inventory-number ;
 		rdfs:label "KE 267 (Marble Bowl)" ;
@@ -19298,6 +19414,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_0519.png" ;
 		kaaont:next kaake:ke2126 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:marine-activities ;
 		kaaont:subject-number "Mi 567" ;
 		kaaont:has-material kaatyp:limestone .
 	
@@ -19831,7 +19948,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 229 (Painted Plaster)" ;
 		kaaont:next kaake:ke0230 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 65" .
+		kaaont:subject-number "Mi 65" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0230 a kaaont:inventory-number ;
 		rdfs:label "KE 230 (Glass Handle)" ;
@@ -20086,7 +20204,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0781 a kaaont:inventory-number ;
 		rdfs:label "KE 781 (Palmette Antefix)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0872.png" ;
+		kaaont:photograph "Ar0084-Ke0782-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0782 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar-terracotta-antefix ;
@@ -20100,7 +20218,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/778-782.PDF" ;
 		kaaont:typological-identification kaatyp:mi-stone-bowl ;
-		kaaont:subject-number "Mi 177" .
+		kaaont:subject-number "Mi 177" ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaake:notebook-page-c-ii-019 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-c-ii-020 ;
@@ -20235,9 +20354,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1736 a kaaont:inventory-number ;
 		rdfs:label "KE 1736 (Lead Fragment)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2163.png" ;
 		kaaont:next kaake:ke1737 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1729-1736.PDF" , "photography/2011_inventory_photos/IMG_2163.png" ;
+		kaaont:file "pagescans/inventory/1729-1736.PDF" ;
 		kaaont:subject-number "Mi 456" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -20266,20 +20386,22 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-b-i .
 	
 	kaake:ke0399 a kaaont:inventory-number ;
-		rdfs:label "KE 399 (Molded Vessel)" ;
+		rdfs:label "KE 399 (Molded Terracotta)" ;
 		kaaont:photograph "Ar0041-Ke0399-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0400 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:subject-number "P 92" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0400 a kaaont:inventory-number ;
 		rdfs:label "KE 400 (Corinthian Orientalizing Kotyle)" ;
-		kaaont:photograph "Ke0400-P0093a-D11-001.png" , "Ke0400-P0093b-D11-001.png" ;
+		kaaont:photograph "Ke0400-P0093b-D11-001.png" , "P0093-Ke0400-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0401 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-unclassified ;
 		kaaont:pagescan "pagescans/inventory/396-400.PDF" ;
-		kaaont:subject-number "P 93" ;
+		kaaont:subject-number "P 93 a, b" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0401 a kaaont:inventory-number ;
@@ -21002,7 +21124,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/1127-1131.PDF" ;
 		kaaont:subject-number "L 302" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross .
+		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross ;
+		kaaont:drawing "Ke1127-L302-JLR-17a.png" .
 	
 	kaake:ke1128 a kaaont:inventory-number ;
 		rdfs:label "KE 1128 (Late Roman Lamp)" ;
@@ -21202,6 +21325,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_0477.png" ;
 		kaaont:next kaake:ke1869 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:subject-number "P 481" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
@@ -21297,6 +21421,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2109.png" ;
 		kaaont:next kaake:ke1680 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 441" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -21304,7 +21429,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1680 (Painted Plaster)" ;
 		kaaont:next kaake:ke1681 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 442" .
+		kaaont:subject-number "Mi 442" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1681 a kaaont:inventory-number ;
 		rdfs:label "KE 1681 (Bronze Point)" ;
@@ -21840,7 +21966,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/548-552.PDF" ;
 		kaaont:subject-number "L 131" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-horse-or-donkey ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-horse-or-donkey , kaatyp:visual-motif-sexual-activity ;
 		kaaont:drawing "Ke0550-L131-JLR-16a.png" .
 	
 	kaake:notebook-page-b-i-120 a kaaont:notebook-page ;
@@ -21924,6 +22050,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1501-1503.PDF" , "pagescans/inventory/1745.PDF" ;
 		kaaont:subject-number "Mi 388" ;
+		kaaont:has-material kaatyp:mortar-plaster ;
 		kaaont:kaa-note "Was recataloged as KE 1745, with a more detailed sketch and more complete description. That number was then re-assigned to the next item. This means that the alternate catalog entry has no inventory number associated with it. Currently, 'KE 1501' points to the PDF file that illustrates the 'redacted' entry." .
 	
 	kaake:ke1502 a kaaont:inventory-number ;
@@ -21981,7 +22108,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0168 a kaaont:inventory-number ;
 		rdfs:label "KE 168 (Frying Pan)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1661.png" ;
+		kaaont:photograph "P0035-Ke0168-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0169 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-cooking-ware-roman ;
@@ -22319,6 +22446,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1673 (Lead Fishnet Weight)" ;
 		kaaont:next kaake:ke1674 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:fishing-technology ;
 		kaaont:subject-number "Mi 435" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -22326,6 +22454,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1674 (Lead Fishnet Weight)" ;
 		kaaont:next kaake:ke1675 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:fishing-technology ;
 		kaaont:subject-number "Mi 436" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -22342,6 +22471,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1676 (Painted Lead Fishnet Weight)" ;
 		kaaont:next kaake:ke1677 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:fishing-technology ;
 		kaaont:subject-number "Mi 438" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -22350,7 +22480,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1484 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1483-1487.PDF" ;
-		kaaont:subject-number "Mi 386" .
+		kaaont:subject-number "Mi 386" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1484 a kaaont:inventory-number ;
 		rdfs:label "KE 1484 (Sherd with Dipinto)" ;
@@ -22390,13 +22521,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2010.png" ;
 		kaaont:next kaake:ke2388 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 581" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2388 a kaaont:inventory-number ;
 		rdfs:label "KE 2388 (Architectural Lead)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2033.png" , "photography/2011_inventory_photos/IMG_2221.png" ;
 		kaaont:next kaake:ke2389 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "photography/2011_inventory_photos/IMG_2033.png" , "photography/2011_inventory_photos/IMG_2221.png" ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 582" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2389 a kaaont:inventory-number ;
@@ -22404,6 +22538,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2013.png" ;
 		kaaont:next kaake:ke2390 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 583" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2390 a kaaont:inventory-number ;
@@ -22412,6 +22547,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke2391 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:lead ;
+		kaaont:subject-number "Mi 584" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1293 a kaaont:inventory-number ;
@@ -22673,6 +22809,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:description """Boar. Thick boy, high vertebral ridge, slight modelling of shoulders flanked by two small ears. Moldmade; hollow.
 """ ;
 		kaaont:subject-number "S 25" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-boar ;
 		kaaont:preserved-length 0.069 ;
 		kaaont:width 0.048 ;
 		kaaont:fabric-description "Fine, pinkish buff clay. Corinthian coroplastic fabric?" .
@@ -22687,7 +22824,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "S 26" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:preserved-height 0.05 ;
-		kaaont:has-visual-motif kaatyp:visual-motif-animal ;
+		kaaont:has-visual-motif kaatyp:visual-motif-boar ;
 		kaaont:preserved-length 0.056 ;
 		kaaont:preservation-comment "One small fragment preserves ears and part of back. Slight to moderate, extensive abrasion and pitting." .
 	
@@ -22698,7 +22835,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/925-927.PDF" ;
 		kaaont:subject-number "L 212" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Broneer Type IV" .
+		kaaont:typology-comment "Broneer Type IV" ;
+		kaaont:drawing "Ke0925-L0212-HW72-001.png" .
 	
 	kaake:ke1826 a kaaont:inventory-number ;
 		rdfs:label "KE 1826 (Early/Middle Roman Corinthian Lamp) " ;
@@ -22720,7 +22858,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1828 a kaaont:inventory-number ;
 		rdfs:label "KE 1828 (Palmette Antefix)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1177.png" ;
+		kaaont:photograph "Ar0096-Ke1828-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1829 ;
 		kaaont:is-logical-part-of kaake:inventory-book , kaake:box-c2289 ;
 		kaaont:file "pagescans/inventory/1828-1834.PDF" ;
@@ -22760,6 +22898,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0732 a kaaont:inventory-number ;
 		rdfs:label "KE 732 (Bronze Appliqué or Handle?)" ;
+		kaaont:comment "Bronze lamp handles?" ;
 		kaaont:next kaake:ke0733 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/732-737.PDF" , "photography/2011_inventory_photos/IMG_2095.png" ;
@@ -22835,7 +22974,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1638 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1637-1645.PDF" ;
-		kaaont:subject-number "Ar 90-66" .
+		kaaont:subject-number "Ar 90-66" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1638 a kaaont:inventory-number ;
 		rdfs:label "KE 1638 (Bronze Nail)" ;
@@ -22843,6 +22983,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1639 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 413" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1639 a kaaont:inventory-number ;
@@ -22918,12 +23059,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0544 a kaaont:inventory-number ;
 		rdfs:label "KE 544 (Kenchreai IV RC 22e Amphora)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1529.png" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1529.png" , "Ke0544-P0135-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0545 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-22e ;
 		kaaont:pagescan "pagescans/inventory/543-547.PDF" ;
 		kaaont:subject-number "P 135" ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:rim-diameter 5.4E-2 ;
 		kaaont:writing true ;
 		kaaont:preserved-height 9.8E-2 .
@@ -22980,9 +23122,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1449 a kaaont:inventory-number ;
 		rdfs:label "KE 1449 (Bronze Spoon)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2068.png" ;
 		kaaont:next kaake:ke1450 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1442-1449.PDF" , "photography/2011_inventory_photos/IMG_2068.png" ;
+		kaaont:file "pagescans/inventory/1442-1449.PDF" ;
 		kaaont:subject-number "Mi 355" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -23368,6 +23511,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1999-2003.PDF" ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 547" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke2000 a kaaont:inventory-number ;
@@ -23444,6 +23588,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2031.png" ;
 		kaaont:next kaake:ke2383 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 576" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2383 a kaaont:inventory-number ;
@@ -23451,6 +23597,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2233.png" ;
 		kaaont:next kaake:ke2384 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 577" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2384 a kaaont:inventory-number ;
@@ -23604,6 +23752,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1410 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1405-1411.PDF" , "photography/2011_inventory_photos/IMG_0522.png" ;
+		kaaont:typological-identification kaatyp:s ;
 		kaaont:subject-number "S 64" ;
 		kaaont:has-material kaatyp:marble .
 	
@@ -23612,7 +23761,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1411 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 321" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1411 a kaaont:inventory-number ;
 		rdfs:label "KE 1411 (Iron Fragment)" ;
@@ -23620,13 +23769,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1405-1411.PDF" ;
 		kaaont:subject-number "Mi 322" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1412 a kaaont:inventory-number ;
 		rdfs:label "KE1412 (Late Archaic/Early Classical Eaves Tile)" ;
+		kaaont:photograph "Ar0079-Ke1412-D11-001-Cf.png" , "Ar0079-Ke1412-D11-002-Cf.png" ;
 		kaaont:next kaake:ke1413 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1412-1417.PDF" , "photography/2011_inventory_photos/IMG_1182.png" ;
+		kaaont:file "pagescans/inventory/1412-1417.PDF" ;
 		kaaont:typological-identification kaatyp:p-rooftile ;
 		kaaont:subject-number "Ar 79" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -23708,6 +23858,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:on-notebook-page kaake:notebook-page-a-v-182 , kaake:notebook-page-a-v-045 , kaake:notebook-page-a-v-036 ;
 		kaaont:typological-identification kaatyp:s ;
 		kaaont:pagescan "pagescans/inventory/1222-1223.PDF" ;
+		kaaont:has-material kaatyp:marble ;
 		kaaont:has-visual-motif kaatyp:visual-motif-person .
 	
 	kaake:ke0125 a kaaont:inventory-number ;
@@ -24109,9 +24260,11 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0489 a kaaont:inventory-number ;
 		rdfs:label "KE 489 (Black Glaze Ring Foot with Graffito)" ;
+		kaaont:photograph "Ke0489-P0121-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0490 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/489-494.PDF" , "photography/2011_inventory_photos/IMG_2718.png" ;
+		kaaont:file "pagescans/inventory/489-494.PDF" ;
+		kaaont:typological-identification kaatyp:p-unclassified ;
 		kaaont:subject-number "P 121" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
@@ -24510,10 +24663,11 @@ iebulbyulbyulbyulb""" .
 		kaaont:width 0.016 .
 	
 	kaake:ke1994 a kaaont:inventory-number ;
-		rdfs:label "KE 1994 (Lead Sheet)" ;
+		rdfs:label "KE 1994 (Lead Sheeting)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1995.png" ;
 		kaaont:next kaake:ke1995 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1994-1998.PDF" , "photography/2011_inventory_photos/IMG_1995.png" ;
+		kaaont:file "pagescans/inventory/1994-1998.PDF" ;
 		kaaont:subject-number "Mi 545" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -24649,6 +24803,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0500 a kaaont:inventory-number ;
 		rdfs:label "KE 500 (Inscribed Early Christian Templon Screen)" ;
+		kaaont:comment "Kenchreai I, p. 126, no. 27; SEG XXVIII 388; Feissel and Phillipides-Braat no. 103; BullÉp 1965 no. 163" ;
 		kaaont:next kaake:ke0501 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:ar , kaatyp:inscription ;
@@ -24865,9 +25020,11 @@ iebulbyulbyulbyulb""" .
 	kaake:ke2120 a kaaont:inventory-number ;
 		rdfs:label "KE 2120 (Monumental Greek Inscription)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1118.png" ;
+		kaaont:comment "Kenchreai I, pp. 123-124, no. 5" ;
 		kaaont:next kaake:ke2121 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
+		kaaont:subject-number "InGr 28" ;
 		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke2121 a kaaont:inventory-number ;
@@ -24942,6 +25099,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2248.png" ;
 		kaaont:next kaake:ke1025 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:subject-number "Mi 243" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -25050,9 +25208,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1957 a kaaont:inventory-number ;
 		rdfs:label "KE 1957 (Bronze Fibula)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2200.png" ;
 		kaaont:next kaake:ke1958 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1957-1961.PDF" , "photography/2011_inventory_photos/IMG_2200.png" ;
+		kaaont:file "pagescans/inventory/1957-1961.PDF" ;
 		kaaont:subject-number "Mi 533" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -25303,7 +25462,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "L 120" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Athenian glazed, early phase" ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-bear .
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-bear ;
+		kaaont:drawing "Ke0483-L0120-JLR-17a.png" .
 	
 	kaake:ke0484 a kaaont:inventory-number ;
 		rdfs:label "KE 484 (Late Roman Corinthian capital)" ;
@@ -25651,6 +25811,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1920 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 519" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1920 a kaaont:inventory-number ;
@@ -25975,8 +26136,13 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-c-i .
 	
 	kaake:ke1349 a kaaont:inventory-number ;
+		rdfs:label "KE 1349 (Marble)" ;
+		kaaont:photograph "Ar0076a-Ke1349-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1350 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Ar 76 a" ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke1350 a kaaont:inventory-number ;
 		rdfs:label "KE 1350 (Monumental Latin Inscription)" ;
@@ -26280,14 +26446,14 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0998 a kaaont:inventory-number ;
 		rdfs:label "KE 998 (Middle Roman Corinthian Lamp)" ;
-		kaaont:comment "Kenchreai V no. 163" ;
+		kaaont:comment "Kenchreai V no. 163. Erotic symplegma." ;
 		kaaont:next kaake:ke0999 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-broneer-xxvii-c ;
 		kaaont:pagescan "pagescans/inventory/998-1000.PDF" ;
 		kaaont:subject-number "L 281" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-sexual-activity .
 	
 	kaake:ke0999 a kaaont:inventory-number ;
 		rdfs:label "KE 999 (Middle Roman Athenian Lamp)" ;
@@ -26488,7 +26654,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-er-italian ;
 		kaaont:subject-number "L 389" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:drawing "Ke1382-L0389-HW72-001.png" .
 	
 	kaake:ke1383 a kaaont:inventory-number ;
 		rdfs:label "KE 1383 (Early Roman Italian Lamp)" ;
@@ -26555,10 +26722,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1191 a kaaont:inventory-number ;
 		rdfs:label "KE 1191 (Bronze Ring)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2016.png" ;
 		kaaont:next kaake:ke1192 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1187-1191.PDF" , "photography/2011_inventory_photos/IMG_2016.png" ;
-		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:file "pagescans/inventory/1187-1191.PDF" ;
 		kaaont:subject-number "Mi 304" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -26635,6 +26802,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2089.png" ;
 		kaaont:next kaake:ke2099 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 562" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke0408 a kaaont:inventory-number ;
@@ -26725,6 +26893,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 218 (Iron Fragments)" ;
 		kaaont:next kaake:ke0219 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:mi ;
 		kaaont:pagescan "pagescans/inventory/218-225.PDF" ;
 		kaaont:subject-number "Mi 62" ;
 		kaaont:has-material kaatyp:iron .
@@ -26908,9 +27077,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1914 a kaaont:inventory-number ;
 		rdfs:label "KE 1914 (Monumental Greek Inscription)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1105.png" , "photography/2011_inventory_photos/IMG_1112.png" ;
+		kaaont:comment "Kenchreai I, pp. 123-124, no. 5" ;
 		kaaont:next kaake:ke1915 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "photography/2011_inventory_photos/IMG_1105.png" , "photography/2011_inventory_photos/IMG_1112.png" ;
 		kaaont:typological-identification kaatyp:inscription ;
 		kaaont:subject-number "InGr 23" ;
 		kaaont:has-material kaatyp:marble .
@@ -26918,6 +27088,7 @@ iebulbyulbyulbyulb""" .
 	kaake:ke1915 a kaaont:inventory-number ;
 		rdfs:label "KE 1915 (Monumental Greek Inscription)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1117.png" ;
+		kaaont:comment "photography/2011_inventory_photos/IMG_1105.png" ;
 		kaaont:next kaake:ke1916 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1913-1915.PDF" ;
@@ -26927,6 +27098,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1916 a kaaont:inventory-number ;
 		rdfs:label "KE 1916 (Monumental Greek Inscription)" ;
+		kaaont:comment "photography/2011_inventory_photos/IMG_1105.png" ;
 		kaaont:next kaake:ke1917 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:inscription ;
@@ -27324,7 +27496,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1157 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 294" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1157 a kaaont:inventory-number ;
 		rdfs:label "KE 1157 (Ceramic Whorl)" ;
@@ -27593,9 +27765,13 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke1898 a kaaont:inventory-number ;
+		rdfs:label "KE 1898 (Byzantine glazed vessel)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1735.png" ;
 		kaaont:next kaake:ke1899 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1898-1900.PDF" , "photography/2011_inventory_photos/IMG_1735.png" .
+		kaaont:file "pagescans/inventory/1898-1900.PDF" ;
+		kaaont:subject-number "P 486" ;
+		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke1899 a kaaont:inventory-number ;
 		rdfs:label "KE 1899 (Early Roman Italian Lamp)" ;
@@ -27872,27 +28048,31 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 213 (Painted Plaster)" ;
 		kaaont:next kaake:ke0214 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 0057" .
+		kaaont:subject-number "Mi 57" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0214 a kaaont:inventory-number ;
 		rdfs:label "KE 214 (Painted Plaster)" ;
 		kaaont:next kaake:ke0215 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 0058" .
+		kaaont:subject-number "Mi 58" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0215 a kaaont:inventory-number ;
 		rdfs:label "KE 215 (Painted Plaster)" ;
 		kaaont:next kaake:ke0216 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/211-215.PDF" ;
-		kaaont:subject-number "Mi 0059" .
+		kaaont:subject-number "Mi 59" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0216 a kaaont:inventory-number ;
 		rdfs:label "KE 216 (Painted Plaster)" ;
 		kaaont:next kaake:ke0217 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/216-217.PDF" ;
-		kaaont:subject-number "Mi 0060" .
+		kaaont:subject-number "Mi 60" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1117 a kaaont:inventory-number ;
 		rdfs:label "KE 1117 (Early/Middle Roman Corinthian Lamp)" ;
@@ -27936,7 +28116,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0024 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/18-23.PDF" ;
-		kaaont:subject-number "Mi 3" .
+		kaaont:subject-number "Mi 3" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0024 a kaaont:inventory-number ;
 		rdfs:label "KE 24 (Late Roman Athenian Lamp)" ;
@@ -28211,7 +28392,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 766 (Painted Plaster)" ;
 		kaaont:next kaake:ke0767 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 171" .
+		kaaont:subject-number "Mi 171" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0767 a kaaont:inventory-number ;
 		rdfs:label "KE 767 (Glass Fragments)" ;
@@ -28264,13 +28446,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1670-1677.PDF" , "photography/2011_inventory_photos/IMG_2120.png" ;
 		kaaont:subject-number "Mi 432" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1671 a kaaont:inventory-number ;
 		rdfs:label "KE 1671 (Lead Fishnet Weight)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2116.png" ;
 		kaaont:next kaake:ke1672 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:fishing-technology ;
 		kaaont:subject-number "Mi 433" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -28278,7 +28461,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1672 (Painted Plaster)" ;
 		kaaont:next kaake:ke1673 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 434" .
+		kaaont:subject-number "Mi 434" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-a-iv-163 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iv-164 ;
@@ -28355,7 +28539,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1479 (Painted Plaster)" ;
 		kaaont:next kaake:ke1480 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 382" .
+		kaaont:subject-number "Mi 382" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1480 a kaaont:inventory-number ;
 		rdfs:label "KE 1480 (Knidian Relief Ware Patera, Zoomorphic Handle)" ;
@@ -28371,14 +28556,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1234.png" ;
 		kaaont:next kaake:ke1482 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 384" .
+		kaaont:subject-number "Mi 384" ;
+		kaaont:has-material kaatyp:limestone , kaatyp:mortar-plaster .
 	
 	kaake:ke1482 a kaaont:inventory-number ;
 		rdfs:label "KE 1482 (Painted Plaster)" ;
 		kaaont:next kaake:ke1483 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1478-1482.PDF" ;
-		kaaont:subject-number "Mi 385" .
+		kaaont:subject-number "Mi 385" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0385 a kaaont:inventory-number ;
 		rdfs:label "KE 385 (Early Roman Italian Lamp)" ;
@@ -28436,7 +28623,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/1290-1294.PDF" ;
 		kaaont:subject-number "L 337" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Howland Type 25B" .
+		kaaont:typology-comment "Howland Type 25B" ;
+		kaaont:drawing "Ke1290-L0337-HW72-001.png" .
 	
 	kaake:ke1291 a kaaont:inventory-number ;
 		rdfs:label "KE 1291 (Early Roman Corinthian Lamp)" ;
@@ -28513,18 +28701,22 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1099 a kaaont:inventory-number ;
 		rdfs:label "KE 1099 (Bronze Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2208.png" ;
 		kaaont:next kaake:ke1100 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1094-1099.PDF" , "photography/2011_inventory_photos/IMG_2208.png" ;
+		kaaont:file "pagescans/inventory/1094-1099.PDF" ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 286" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1100 a kaaont:inventory-number ;
 		rdfs:label "KE 1100 (Bronze Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2209.png" ;
 		kaaont:next kaake:ke1101 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1100-1103.PDF" , "photography/2011_inventory_photos/IMG_2209.png" ;
+		kaaont:file "pagescans/inventory/1100-1103.PDF" ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 287" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1101 a kaaont:inventory-number ;
@@ -28533,6 +28725,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1102 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 288" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke2243 a kaaont:inventory-number ;
@@ -28896,7 +29089,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0541 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/538-542.PDF" ;
-		kaaont:subject-number "Mi 122" .
+		kaaont:subject-number "Mi 122" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0541 a kaaont:inventory-number ;
 		rdfs:label "KE 541 (Hellenistic Athenian Moldmade Bowl)" ;
@@ -29029,7 +29223,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "Ke0160-L044-D13-001-Cf.png" ;
 		kaaont:next kaake:ke0161 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:l-lr-corinthian-copy-imitation-north-african ;
+		kaaont:typological-identification kaatyp:l-lr-corinthian-copy-north-african ;
 		kaaont:pagescan "pagescans/inventory/156-160.PDF" ;
 		kaaont:subject-number "L 44" ;
 		kaaont:has-material kaatyp:ceramic-material ;
@@ -29413,6 +29607,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2123.png" ;
 		kaaont:next kaake:ke1665 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 429" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1665 a kaaont:inventory-number ;
@@ -29421,6 +29616,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1666 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 430" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1666 a kaaont:inventory-number ;
@@ -29499,25 +29695,29 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0574 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/570-573.PDF" ;
-		kaaont:subject-number "Mi 129" .
+		kaaont:subject-number "Mi 129" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1474 a kaaont:inventory-number ;
 		rdfs:label "KE 1474 (Painted Plaster)" ;
 		kaaont:next kaake:ke1475 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 377" .
+		kaaont:subject-number "Mi 377" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1475 a kaaont:inventory-number ;
 		rdfs:label "KE 1475 (Painted Plaster)" ;
 		kaaont:next kaake:ke1476 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 378" .
+		kaaont:subject-number "Mi 378" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1476 a kaaont:inventory-number ;
 		rdfs:label "KE 1476 (Painted Plaster)" ;
 		kaaont:next kaake:ke1477 ;
 		kaaont:is-logical-part-of kaake:inventory-book , kaake:box-c1341 ;
 		kaaont:subject-number "Mi 379" ;
+		kaaont:has-material kaatyp:mortar-plaster ;
 		kaaont:kaa-note "The bag for this inventory number also has a tag for box-ta0144." .
 	
 	kaake:ke1477 a kaaont:inventory-number ;
@@ -29525,7 +29725,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1478 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1471-1477.PDF" ;
-		kaaont:subject-number "Mi 380" .
+		kaaont:subject-number "Mi 380" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0380 a kaaont:inventory-number ;
 		rdfs:label "KE 380 (Palmette Antefix)" ;
@@ -29568,13 +29769,17 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 2378 (Iron Nail or Clamp)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2241.png" ;
 		kaaont:next kaake:ke2379 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 572" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke2379 a kaaont:inventory-number ;
 		rdfs:label "KE 2379 (Lead Strip)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2232.png" ;
 		kaaont:next kaake:ke2380 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 573" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2380 a kaaont:inventory-number ;
@@ -29582,6 +29787,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2244.png" ;
 		kaaont:next kaake:ke2381 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 574" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2381 a kaaont:inventory-number ;
@@ -29589,6 +29795,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2170.png" ;
 		kaaont:next kaake:ke2382 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 575" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke1284 a kaaont:inventory-number ;
@@ -29739,13 +29946,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1094-1099.PDF" , "photography/2011_inventory_photos/IMG_2184.png" ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 281" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1095 a kaaont:inventory-number ;
-		rdfs:label "KE 1095 (Bronze pin?)" ;
+		rdfs:label "KE 1095 (Bronze bracelet?)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2186.png" ;
 		kaaont:next kaake:ke1096 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:jewelry-bracelet ;
+		kaaont:subject-number "Mi 282" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1096 a kaaont:inventory-number ;
@@ -29754,6 +29964,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1097 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 283" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1097 a kaaont:inventory-number ;
@@ -29762,6 +29973,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1098 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 284" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-c-iii-073 a kaaont:notebook-page ;
@@ -29964,14 +30176,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-physical-part-of kaake:notebook-a-i .
 	
 	kaake:ke0723 a kaaont:inventory-number ;
-		rdfs:label "KE 723 (Gilded Bronze Fingers Ring with Cornelian)" ;
+		rdfs:label "KE 723 (Gilded Bronze Finger Ring with Cornelian) " ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2004.png" ;
 		kaaont:next kaake:ke0724 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/723-731.PDF" ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
 		kaaont:subject-number "Mi 159" ;
-		kaaont:has-material kaatyp:bronze .
+		kaaont:has-material kaatyp:bronze , kaatyp:gold .
 	
 	kaake:ke0724 a kaaont:inventory-number ;
 		rdfs:label "KE 724 (Bronze Fishhook)" ;
@@ -30100,7 +30312,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0536 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/531-537.PDF" ;
-		kaaont:subject-number "Mi 119" .
+		kaaont:subject-number "Mi 119" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0536 a kaaont:inventory-number ;
 		rdfs:label "KE 536 (Painted Plaster)" ;
@@ -30108,7 +30321,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/531-537.PDF" ;
 		kaaont:subject-number "Mi 120" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-a-iii-186 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iii-187 ;
@@ -30526,6 +30739,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0896 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
+		kaaont:subject-number "Mi 215" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0896 a kaaont:inventory-number ;
@@ -30544,6 +30758,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/897-904.PDF" ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
+		kaaont:subject-number "Mi 217" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0898 a kaaont:inventory-number ;
@@ -30604,22 +30819,25 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "Mi0475-Ke1799-D15-001-Cf.png" , "Mi0475-Ke1799-D15-002-Cf.png" , "Mi0475-Ke1799-D15-003-Cf.png" ;
 		kaaont:next kaake:ke1800 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 475" .
+		kaaont:subject-number "Mi 475" ;
+		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke1800 a kaaont:inventory-number ;
 		rdfs:label "KE 1800 (Bronze Netting Needle)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2164.png" ;
 		kaaont:next kaake:ke1801 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1793-1800.PDF" , "photography/2011_inventory_photos/IMG_2164.png" ;
+		kaaont:file "pagescans/inventory/1793-1800.PDF" ;
 		kaaont:typological-identification kaatyp:netting-needle ;
 		kaaont:subject-number "Mi 476" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1801 a kaaont:inventory-number ;
 		rdfs:label "KE 1801 (Bronze Pin and Chain)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2165.png" ;
 		kaaont:next kaake:ke1802 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1801-1807.PDF" , "photography/2011_inventory_photos/IMG_2165.png" ;
+		kaaont:file "pagescans/inventory/1801-1807.PDF" ;
 		kaaont:subject-number "Mi 477" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -30656,7 +30874,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2227.png" ;
 		kaaont:next kaake:ke2377 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:subject-number "Mi 568 a-d" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:notebook-page-a-i-125 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-i-126 ;
@@ -31339,6 +31558,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2055.png" ;
 		kaaont:next kaake:ke1436 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:jewelry ;
 		kaaont:subject-number "Mi 341" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -31551,14 +31771,18 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2146.png" ;
 		kaaont:next kaake:ke0891 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 210" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke0891 a kaaont:inventory-number ;
-		rdfs:label "KE 891 (Bronze Nail)" ;
+		rdfs:label "KE 891 (Lead Nail)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2147.png" ;
 		kaaont:next kaake:ke0892 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:has-material kaatyp:bronze .
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 211" ;
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke0892 a kaaont:inventory-number ;
 		rdfs:label "KE 892 (Bronze Fishhook)" ;
@@ -31574,6 +31798,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0894 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
+		kaaont:subject-number "Mi 213" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:field-book-number-c-0080 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -31733,7 +31958,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/1950-1953.PDF" ;
 		kaaont:subject-number "L 514" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-dog .
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-dog ;
+		kaaont:drawing "Ke1950-L0514-HW72-001.png" .
 	
 	kaake:ke0856 a kaaont:inventory-number ;
 		rdfs:label "KE 856 (Hellenistic Amphora with Stamp)" ;
@@ -31836,6 +32062,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1191 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 303" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke2334 a kaaont:inventory-number ;
@@ -31986,9 +32213,9 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0249 a kaaont:inventory-number ;
 		rdfs:label "KE 249 (Sherd with Stamp)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2945.png" ;
 		kaaont:next kaake:ke0250 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "photography/2011_inventory_photos/IMG_2945.png" ;
 		kaaont:subject-number "P 50" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
@@ -32159,7 +32386,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1941-1945.PDF" ;
 		kaaont:subject-number "Mi 529" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:lead .
 	
 	kaake:notebook-page-a-iv-199 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iv-200 ;
@@ -32198,7 +32425,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-lr-athenian ;
 		kaaont:pagescan "pagescans/inventory/1371-1375.PDF" ;
 		kaaont:subject-number "L 382" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:typology-comment "Bucranium type" .
 	
 	kaake:notebook-page-e-i-106 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-e-i-107 ;
@@ -32218,6 +32446,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2217.png" ;
 		kaaont:next kaake:ke1186 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 298" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-i-031 a kaaont:notebook-page ;
@@ -32247,7 +32476,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 212 (Painted Plaster)" ;
 		kaaont:next kaake:ke0213 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 0056" .
+		kaaont:subject-number "Mi 56" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-a-v-158 a kaaont:notebook-page ;
 		rdfs:label "Notebook 1964 Area A V, Page 158" ;
@@ -33017,7 +33247,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1695 (Plaster Molding)" ;
 		kaaont:next kaake:ke1696 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 449" .
+		kaaont:subject-number "Mi 449" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0912 a kaaont:inventory-number ;
 		rdfs:label "KE 912 (Bone Pin)" ;
@@ -33376,7 +33607,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0908 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:netting-needle ;
-		kaaont:subject-number "Mi227" ;
+		kaaont:subject-number "Mi 227" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1811 a kaaont:inventory-number ;
@@ -33524,6 +33755,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2145.png" ;
 		kaaont:next kaake:ke0890 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 209" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-vi-058 a kaaont:notebook-page ;
@@ -33571,11 +33804,12 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1843 a kaaont:inventory-number ;
-		rdfs:label "KE 1843 (Bronze Ring)" ;
+		rdfs:label "KE 1843 (Bronze Finger Ring)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2195.png" ;
 		kaaont:next kaake:ke1844 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 505" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-iv-097 a kaaont:notebook-page ;
@@ -33587,7 +33821,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1650 (Nail Impression in Burned Plaster?)" ;
 		kaaont:next kaake:ke1651 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 416" .
+		kaaont:subject-number "Mi 416" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1651 a kaaont:inventory-number ;
 		rdfs:label "KE 1651 (Glass)" ;
@@ -33609,15 +33844,16 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2131.png" ;
 		kaaont:next kaake:ke1654 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 418" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1460 a kaaont:inventory-number ;
 		rdfs:label "KE 1460 (Iron Fastener)" ;
 		kaaont:next kaake:ke1461 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 365" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1461 a kaaont:inventory-number ;
 		rdfs:label "KE 1461 (Bronze Plating)" ;
@@ -33638,9 +33874,10 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1463 (Iron Nail or Clamp)" ;
 		kaaont:next kaake:ke1464 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:pagescan "pagescans/inventory/1458-1463.PDF" ;
 		kaaont:subject-number "Mi 368" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke2367 a kaaont:inventory-number ;
 		rdfs:label "KE 2367 (Glass)" ;
@@ -33673,6 +33910,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1272 (Marble Statuette of Aphrodite)" ;
 		kaaont:next kaake:ke1273 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:s ;
 		kaaont:pagescan "pagescans/inventory/1268-1272.PDF" ;
 		kaaont:subject-number "S 59" ;
 		kaaont:has-material kaatyp:marble ;
@@ -33723,7 +33961,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2214.png" ;
 		kaaont:next kaake:ke1081 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
+		kaaont:subject-number "Mi 267 a, b" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1081 a kaaont:inventory-number ;
@@ -33732,7 +33970,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1075-1081.PDF" ;
 		kaaont:subject-number "Mi 268" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1082 a kaaont:inventory-number ;
 		rdfs:label "KE 1082 (Bronze Cable Earring)" ;
@@ -33745,11 +33983,12 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:ke1083 a kaaont:inventory-number ;
-		rdfs:label "KE 1083 (Bronze Pin?)" ;
+		rdfs:label "KE 1083 (Lead and iron(?) pin)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2179.png" ;
 		kaaont:next kaake:ke1084 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:has-material kaatyp:bronze .
+		kaaont:subject-number "Mi 270" ;
+		kaaont:has-material kaatyp:lead , kaatyp:iron .
 	
 	kaake:notebook-page-a-viii-194 a kaaont:notebook-page ;
 		rdfs:label "Notebook A VIII, Page 194" ;
@@ -33897,6 +34136,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2126.png" ;
 		kaaont:next kaake:ke0885 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 204" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-a-vi-050 a kaaont:notebook-page ;
@@ -33950,7 +34191,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1598 (Plaster Molding)" ;
 		kaaont:next kaake:ke1599 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 406" .
+		kaaont:subject-number "Mi 406" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-e-i-139 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-e-i-140 ;
@@ -34054,7 +34296,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0278 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/273-277.PDF" ;
-		kaaont:subject-number "Mi 71" .
+		kaaont:subject-number "Mi 71" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke2325 a kaaont:inventory-number ;
 		rdfs:label "KE 2325 (Cooking Pot)" ;
@@ -34124,7 +34367,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1967-1972.PDF" , "photography/2011_inventory_photos/IMG_2205.png" ;
 		kaaont:subject-number "Mi 539" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1973 a kaaont:inventory-number ;
 		rdfs:label "KE 1973 (Late Classical/Early Hellenistic Black Glaze Bowl with Graffito)" ;
@@ -34139,6 +34382,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_0483.png" ;
 		kaaont:next kaake:ke1781 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:pagescan "pagescans/inventory/1776-1780.PDF" ;
 		kaaont:subject-number "P 458" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -34149,7 +34393,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1782 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:modern-chronology kaa:day1966-07-06 ;
-		kaaont:typological-identification kaatyp:p-kenchreai-iv-rc-10 ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:pagescan "pagescans/inventory/1781-1785.PDF" ;
 		kaaont:subject-number "P 459" .
 	
@@ -34159,7 +34403,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1783 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:modern-chronology kaa:day1966-07-06 ;
-		kaaont:typological-identification kaatyp:p-kenchreai-iv-rc-10 ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:height 46 ;
 		kaaont:pagescan "pagescans/inventory/1781-1785.PDF" ;
 		kaaont:subject-number "P 460" .
@@ -34170,7 +34414,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1784 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:modern-chronology kaa:day1966-07-11 ;
-		kaaont:typological-identification kaatyp:p-kenchreai-iv-rc-10 ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:height 4.65E1 ;
 		kaaont:pagescan "pagescans/inventory/1781-1785.PDF" ;
 		kaaont:subject-number "P 461" ;
@@ -34208,6 +34452,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1593 a kaaont:inventory-number ;
 		rdfs:label "KE 1593 (Schistose Marble Cutting Debris?)" ;
+		kaaont:photograph "Ar0083-Ke1533-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1594 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Ar 83-66" ;
@@ -34302,9 +34547,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1936 a kaaont:inventory-number ;
 		rdfs:label "KE 1936 (Bronze Nail)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2199.png" ;
 		kaaont:next kaake:ke1937 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1936-1940.PDF" , "photography/2011_inventory_photos/IMG_2199.png" ;
+		kaaont:file "pagescans/inventory/1936-1940.PDF" ;
 		kaaont:typological-identification kaatyp:nail ;
 		kaaont:subject-number "Mi 526" ;
 		kaaont:has-material kaatyp:bronze .
@@ -34332,6 +34578,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 1556 (Gold Finger Ring)" ;
 		kaaont:next kaake:ke1557 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
 		kaaont:subject-number "Mi 393" ;
 		kaaont:has-material kaatyp:gold .
 	
@@ -35155,6 +35402,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2231.png" ;
 		kaaont:next kaake:ke2396 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
+		kaaont:subject-number "Mi 589" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:notebook-page-a-i-147 a kaaont:notebook-page ;
@@ -35283,7 +35532,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1835 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1828-1834.PDF" ;
-		kaaont:subject-number "Mi 499 a-c" .
+		kaaont:subject-number "Mi 499 a-c" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:notebook-page-a-iv-088 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iv-089 ;
@@ -35425,21 +35675,24 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0702 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/697-701.PDF" ;
-		kaaont:subject-number "Mi 148" .
+		kaaont:subject-number "Mi 148" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0702 a kaaont:inventory-number ;
 		rdfs:label "KE 702 (Painted Plaster)" ;
 		kaaont:next kaake:ke0703 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/702-704.PDF" ;
-		kaaont:subject-number "Mi 149" .
+		kaaont:subject-number "Mi 149" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0703 a kaaont:inventory-number ;
 		rdfs:label "KE 703 (Painted Plaster)" ;
 		kaaont:next kaake:ke0704 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/702-704.PDF" ;
-		kaaont:subject-number "Mi 150" .
+		kaaont:subject-number "Mi 150" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke1607 a kaaont:inventory-number ;
 		rdfs:label "KE 1607 (Glass)" ;
@@ -35646,6 +35899,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1258.png" ;
 		kaaont:next kaake:ke1780 ;
 		kaaont:is-logical-part-of kaake:inventory-book , kaake:fountain-court-side-room ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:pagescan "pagescans/inventory/1776-1780.PDF" ;
 		kaaont:subject-number "P 457" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -35699,10 +35953,12 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1399 a kaaont:inventory-number ;
 		rdfs:label "KE 1399 (Fine Marble Architectural Molding)" ;
+		kaaont:photograph "Ar0078b-Ke0399-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1400 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:ar ;
 		kaaont:pagescan "pagescans/inventory/1396-1399.PDF" ;
-		kaaont:subject-number "Ar 78" ;
+		kaaont:subject-number "Ar 78 b" ;
 		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke2350 a kaaont:inventory-number ;
@@ -35955,7 +36211,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1965 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 536" ;
-		kaaont:has-material kaa:oscar-t-broneer .
+		kaaont:has-material kaatyp:bronze ;
+		kaaont:preserved-length 0.018 .
 	
 	kaake:ke1774 a kaaont:inventory-number ;
 		rdfs:label "KE 1774 (Knidian Amphora Stamped Handle)" ;
@@ -36240,11 +36497,12 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0070 a kaaont:inventory-number ;
 		rdfs:label "KE 70 (Early Roman Lead-Glazed Vessel)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1752.png" ;
+		kaaont:photograph "Ke0070-P0021-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0071 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/68-72.PDF" ;
 		kaaont:subject-number "P 21" ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:extant-part "Body Sherd" .
 	
 	kaake:ke0071 a kaaont:inventory-number ;
@@ -36734,9 +36992,11 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1867 a kaaont:inventory-number ;
 		rdfs:label "KE 1867 (Kenchreai IV RC10 Amphora)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_0478.png" ;
 		kaaont:next kaake:ke1868 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1867-1872.PDF" , "photography/2011_inventory_photos/IMG_0478.png" ;
+		kaaont:file "pagescans/inventory/1867-1872.PDF" ;
+		kaaont:typological-identification kaatyp:p-kenchreai-4-rc-10 ;
 		kaaont:subject-number "P 480" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
@@ -36797,6 +37057,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1678 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1670-1677.PDF" ;
+		kaaont:typological-identification kaatyp:fishing-technology ;
 		kaaont:subject-number "Mi 439" ;
 		kaaont:has-material kaatyp:lead .
 	
@@ -36843,14 +37104,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0390 a kaaont:inventory-number ;
-		rdfs:label "KE 390 (Middle Roman Athenian Lamp)" ;
+		rdfs:label "KE 390 (Early/Middle Roman Corinthian Lamp)" ;
 		kaaont:next kaake:ke0391 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:typological-identification kaatyp:l-mr-athenian-unglazed ;
+		kaaont:typological-identification kaatyp:l-broneer-xxvii-c ;
 		kaaont:pagescan "pagescans/inventory/390-395.PDF" ;
 		kaaont:subject-number "L 77" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-sexual-activity .
 	
 	kaake:ke0391 a kaaont:inventory-number ;
 		rdfs:label "KE 391 (Early Roman Italian Lamp)" ;
@@ -36926,7 +37187,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-howland-type-25 ;
 		kaaont:subject-number "L 213" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Howland Type 25A'" , "Scheibler Type RSL4" , "Broneer Type VII" .
+		kaaont:typology-comment "Howland Type 25A'" , "Scheibler Type RSL4" , "Broneer Type VII" ;
+		kaaont:drawing "Ke0926-L0213-HW72-001.png" .
 	
 	kaake:notebook-page-a-i-175 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-i-176 ;
@@ -36997,7 +37259,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke2404 a kaaont:inventory-number ;
 		rdfs:comment "Temporary note: Inventoried and drawn in 2015. From “Trench MT 2” Field Book Number/Excavation Box 8 and 9. With context pottery (140)." ;
-		rdfs:label "KE 2404" ;
+		rdfs:label "KE 2404 (Vessel)" ;
 		kaaont:next kaake:ke2405 ;
 		kaaont:is-logical-part-of kaake:inventory-book , kaake:field-book-number-ta-0008 ;
 		kaaont:typological-identification kaatyp:p-unclassified ;
@@ -37064,6 +37326,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2238.png" ;
 		kaaont:next kaake:ke2387 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 580" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:notebook-page-a-i-138 a kaaont:notebook-page ;
@@ -37171,7 +37434,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1636 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 412" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:notebook-page-b-i-064 a kaaont:notebook-page ;
 		rdfs:label "Notebook B I, Page 64" ;
@@ -37352,7 +37615,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "L 331" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:typology-comment "Athenian early unglazed" .
+		kaaont:typology-comment "Athenian early unglazed" ;
+		kaaont:drawing "Ke1211_Ke1218-L0331_L334-JLR-17a.png" .
 	
 	kaake:ke0124 a kaaont:inventory-number ;
 		rdfs:label "KE 124 (Nail)" ;
@@ -37621,12 +37885,14 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1400 a kaaont:inventory-number ;
 		rdfs:label "KE 1400 (Monumental Latin Epitaph)" ;
+		kaaont:comment "ILGR 124; Roman Peloponnese I, no. COR 146 [2]" ;
 		kaaont:next kaake:ke1401 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1400.1-10.PDF" , "pagescans/inventory/1400.11-21.PDF" , "pagescans/inventory/1400.22-31.PDF" , "pagescans/inventory/1400.32-41.PDF" ;
 		kaaont:typological-identification kaatyp:inscription ;
 		kaaont:subject-number "InLat 8" ;
-		kaaont:has-material kaatyp:marble .
+		kaaont:has-material kaatyp:marble ;
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaake:ke1401 a kaaont:inventory-number ;
 		rdfs:label "KE 1401 (Early Roman Asia Minor Lamp)" ;
@@ -37692,7 +37958,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:subject-number "L 331" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Athenian glazed, early phase" ;
-		kaaont:has-visual-motif kaatyp:visual-motif-eros-cupid .
+		kaaont:has-visual-motif kaatyp:visual-motif-eros-cupid ;
+		kaaont:drawing "Ke1211_Ke1218-L0331_L334-JLR-17a.png" .
 	
 	kaake:ke1212 a kaaont:inventory-number ;
 		rdfs:label "KE 1212 (Early Roman Italian Lamp)" ;
@@ -37865,6 +38132,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2090.png" , "photography/2011_inventory_photos/IMG_2219.png" ;
 		kaaont:next kaake:ke2100 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 563" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:notebook-page-c-iii-174 a kaaont:notebook-page ;
@@ -37976,7 +38244,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:pagescan "pagescans/inventory/444-448.PDF" ;
 		kaaont:subject-number "L 104" ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person .
+		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:drawing "Ke0444-L0104-HW72-001.png" .
 	
 	kaake:notebook-page-a-iii-097 a kaaont:notebook-page ;
 		kaaont:next kaake:notebook-page-a-iii-098 ;
@@ -37985,7 +38254,7 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1348 a kaaont:inventory-number ;
 		rdfs:label "KE 1348 (Architectural Terracotta)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_1169.png" ;
+		kaaont:photograph "Ar0075c-Ke1348-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1349 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Ar 75" ;
@@ -38009,11 +38278,13 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0064 a kaaont:inventory-number ;
 		rdfs:label "KE 64 (Attic Black Glaze Handle)" ;
+		kaaont:photograph "Ke0064-P0020-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0065 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/64-67.PDF" , "photography/2011_inventory_photos/IMG_2763.png" ;
+		kaaont:file "pagescans/inventory/64-67.PDF" ;
 		kaaont:typological-identification kaatyp:p-unclassified ;
 		kaaont:subject-number "P 20" ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:has-geographic-origin kaa:attica .
 	
 	kaake:notebook-page-a-vii-065 a kaaont:notebook-page ;
@@ -38073,7 +38344,9 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 2094 (Iron Hobnails or Tacks)" ;
 		kaaont:next kaake:ke2095 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "Mi 561" .
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 561" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke0407 a kaaont:inventory-number ;
 		rdfs:label "KE 407 (Late Roman North African Lamp)" ;
@@ -38164,6 +38437,7 @@ iebulbyulbyulbyulb""" .
 	kaake:ke1913 a kaaont:inventory-number ;
 		rdfs:label "KE 1913 (Monumental Greek Inscription)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_1109.png" , "photography/2011_inventory_photos/IMG_1116.png" ;
+		kaaont:comment "Kenchreai I, pp. 123-124, no. 5" ;
 		kaaont:next kaake:ke1914 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:file "pagescans/inventory/1913-1915.PDF" ;
@@ -38205,9 +38479,10 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1533 a kaaont:inventory-number ;
 		rdfs:label "KE 1533 (Late Roman Amphora 1 with Dipinto)" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_1506.png" ;
 		kaaont:next kaake:ke1534 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1527-1533.PDF" , "photography/2011_inventory_photos/IMG_1506.png" ;
+		kaaont:file "pagescans/inventory/1527-1533.PDF" ;
 		kaaont:typological-identification kaatyp:p-lra-1 ;
 		kaaont:subject-number "P 410" ;
 		kaaont:has-material kaatyp:ceramic-material .
@@ -38292,9 +38567,11 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke1895 a kaaont:inventory-number ;
 		rdfs:label "KE 1895 (Painted Tile)" ;
-		kaaont:photograph "photography/2011_inventory_photos/IMG_0711.png" ;
+		kaaont:photograph "Ar0096-Ke1895-D11-001-Cf.png" ;
 		kaaont:next kaake:ke1896 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:p-rooftile ;
+		kaaont:subject-number "Ar 96" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:notebook-page-b-ii-117 a kaaont:notebook-page ;
@@ -38428,7 +38705,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1479 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/1478-1482.PDF" ;
-		kaaont:subject-number "Mi 381" .
+		kaaont:subject-number "Mi 381" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0384 a kaaont:inventory-number ;
 		rdfs:label "KE 384 (Early Roman Italian Lamp)" ;
@@ -38474,6 +38752,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke1099 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 285" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:notebook-page-c-iii-077 a kaaont:notebook-page ;
@@ -38521,7 +38800,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0538 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/531-537.PDF" ;
-		kaaont:subject-number "Mi 121" .
+		kaaont:subject-number "Mi 121" ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaake:ke0347 a kaaont:inventory-number ;
 		rdfs:label "KE 347 (Glass Fragments)" ;
@@ -38577,6 +38857,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0900 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
+		kaaont:subject-number "Mi 219" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:field-book-number-c-0086 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -38600,14 +38881,15 @@ iebulbyulbyulbyulb""" .
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:l-broneer-xvi ;
 		kaaont:subject-number "L 488" ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "Ke1853-L0488-HW72-001.png" .
 	
 	kaake:ke1663 a kaaont:inventory-number ;
 		rdfs:label "KE 1663 (Bronze pin or nail)" ;
-		kaaont:photograph """	  photography/2011_inventory_photos/IMG_2128.png""" ;
+		kaaont:photograph "photography/2011_inventory_photos/IMG_2128.png" , """	  photography/2011_inventory_photos/IMG_2128.png""" ;
 		kaaont:next kaake:ke1664 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:file "pagescans/inventory/1663-1669.PDF" , "photography/2011_inventory_photos/IMG_2128.png" ;
+		kaaont:file "pagescans/inventory/1663-1669.PDF" ;
 		kaaont:subject-number "Mi 428" ;
 		kaaont:has-material kaatyp:bronze .
 	
@@ -38623,7 +38905,10 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KE 2377 (Iron Spikes or Bars)" ;
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2026.png" ;
 		kaaont:next kaake:ke2378 ;
-		kaaont:is-logical-part-of kaake:inventory-book .
+		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:nail ;
+		kaaont:subject-number "Mi 571" ;
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke1283 a kaaont:inventory-number ;
 		rdfs:label "KE 1283 (Early Hellenistic West Slope Kantharos)" ;
@@ -38802,6 +39087,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0895 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:metal-fishhook ;
+		kaaont:subject-number "Mi 214" ;
 		kaaont:has-material kaatyp:bronze .
 	
 	kaake:field-book-number-c-0081 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -39012,7 +39298,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2230.png" ;
 		kaaont:next kaake:ke2101 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
-		kaaont:subject-number "KE 2101 (Lead Architectural Clamp)" ;
+		kaaont:subject-number "Mi 564" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2101 a kaaont:inventory-number ;
@@ -39020,6 +39306,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2034.png" ;
 		kaaont:next kaake:ke2102 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 565" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:ke2102 a kaaont:inventory-number ;
@@ -39027,6 +39314,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "photography/2011_inventory_photos/IMG_2030.png" ;
 		kaaont:next kaake:ke2103 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:subject-number "Mi 566" ;
 		kaaont:has-material kaatyp:lead .
 	
 	kaake:field-book-number-c-0174 a kaaont:field-book-number , kaaont:excavation-box ;
@@ -39051,10 +39339,11 @@ iebulbyulbyulbyulb""" .
 	
 	kaake:ke0200 a kaaont:inventory-number ;
 		rdfs:label "KE 200 (Situla with figural relief)" ;
+		kaaont:photograph "P0038-Ke0200-D11-001-Cf.png" ;
 		kaaont:next kaake:ke0201 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:pagescan "pagescans/inventory/199-202.PDF" ;
-		kaaont:subject-number "P 0038" ;
+		kaaont:subject-number "P 38" ;
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaake:ke0201 a kaaont:inventory-number ;
@@ -39119,21 +39408,22 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaake:ke0901 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 221" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke0901 a kaaont:inventory-number ;
 		rdfs:label "KE 901 (Iron Blade)" ;
 		kaaont:next kaake:ke0902 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "Mi 222" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:ke0902 a kaaont:inventory-number ;
-		rdfs:label "KE 902 (Iron Finger Ring)" ;
+		rdfs:label "KE 902 (Iron Finger Ring?)" ;
 		kaaont:next kaake:ke0903 ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
+		kaaont:typological-identification kaatyp:jewelry-finger-ring ;
 		kaaont:subject-number "Mi 223" ;
-		kaaont:has-material kaatyp:metal .
+		kaaont:has-material kaatyp:iron .
 	
 	kaake:trench-c64-b a kaaont:excavation-trench ;
 		rdfs:label "Trench C64-B" ;
@@ -42889,7 +43179,8 @@ iebulbyulbyulbyulb""" .
 	kaakth:kth0199 a kaaont:inventory-number ;
 		rdfs:label "KTH0199 (Plaster)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaakth:kth0200 a kaaont:inventory-number ;
 		rdfs:label "KTH0200 (Bone pin)" ;
@@ -42969,7 +43260,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:next kaakth:kth0209 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:nail ;
-		kaaont:has-material kaatyp:metal , kaatyp:iron .
+		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth0209 a kaaont:inventory-number ;
 		rdfs:label "KTH0209 (Glass)" ;
@@ -43113,7 +43404,8 @@ iebulbyulbyulbyulb""" .
 	kaakth:kth0230 a kaaont:inventory-number ;
 		rdfs:label "KTH0230 (Plaster)" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:mortar-plaster .
 	
 	kaakth:kth0231 a kaaont:inventory-number ;
 		rdfs:label "KTH0231 (Burned Iron)" ;
@@ -43237,7 +43529,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KTH0247 (Iron and plaster fragments)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:has-material kaatyp:iron .
+		kaaont:has-material kaatyp:iron , kaatyp:mortar-plaster .
 	
 	kaakth:kth0248 a kaaont:inventory-number ;
 		rdfs:label "KTH0248 (Shell)" ;
@@ -43415,12 +43707,12 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:marble .
 	
 	kaakth:kth0281 a kaaont:inventory-number ;
-		rdfs:label "KTH0281 (Stone Tray or Table-Top)" ;
+		rdfs:label "KTH0281 (Marble Tray or Table-Top)" ;
 		kaaont:photograph "KTH0281a-D15-002-Cf.png" , "KTH0281a-D15-003-Cf.png" , "KTH0281a-D15-004-Cf.png" , "KTH0281b-D15-001-Cf.png" , "KTH0281b-D15-002-Cf.png" , "KTH0281b-D15-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:next kaakth:kth0282 ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
-		kaaont:has-material kaatyp:marble , kaatyp:stone .
+		kaaont:has-material kaatyp:marble .
 	
 	kaakth:kth0282 a kaaont:inventory-number ;
 		rdfs:label "KTH0282 (Glass)" ;
@@ -44309,6 +44601,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:description "Circular discus has molded relief with line of drapery pushed up in middle at very top of discus and rounded framing ring. Probably erotic symplegma type with woman reclining left and man kneeling right on kline under canopy. Plain shoulder with panels. Low, narrow, solid handle with three grooves." ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:typology-comment "Athenian glazed, early phase" ;
+		kaaont:has-visual-motif kaatyp:visual-motif-sexual-activity ;
 		kaaont:drawing "KL003-JLR-15a.png" ;
 		kaaont:preserved-length 0.051 ;
 		kaaont:preserved-width 0.027 ;
@@ -48184,7 +48477,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:typological-identification kaatyp:l-mr-athenian-unglazed ;
 		kaaont:description "Circular discus has large filling hole left, small airhole near base of nozzle, figural relief, and narrow, rounded framing ring. Figures depicts erotic scene in which man stooped over with erect penis approaches back of stooped woman with exposed buttocks in heavy tunic and braided hair; columnar altar to lower right of man and child (or Eros?) with outstretched hands to lower left of woman, who touches head with right hand. Shoulder has panels crossing broad channel containing ten dot rosettes per side. Flat, narrow, kite-shaped nozzle with traces of burning." ;
 		kaaont:has-material kaatyp:ceramic-material ;
-		kaaont:has-visual-motif kaatyp:visual-motif-person ;
+		kaaont:has-visual-motif kaatyp:visual-motif-person , kaatyp:visual-motif-sexual-activity ;
 		kaaont:drawing "KL035-JLR-15a.png" ;
 		kaaont:preserved-length 0.071 ;
 		kaaont:preserved-width 0.069 ;
@@ -51150,7 +51443,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-er-italian ;
-		kaaont:has-material kaatyp:ceramic-material .
+		kaaont:has-material kaatyp:ceramic-material ;
+		kaaont:drawing "KTH1300-JLR-17a.png" .
 	
 	kaakth:kth1301 a kaaont:inventory-number ;
 		rdfs:label "KTH1301" ;
@@ -51740,6 +52034,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KTH1416 (Early Byzantine Thief or Racker)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "KTH1416-AGF-16.png" .
 	
 	kaakth:kth1417 a kaaont:inventory-number ;
@@ -54470,7 +54765,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "KTH1955-composite.png" .
 	
 	kaakth:kth1956 a kaaont:inventory-number ;
-		rdfs:label "KTH 1956 (Hellenistic Athenian Lamp)" ;
+		rdfs:label "KTH1956 (Hellenistic Athenian Lamp)" ;
 		kaaont:photograph "KTH1956-D16-003-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
@@ -54501,6 +54796,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KTH1959 (Iron nail)" ;
 		kaaont:comment "Object description in preparation." ;
 		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:typological-identification kaatyp:nail ;
 		kaaont:has-material kaatyp:iron .
 	
 	kaakth:kth1960 a kaaont:inventory-number ;
@@ -55323,7 +55619,8 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KTH2120 (Groundstone)" ;
 		kaaont:photograph "KTH2120-D16-001-Cf.png" ;
 		kaaont:comment "Object description in preparation." ;
-		kaaont:is-logical-part-of kaakth:inventoried-objects .
+		kaaont:is-logical-part-of kaakth:inventoried-objects ;
+		kaaont:has-material kaatyp:stone .
 	
 	kaatyp:l-howland-type-25 a kaaont:typology-item ;
 		rdfs:label "Howland Type 25 Lamp" ;
@@ -55555,14 +55852,14 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:marble .
 	
 	kaake:ke2407 a kaaont:inventory-number ;
-		rdfs:label "KE2407" ;
+		rdfs:label "KE 2407 (Black-glaze vessel)" ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:subject-number "P 798" ;
 		kaaont:has-material kaatyp:ceramic-material ;
 		kaaont:drawing "Ke2407-P0798-DMW-15.png" .
 	
 	kaake:ke2408 a kaaont:inventory-number ;
-		rdfs:label "KE2408" ;
+		rdfs:label "KE 2408 (Black-glaze with red-figure vessel)" ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-unclassified-red-figure ;
 		kaaont:subject-number "P 799" ;
@@ -55570,7 +55867,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:drawing "Ke2408-P0799-DMW-15.png" .
 	
 	kaake:ke2409 a kaaont:inventory-number ;
-		rdfs:label "KE2409" ;
+		rdfs:label "KE 2409 (Black-glazed with red-figure vessel)" ;
 		kaaont:is-logical-part-of kaake:inventory-book ;
 		kaaont:typological-identification kaatyp:p-unclassified-red-figure ;
 		kaaont:subject-number "P 800" ;
@@ -57409,6 +57706,7 @@ iebulbyulbyulbyulb""" .
 		rdfs:label "KA1990-001 (Miniature limestone altar)" ;
 		kaaont:photograph "KA1990001-D05-001-Cf.png" , "KA1990001-D05-004-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
+		kaaont:has-material kaatyp:limestone ;
 		kaaont:drawing "KA1990001-DMW-06.png" .
 	
 	kaakcp:kl144 a kaaont:inventory-number ;
@@ -57452,15 +57750,18 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KI001-D06-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:inscription ;
-		kaaont:has-material kaatyp:marble .
+		kaaont:has-material kaatyp:marble ;
+		kaaont:has-historical-period kaachron:late-roman .
 	
 	kaakcp:ki002 a kaaont:inventory-number ;
 		rdfs:label "KI002 (Byzantine Graffito: Christian prayer)" ;
 		kaaont:photograph "KI002-D04-003-Cf.png" , "KI002-D08-001-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:inscription ;
+		kaaont:has-material kaatyp:mortar-plaster ;
 		kaaont:has-visual-motif kaatyp:visual-motif-christian-cross ;
-		kaaont:drawing "KI002-FMJLR-0415.png" .
+		kaaont:drawing "KI002-FMJLR-0415.png" ;
+		kaaont:has-historical-period kaachron:late-roman , kaachron:byzantine , kaachron:early-byzantine .
 	
 	kaakcp:kl100 a kaaont:inventory-number ;
 		rdfs:label "KL100 (Early/Middle Roman Corinthian Lamp)" ;
@@ -57517,7 +57818,8 @@ iebulbyulbyulbyulb""" .
 		kaaont:photograph "KI1988001-D05-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:inscription ;
-		kaaont:has-material kaatyp:marble .
+		kaaont:has-material kaatyp:marble ;
+		kaaont:has-historical-period kaachron:early-roman .
 	
 	kaakcp:kl097 a kaaont:inventory-number ;
 		rdfs:label "KL097 (Early Roman Asia Minor Lamp)" ;
@@ -57536,7 +57838,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:has-material kaatyp:ceramic-material .
 	
 	kaakcp:kl099 a kaaont:inventory-number ;
-		rdfs:label "KL099 (Early Roman Corinthian Imitation Asia Minor[?] Lamp)" ;
+		rdfs:label "KL099 (Early Roman Corinthian Imitative Lamp) " ;
 		kaaont:photograph "KL099-D07-001-Cf.png" , "KL099-D07-002-Cf.png" ;
 		kaaont:is-logical-part-of kaakcp:inventoried-objects ;
 		kaaont:typological-identification kaatyp:l-ermr-corinthian-imitation-asia-minor ;
@@ -57914,7 +58216,7 @@ iebulbyulbyulbyulb""" .
 		kaaont:broader kaatyp:l .
 	
 	kaatyp:l-lr-athenian-glazed-late a kaaont:typology-item ;
-		rdfs:label "Athenian Glazed Lamp, late phase" ;
+		rdfs:label "Late Roman Athenian lamp, late glazed" ;
 		kaaont:broader kaatyp:l-lr-athenian .
 	
 	kaatyp:l-lr-athenian-unglazed a kaaont:typology-item ;
@@ -58282,6 +58584,22 @@ iebulbyulbyulbyulb""" .
 		kaaont:broader kaatyp:l ;
 		kaaont:has-historical-period kaachron:roman , kaachron:byzantine ;
 		kaaont:has-geographic-origin kaa:egypt .
+	
+	kaatyp:visual-motif-boar a kaaont:typology-item ;
+		rdfs:label "Boar (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif-animal .
+	
+	kaatyp:visual-motif-goat a kaaont:typology-item ;
+		rdfs:label "Goat (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif-animal .
+	
+	kaatyp:mortar-plaster a kaaont:typology-item ;
+		rdfs:label "Mortar/Plaster (Material)" ;
+		kaaont:broader kaatyp:material .
+	
+	kaatyp:visual-motif-sexual-activity a kaaont:typology-item ;
+		rdfs:label "Sexual Activity (Visual Motif)" ;
+		kaaont:broader kaatyp:visual-motif .
 }
 
 <urn:kenchreai:schema> {
